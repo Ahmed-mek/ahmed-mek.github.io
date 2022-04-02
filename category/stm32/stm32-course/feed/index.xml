@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>STM32_course &#8211; Ahmed Mekatronik</title>
+	<atom:link href="/category/stm32/stm32-course/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
+	<description>موقع تعليمي للهواة و المهندسين</description>
+	<lastBuildDate>Sat, 02 Apr 2022 13:48:05 +0000</lastBuildDate>
+	<language>ar</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.2</generator>
+	<item>
+		<title>مكتبة HAL_GPIO</title>
+		<link>/2022/04/02/%d9%85%d9%83%d8%aa%d8%a8%d8%a9-hal_gpio/</link>
+					<comments>/2022/04/02/%d9%85%d9%83%d8%aa%d8%a8%d8%a9-hal_gpio/#respond</comments>
+		
+		<dc:creator><![CDATA[ahmed]]></dc:creator>
+		<pubDate>Sat, 02 Apr 2022 13:07:14 +0000</pubDate>
+				<category><![CDATA[STM32]]></category>
+		<category><![CDATA[STM32_course]]></category>
+		<category><![CDATA[STM32 advanced]]></category>
+		<category><![CDATA[STM32 beginner]]></category>
+		<category><![CDATA[STM32F103C8]]></category>
+		<category><![CDATA[STM32G07]]></category>
+		<guid isPermaLink="false">/?p=549</guid>
+
+					<description><![CDATA[&#8211; المتغير Pin : وهو رقم يبدأ من صفر , وهو رقم Pin الذي تريد ان تقوم بإعداده , فعلي سبيل المثال PA5 , بحيث&#8230;]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="549" class="elementor elementor-549">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-9b97d57 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9b97d57" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a74d8b1" data-id="a74d8b1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-cdfe5fe elementor-widget elementor-widget-text-editor" data-id="cdfe5fe" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.1 - 23-03-2022 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:right;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p><strong>&#8211; المتغير Pin :</strong> وهو رقم يبدأ من صفر , وهو رقم Pin الذي تريد ان تقوم بإعداده , فعلي سبيل المثال PA5 , بحيث سيتم تعريف رقمه هكذا 5_GPIO_Pin , يمكنك ايضا تعريف مجموعة من Pins مع بعضهم دفعة واحدة باستخدام GPIO_InitTypeDef كالاتي ( e.g. , GPIO_PIN_1 | GPIO_PIN_5 | GPIO_PIN_6 ) .</p><p><strong> &#8211; الوضع Mode :</strong> وهو وضع التشغيل للـ Pin , ويمكنك الاختيار ما بين الأوضاع المختلفة المتاحة كما بالجدول . <span style="color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-weight: var( --e-global-typography-text-font-weight );"> </span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-0165ce5 elementor-widget elementor-widget-image" data-id="0165ce5" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.1 - 23-03-2022 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="843" height="333" src="/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-1024x404.png" class="attachment-large size-large" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-1024x404.png 1024w, /wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-300x118.png 300w, /wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-768x303.png 768w, /wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811.png 1342w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-a47ac58 elementor-widget elementor-widget-text-editor" data-id="a47ac58" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><span style="color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-weight: var( --e-global-typography-text-font-weight );"><strong>&#8211; Pull :</strong> تحدد النوعية هل Pull &#8211; Up أم Pull &#8211; Down , وتفعيلها من أجل Pin المحدد .</span></p><div id="simple-translate"><div><div class="simple-translate-button isShow" style="background-image: url('chrome-extension://cllnohpbfenopiakdcjmjcbaeapmkcdl/icons/512.png'); height: 22px; width: 22px; top: 34px; left: 269px;"> </div><div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: #ffffff;"><div class="simple-translate-result-wrapper" style="overflow: hidden;"><div class="simple-translate-move" draggable="true"> </div><div class="simple-translate-result-contents"><p class="simple-translate-result" dir="auto" style="color: #000000;"> </p><p class="simple-translate-candidate" dir="auto" style="color: #737373;"> </p></div></div></div></div></div>						</div>
+				</div>
+				<div class="elementor-element elementor-element-c58269b elementor-widget elementor-widget-image" data-id="c58269b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="843" height="129" src="/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-161145-1024x157.png" class="attachment-large size-large" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-161145-1024x157.png 1024w, /wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-161145-300x46.png 300w, /wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-161145-768x118.png 768w, /wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-161145.png 1256w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-60d1103 elementor-widget elementor-widget-text-editor" data-id="60d1103" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>&#8211;<strong> السرعة Speed :</strong> تقوم بتحديد سرعة الـ Pin في حالة تعيينه كخرج Output وسيتم التحدث عنها في جزئية قادمة</p><p><strong>-البديل Alternate :</strong> يتم تحديد الوحدة الطرفية الملائمة لهذا Pin .</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8f753d4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8f753d4" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cc0b0aa" data-id="cc0b0aa" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e69644c elementor-widget elementor-widget-heading" data-id="e69644c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.1 - 23-03-2022 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">GPIO Mode</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b6ee041 elementor-widget elementor-widget-heading" data-id="b6ee041" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">GPIO INPUT </h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-98394ce elementor-widget elementor-widget-text-editor" data-id="98394ce" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><strong>GPIO_InitTypeDef.Mode</strong></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-0b4d723 elementor-widget elementor-widget-text-editor" data-id="0b4d723" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>عندما يتم اختيار <strong>GPIO_MODE_INPUT</strong> كـ I / O</p><p>&#8211; لـ Output Buffer يتم تعطيله disable . </p><p>&#8211; ادخل دائرة Schmitt Trigger يتم تفعيله .</p><p>&#8211; يتم تفعيل إما Pull &#8211; Up أو Pull &#8211; Down علي حسب ما تم اختياره في جزء Pull</p><p>&#8211; البيانات التي يتم ادخالها علي I/O يتم تقسيمها Sampled داخل Input Data Register کل Clock Cycle</p><p>&#8211; يتم السماح بقراءة محتوي Input Data Register الذي يحتوي على حالة I/O .</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-281a136 elementor-widget elementor-widget-text-editor" data-id="281a136" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>عندما يتم اختيار <strong>GPIO_MODE_ANALOG</strong> &#8211; I / O</p><p>&#8211; يتم تعطيل Output Buffer &#8211; دخل دائرة Schmitt Trigeer يتم تعطيله .</p><p>&#8211; يتم تعطيل Pull &#8211; Down , Pull &#8211; Up .</p><p>&#8211; عند عرض محتوي Input Data Register ستجده يتضمن صفر</p><div id="simple-translate"><div><div class="simple-translate-button isShow" style="background-image: url('chrome-extension://cllnohpbfenopiakdcjmjcbaeapmkcdl/icons/512.png'); height: 22px; width: 22px; top: 61px; left: 211px;"> </div><div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: #ffffff;"><div class="simple-translate-result-wrapper" style="overflow: hidden;"><div class="simple-translate-move" draggable="true"> </div><div class="simple-translate-result-contents"><p class="simple-translate-result" dir="auto" style="color: #000000;"> </p><p class="simple-translate-candidate" dir="auto" style="color: #737373;"> </p></div></div></div></div></div>						</div>
+				</div>
+				<div class="elementor-element elementor-element-a03fe91 elementor-widget elementor-widget-heading" data-id="a03fe91" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">GPIO OUTPUT</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-181da47 elementor-widget elementor-widget-text-editor" data-id="181da47" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>عندما يتم اختيار وضع 1/0 الى Output </p><p>&#8211; يتم تفعيل <strong>Output Buffer</strong> كالاتي : &#8211;</p><p> لو الوضع <strong>GPIO_MODE_OUTPUT_DO</strong> : فالصفر في ( Output Rlgister ( ODR تفعل N &#8211; MOS , بينما 1 تترك الـ Port لحلة P &#8211; MOS ) Hi &#8211; Z لا يتم تفعيله ) </p><p>&#8211; لو <strong>GPIO_MODE_OUTPUT_PP</strong> : 0 في ODR يفعل N &#8211; MOS , بينما 1 يفعل P &#8211; MOS . &#8211; يتم تفعيل دخل Schmitt Trigger</p><p> &#8211; يتم تفعيل Pull &#8211; Down , Pul &#8211; Up بناءا على ما تم اختياره في Pull .</p><p> &#8211; يتم تقسيم Sampled البيانات على I/O  الي Input Data Register لكل Clock Cycle .</p><p> &#8211; قراءة حالة Input Register تعطى حالة I/O . &#8211; قراءة حالة Output Register تعطي حالة أخر كتابة على I/O .</p><div id="simple-translate"><div><div class="simple-translate-button isShow" style="background-image: url('chrome-extension://cllnohpbfenopiakdcjmjcbaeapmkcdl/icons/512.png'); height: 22px; width: 22px; top: 157px; left: 93px;"> </div><div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: #ffffff;"><div class="simple-translate-result-wrapper" style="overflow: hidden;"><div class="simple-translate-move" draggable="true"> </div><div class="simple-translate-result-contents"><p class="simple-translate-result" dir="auto" style="color: #000000;"> </p><p class="simple-translate-candidate" dir="auto" style="color: #737373;"> </p></div></div></div></div></div>						</div>
+				</div>
+				<div class="elementor-element elementor-element-319c879 elementor-widget elementor-widget-text-editor" data-id="319c879" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>عندما يتم اختيار وضع I/O كـ <strong>Alternate Function </strong></p><p>&#8211; Output Buffer يمكن تشغيله إما Open Drain او Push &#8211; Pull</p><p> &#8211; دخل Schmitt Trigger يتم تفعيله .</p><p> &#8211; يتم تفعيل Pull &#8211; Down , Pull &#8211; Up بناءا علي Pull . </p><p>&#8211; يتم تقسيم البيانات الداخلة I/O کل Clock Cycle</p><p> &#8211; قراءة حالة Input Register يعطي حالة I/O .</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1051e0c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1051e0c" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5c70d41" data-id="5c70d41" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-51907c3 elementor-widget elementor-widget-heading" data-id="51907c3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">GPIO Alternate Function</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e99cbe0 elementor-widget elementor-widget-text-editor" data-id="e99cbe0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><strong>GPIO_InitTypeDef.Alternate</strong></p><p>أغلب GPIOS يتوفروا على الوظائف البديلة Alternate Function , فيمكن من أن يحتوي نفس Pin على أكثر من وظيفة سبيل المثال يمكن ضبطه كـ I/O وأيضا يمكن تغيير وظيفته ليصبح واحد من الوحدات الطرفية Peripherals , ولكن إعداد وظيفة وحيدة للـ Pin في الكود</p><div id="simple-translate"><div><div class="simple-translate-button isShow" style="background-image: url('chrome-extension://cllnohpbfenopiakdcjmjcbaeapmkcdl/icons/512.png'); height: 22px; width: 22px; top: 40px; left: 39px;"> </div><div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: #ffffff;"><div class="simple-translate-result-wrapper" style="overflow: hidden;"><div class="simple-translate-move" draggable="true"> </div><div class="simple-translate-result-contents"><p class="simple-translate-result" dir="auto" style="color: #000000;"> </p><p class="simple-translate-candidate" dir="auto" style="color: #737373;"> </p></div></div></div></div></div>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b2df738 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b2df738" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-38c13c6" data-id="38c13c6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0ef7bb0 elementor-widget elementor-widget-heading" data-id="0ef7bb0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">GPIO Speed</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e4cb91a elementor-widget elementor-widget-text-editor" data-id="e4cb91a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><strong>GPIO_InitTypeDef.Speed</strong></p><p>هي واحدة من الأشياء التي تبدو عليها التساؤلات في متحكمات STM32</p><p>يتم اختيار القيمة المتاحة من جدول  , وهذه الخاصية مؤثرة فقط إذا كان وضع GPIOكـ Output.</p><p> </p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-a73c560 elementor-widget elementor-widget-image" data-id="a73c560" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="843" height="180" src="/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-163655-1024x219.png" class="attachment-large size-large" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-163655-1024x219.png 1024w, /wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-163655-300x64.png 300w, /wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-163655-768x164.png 768w, /wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-163655.png 1290w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-2d69741 elementor-widget elementor-widget-text-editor" data-id="2d69741" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>في الحقيقة الاسم المعرف كـ Speed يجعلك تظن انها سرعة Switching Frequency ما بين تغيير الأوضاع ON الي OFF والعكس كما أنا ظننت عندما رأيتها , ولكن في الحقيقة هذا معتقد خاطئ , فهو يعني Slew Rate للـ GPIO , وهو يعني سرعة الذهاب من وضع 0 الي VDD والعكس صحيح .</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-6a93838 elementor-widget elementor-widget-image" data-id="6a93838" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="453" height="358" src="/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-164654.png" class="attachment-large size-large" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-164654.png 453w, /wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-164654-300x237.png 300w" sizes="(max-width: 453px) 100vw, 453px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-fe4af46 elementor-widget elementor-widget-text-editor" data-id="fe4af46" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p> تأثير Slew Rate علي موجة مربعة – الجزء بالأحمر الشكل المراد Desired والاخضر الفعلي Actual</p><p>أنصح بعدم زيادة Speed أو Slew Rate لأنه يتسبب أحيانا في ضياع معالم الاشارة , وأنصح دائما بضبط هذه القيمة على LOW .</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		]]></content:encoded>
+					
+					<wfw:commentRss>/2022/04/02/%d9%85%d9%83%d8%aa%d8%a8%d8%a9-hal_gpio/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>stm32 GPIO</title>
+		<link>/2022/04/02/stm32-gpio-output-input/</link>
+					<comments>/2022/04/02/stm32-gpio-output-input/#respond</comments>
+		
+		<dc:creator><![CDATA[ahmed]]></dc:creator>
+		<pubDate>Fri, 01 Apr 2022 23:53:25 +0000</pubDate>
+				<category><![CDATA[STM32]]></category>
+		<category><![CDATA[STM32_course]]></category>
+		<guid isPermaLink="false">/?p=428</guid>
+
+					<description><![CDATA[اولا يتم التاكد انه تم ادراج مكتبة الـ GPIO في ملفات المشروع : Drivers &#62;&#62; STM32G0xx_HAL_Driver &#62;&#62; Inc &#62;&#62; Legacy &#62;&#62; (1) : stm32g0xx_hal_gpio_ex.h (2)&#8230;]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="428" class="elementor elementor-428">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-73d0413 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="73d0413" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f63bdd3" data-id="f63bdd3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9df13c3 elementor-widget elementor-widget-shortcode" data-id="9df13c3" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e7e53e2 elementor-widget elementor-widget-text-editor" data-id="e7e53e2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>اولا يتم التاكد انه تم ادراج مكتبة الـ GPIO في ملفات المشروع :</p>
+<p dir="ltr">Drivers &gt;&gt; STM32G0xx_HAL_Driver &gt;&gt; Inc &gt;&gt; Legacy &gt;&gt; (1) : stm32g0xx_hal_gpio_ex.h (2) : stm32g0xx_hal_gpio.h</p>
+<p dir="ltr">Drivers &gt;&gt; STM32G0xx_HAL_Driver &gt;&gt; Src&gt;&gt; (1) : stm32g0xx_hal_gpio.c</p>
+<p></p>
+<p><br></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-14dc617 elementor-widget elementor-widget-text-editor" data-id="14dc617" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>بعد ذلك يتم تفعيل مكتبة GPIO من خلال حذف علامتي التنصيص */&nbsp; الملف&nbsp;#define HAL_GPIO_MODULE_ENABLED في المسار<span style="color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-weight: var( --e-global-typography-text-font-weight );">&nbsp; stm32g0xx_hal_conf.h :Drivers &gt;&gt; STM32G0xx_HAL_Driver &gt;&gt; Core &gt;&gt; Inc &gt;&gt; stm32g0xx_hal_conf.h</span><br></p>
+<p></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-7383ecb elementor-widget elementor-widget-code-highlight" data-id="7383ecb" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-tomorrow copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>/* ########################## Module Selection ############################## */
+/**
+  * @brief This is the list of modules to be used in the HAL driver
+  */
+#define HAL_MODULE_ENABLED
+
+/* #define HAL_WWDG_MODULE_ENABLED   */
+
+/* يتم التاكد من ازالة علامة التنصيص*/
+#define HAL_GPIO_MODULE_ENABLED
+
+#define HAL_EXTI_MODULE_ENABLED
+
+</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-661a397 elementor-widget elementor-widget-code-highlight" data-id="661a397" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-tomorrow copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>static void MX_GPIO_Init(void)
+{
+
+  /*  e */
+  GPIO_InitTypeDef pinYapilandir ={0};  //Initializing a struct to 0 //reset gibi...
+  __HAL_RCC_GPIOA_CLK_ENABLE(); //Enable clock for GPIO A port
+  __HAL_RCC_GPIOC_CLK_ENABLE(); //Enable clock for GPIO C port
+  //  whates menis of (__function....) ?
+
+HAL_GPIO_WritePin(GPIOA,  GPIO_PIN_5  | GPIO_PIN_4, GPIO_PIN_RESET);
+pinYapilandir.Mode=GPIO_MODE_OUTPUT_PP;
+pinYapilandir.Pin=GPIO_PIN_5  | GPIO_PIN_4;
+pinYapilandir.Pull=GPIO_NOPULL;
+pinYapilandir.Speed=GPIO_SPEED_FREQ_HIGH;
+HAL_GPIO_Init(GPIOA, &pinYapilandir);  //Initialization function
+
+HAL_GPIO_WritePin(GPIOC,  GPIO_PIN_13, GPIO_PIN_RESET);
+pinYapilandir.Mode=GPIO_MODE_INPUT;
+pinYapilandir.Pin=GPIO_PIN_13;
+pinYapilandir.Pull=GPIO_NOPULL;
+HAL_GPIO_Init(GPIOC, &pinYapilandir);  //Initialization function
+
+
+}
+</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-163570e elementor-widget elementor-widget-image" data-id="163570e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img src="/wp-content/plugins/elementor/assets/images/placeholder.png" title="" alt="" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f96ef6a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f96ef6a" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d480b6f" data-id="d480b6f" data-element_type="column">
+			<div class="elementor-widget-wrap">
+									</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-272e987 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="272e987" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c37f44f" data-id="c37f44f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d8d8fc7 elementor-tabs-view-horizontal elementor-widget elementor-widget-tabs" data-id="d8d8fc7" data-element_type="widget" data-widget_type="tabs.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.1 - 23-03-2022 */
+.elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tabs-wrapper{width:25%;-ms-flex-negative:0;flex-shrink:0}.elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tab-desktop-title.elementor-active{border-left-style:none}.elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tab-desktop-title.elementor-active:after,.elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tab-desktop-title.elementor-active:before{height:999em;width:0;left:0;border-left-style:solid}.elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tab-desktop-title.elementor-active:before{top:0;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)}.elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tab-desktop-title.elementor-active:after{top:100%}.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title{display:table-cell}.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active{border-bottom-style:none}.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active:after,.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active:before{bottom:0;height:0;width:999em;border-bottom-style:solid}.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active:before{right:100%}.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active:after{left:100%}.elementor-widget-tabs .elementor-tab-content,.elementor-widget-tabs .elementor-tab-title,.elementor-widget-tabs .elementor-tab-title:after,.elementor-widget-tabs .elementor-tab-title:before,.elementor-widget-tabs .elementor-tabs-content-wrapper{border:1px #d4d4d4}.elementor-widget-tabs .elementor-tabs{text-align:right}.elementor-widget-tabs .elementor-tabs-wrapper{overflow:hidden}.elementor-widget-tabs .elementor-tab-title{cursor:pointer;outline:var(--focus-outline,none)}.elementor-widget-tabs .elementor-tab-desktop-title{position:relative;padding:20px 25px;font-weight:700;line-height:1;border:solid transparent}.elementor-widget-tabs .elementor-tab-desktop-title.elementor-active{border-color:#d4d4d4}.elementor-widget-tabs .elementor-tab-desktop-title.elementor-active:after,.elementor-widget-tabs .elementor-tab-desktop-title.elementor-active:before{display:block;content:"";position:absolute}.elementor-widget-tabs .elementor-tab-mobile-title{padding:10px;cursor:pointer}.elementor-widget-tabs .elementor-tab-content{padding:20px;display:none}@media (max-width:767px){.elementor-tabs .elementor-tab-content,.elementor-tabs .elementor-tab-title{border-style:solid solid none}.elementor-tabs .elementor-tabs-wrapper{display:none}.elementor-tabs .elementor-tabs-content-wrapper{border-bottom-style:solid}.elementor-tabs .elementor-tab-content{padding:10px}}@media (min-width:768px){.elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tabs{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tabs-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tabs-content-wrapper{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;border-style:solid none solid solid}.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-content{border-style:none solid solid}.elementor-widget-tabs.elementor-tabs-alignment-center .elementor-tabs-wrapper,.elementor-widget-tabs.elementor-tabs-alignment-end .elementor-tabs-wrapper,.elementor-widget-tabs.elementor-tabs-alignment-stretch .elementor-tabs-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-tabs.elementor-tabs-alignment-center .elementor-tabs-wrapper{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget-tabs.elementor-tabs-alignment-end .elementor-tabs-wrapper{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget-tabs.elementor-tabs-alignment-stretch.elementor-tabs-view-horizontal .elementor-tab-title{width:100%}.elementor-widget-tabs.elementor-tabs-alignment-stretch.elementor-tabs-view-vertical .elementor-tab-title{height:100%}.elementor-tabs .elementor-tab-mobile-title{display:none}}</style>		<div class="elementor-tabs">
+			<div class="elementor-tabs-wrapper" role="tablist" >
+									<div id="elementor-tab-title-2271" class="elementor-tab-title elementor-tab-desktop-title" aria-selected="true" data-tab="1" role="tab" tabindex="0" aria-controls="elementor-tab-content-2271" aria-expanded="false">الاعداد اليدوي</div>
+									<div id="elementor-tab-title-2272" class="elementor-tab-title elementor-tab-desktop-title" aria-selected="false" data-tab="2" role="tab" tabindex="-1" aria-controls="elementor-tab-content-2272" aria-expanded="false">الاعداد من IDE</div>
+							</div>
+			<div class="elementor-tabs-content-wrapper" role="tablist" aria-orientation="vertical">
+									<div class="elementor-tab-title elementor-tab-mobile-title" aria-selected="true" data-tab="1" role="tab" tabindex="0" aria-controls="elementor-tab-content-2271" aria-expanded="false">الاعداد اليدوي</div>
+					<div id="elementor-tab-content-2271" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-2271" tabindex="0" hidden="false"></div>
+									<div class="elementor-tab-title elementor-tab-mobile-title" aria-selected="false" data-tab="2" role="tab" tabindex="-1" aria-controls="elementor-tab-content-2272" aria-expanded="false">الاعداد من IDE</div>
+					<div id="elementor-tab-content-2272" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-2272" tabindex="0" hidden="hidden">أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ</div>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e933fce elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e933fce" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3e2ee7a" data-id="3e2ee7a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+									</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f04ce3e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f04ce3e" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-858402c" data-id="858402c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1ada32d elementor-widget elementor-widget-accordion" data-id="1ada32d" data-element_type="widget" data-widget_type="accordion.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.1 - 23-03-2022 */
+.elementor-accordion{text-align:right}.elementor-accordion .elementor-accordion-item{border:1px solid #d4d4d4}.elementor-accordion .elementor-accordion-item+.elementor-accordion-item{border-top:none}.elementor-accordion .elementor-tab-title{margin:0;padding:15px 20px;font-weight:700;line-height:1;cursor:pointer;outline:none}.elementor-accordion .elementor-tab-title .elementor-accordion-icon{display:inline-block;width:1.5em}.elementor-accordion .elementor-tab-title .elementor-accordion-icon svg{width:1em;height:1em}.elementor-accordion .elementor-tab-title .elementor-accordion-icon.elementor-accordion-icon-right{float:right;text-align:right}.elementor-accordion .elementor-tab-title .elementor-accordion-icon.elementor-accordion-icon-left{float:left;text-align:left}.elementor-accordion .elementor-tab-title .elementor-accordion-icon .elementor-accordion-icon-closed{display:block}.elementor-accordion .elementor-tab-title .elementor-accordion-icon .elementor-accordion-icon-opened,.elementor-accordion .elementor-tab-title.elementor-active .elementor-accordion-icon-closed{display:none}.elementor-accordion .elementor-tab-title.elementor-active .elementor-accordion-icon-opened{display:block}.elementor-accordion .elementor-tab-content{display:none;padding:15px 20px;border-top:1px solid #d4d4d4}@media (max-width:767px){.elementor-accordion .elementor-tab-title{padding:12px 15px}.elementor-accordion .elementor-tab-title .elementor-accordion-icon{width:1.2em}.elementor-accordion .elementor-tab-content{padding:7px 15px}}</style>		<div class="elementor-accordion" role="tablist">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2811" class="elementor-tab-title" data-tab="1" role="tab" aria-controls="elementor-tab-content-2811" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" href="">أكورديون #1</a>
+					</div>
+					<div id="elementor-tab-content-2811" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-2811">أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ</div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2812" class="elementor-tab-title" data-tab="2" role="tab" aria-controls="elementor-tab-content-2812" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" href="">أكورديون #2</a>
+					</div>
+					<div id="elementor-tab-content-2812" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-2812">أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ</div>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2632d47 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2632d47" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c30c433" data-id="c30c433" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ad05429 elementor-widget elementor-widget-toggle" data-id="ad05429" data-element_type="widget" data-widget_type="toggle.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.1 - 23-03-2022 */
+.elementor-toggle{text-align:right}.elementor-toggle .elementor-tab-title{font-weight:700;line-height:1;margin:0;padding:15px;border-bottom:1px solid #d4d4d4;cursor:pointer;outline:none}.elementor-toggle .elementor-tab-title .elementor-toggle-icon{display:inline-block;width:1em}.elementor-toggle .elementor-tab-title .elementor-toggle-icon svg{-webkit-margin-start:-5px;margin-inline-start:-5px;width:1em;height:1em}.elementor-toggle .elementor-tab-title .elementor-toggle-icon.elementor-toggle-icon-right{float:right;text-align:right}.elementor-toggle .elementor-tab-title .elementor-toggle-icon.elementor-toggle-icon-left{float:left;text-align:left}.elementor-toggle .elementor-tab-title .elementor-toggle-icon .elementor-toggle-icon-closed{display:block}.elementor-toggle .elementor-tab-title .elementor-toggle-icon .elementor-toggle-icon-opened{display:none}.elementor-toggle .elementor-tab-title.elementor-active{border-bottom:none}.elementor-toggle .elementor-tab-title.elementor-active .elementor-toggle-icon-closed{display:none}.elementor-toggle .elementor-tab-title.elementor-active .elementor-toggle-icon-opened{display:block}.elementor-toggle .elementor-tab-content{padding:15px;border-bottom:1px solid #d4d4d4;display:none}@media (max-width:767px){.elementor-toggle .elementor-tab-title{padding:12px}.elementor-toggle .elementor-tab-content{padding:12px 10px}}</style>		<div class="elementor-toggle" role="tablist">
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1811" class="elementor-tab-title" data-tab="1" role="tab" aria-controls="elementor-tab-content-1811" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-left"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a href="" class="elementor-toggle-title">الاعداد اليدوي</a>
+					</div>
+
+					<div id="elementor-tab-content-1811" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-1811"></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1812" class="elementor-tab-title" data-tab="2" role="tab" aria-controls="elementor-tab-content-1812" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-left"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a href="" class="elementor-toggle-title">تبديل #2</a>
+					</div>
+
+					<div id="elementor-tab-content-1812" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-1812">أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ</div>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		]]></content:encoded>
+					
+					<wfw:commentRss>/2022/04/02/stm32-gpio-output-input/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>cubeIDE , cubMX , keilIDE</title>
+		<link>/2022/04/02/cubeide-cubmx-keilide/</link>
+					<comments>/2022/04/02/cubeide-cubmx-keilide/#respond</comments>
+		
+		<dc:creator><![CDATA[ahmed]]></dc:creator>
+		<pubDate>Fri, 01 Apr 2022 23:18:54 +0000</pubDate>
+				<category><![CDATA[STM32]]></category>
+		<category><![CDATA[STM32_course]]></category>
+		<category><![CDATA[STM32_projects]]></category>
+		<guid isPermaLink="false">/?p=410</guid>
+
+					<description><![CDATA[تبويب #1 علامة التبويب #2 تبويب #1 أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ علامة التبويب #2 أبجد هوز حطي كلمن سعفص قرشت ثخذ&#8230;]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="410" class="elementor elementor-410">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-3eb834a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3eb834a" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-66d061c" data-id="66d061c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3f68c4c elementor-tabs-view-horizontal elementor-widget elementor-widget-tabs" data-id="3f68c4c" data-element_type="widget" data-widget_type="tabs.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-tabs">
+			<div class="elementor-tabs-wrapper" role="tablist" >
+									<div id="elementor-tab-title-6641" class="elementor-tab-title elementor-tab-desktop-title" aria-selected="true" data-tab="1" role="tab" tabindex="0" aria-controls="elementor-tab-content-6641" aria-expanded="false">تبويب #1</div>
+									<div id="elementor-tab-title-6642" class="elementor-tab-title elementor-tab-desktop-title" aria-selected="false" data-tab="2" role="tab" tabindex="-1" aria-controls="elementor-tab-content-6642" aria-expanded="false">علامة التبويب #2</div>
+							</div>
+			<div class="elementor-tabs-content-wrapper" role="tablist" aria-orientation="vertical">
+									<div class="elementor-tab-title elementor-tab-mobile-title" aria-selected="true" data-tab="1" role="tab" tabindex="0" aria-controls="elementor-tab-content-6641" aria-expanded="false">تبويب #1</div>
+					<div id="elementor-tab-content-6641" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-6641" tabindex="0" hidden="false">أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ</div>
+									<div class="elementor-tab-title elementor-tab-mobile-title" aria-selected="false" data-tab="2" role="tab" tabindex="-1" aria-controls="elementor-tab-content-6642" aria-expanded="false">علامة التبويب #2</div>
+					<div id="elementor-tab-content-6642" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-6642" tabindex="0" hidden="hidden">أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ</div>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a005489 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a005489" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-886b16f" data-id="886b16f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0a9eb84 elementor-widget elementor-widget-accordion" data-id="0a9eb84" data-element_type="widget" data-widget_type="accordion.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-accordion" role="tablist">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1111" class="elementor-tab-title" data-tab="1" role="tab" aria-controls="elementor-tab-content-1111" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" href="">أكورديون #1</a>
+					</div>
+					<div id="elementor-tab-content-1111" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-1111">أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ</div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1112" class="elementor-tab-title" data-tab="2" role="tab" aria-controls="elementor-tab-content-1112" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" href="">أكورديون #2</a>
+					</div>
+					<div id="elementor-tab-content-1112" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-1112">أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ</div>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-24bd842 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="24bd842" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ffe36dc" data-id="ffe36dc" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b4877ad elementor-widget elementor-widget-toggle" data-id="b4877ad" data-element_type="widget" data-widget_type="toggle.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-toggle" role="tablist">
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1891" class="elementor-tab-title" data-tab="1" role="tab" aria-controls="elementor-tab-content-1891" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-left"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a href="" class="elementor-toggle-title">تبديل #1</a>
+					</div>
+
+					<div id="elementor-tab-content-1891" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-1891">أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ</div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1892" class="elementor-tab-title" data-tab="2" role="tab" aria-controls="elementor-tab-content-1892" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-left"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a href="" class="elementor-toggle-title">تبديل #2</a>
+					</div>
+
+					<div id="elementor-tab-content-1892" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-1892">أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ</div>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		]]></content:encoded>
+					
+					<wfw:commentRss>/2022/04/02/cubeide-cubmx-keilide/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
