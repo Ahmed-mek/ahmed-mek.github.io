@@ -12,7 +12,7 @@
 	<atom:link href="https://ahmed-mek.github.io/author/ahmed/feed/" rel="self" type="application/rss+xml" />
 	<link>https://ahmed-mek.github.io</link>
 	<description>موقع تعليمي للهواة و المهندسين</description>
-	<lastBuildDate>Sat, 02 Apr 2022 13:48:05 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 03 Apr 2022 12:22:24 +0000</lastBuildDate>
 	<language>ar</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,8 +21,8 @@
 	<generator>https://wordpress.org/?v=5.9.2</generator>
 	<item>
 		<title>مكتبة HAL_GPIO</title>
-		<link>https://ahmed-mek.github.io/2022/04/02/%d9%85%d9%83%d8%aa%d8%a8%d8%a9-hal_gpio/</link>
-					<comments>https://ahmed-mek.github.io/2022/04/02/%d9%85%d9%83%d8%aa%d8%a8%d8%a9-hal_gpio/#respond</comments>
+		<link>https://ahmed-mek.github.io/2022/04/02/hal_gpio/</link>
+					<comments>https://ahmed-mek.github.io/2022/04/02/hal_gpio/#respond</comments>
 		
 		<dc:creator><![CDATA[ahmed]]></dc:creator>
 		<pubDate>Sat, 02 Apr 2022 13:07:14 +0000</pubDate>
@@ -158,7 +158,7 @@
 							</div>
 		]]></content:encoded>
 					
-					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/02/%d9%85%d9%83%d8%aa%d8%a8%d8%a9-hal_gpio/feed/</wfw:commentRss>
+					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/02/hal_gpio/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
