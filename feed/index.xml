@@ -12,7 +12,7 @@
 	<atom:link href="https://ahmed-mek.github.io/feed/" rel="self" type="application/rss+xml" />
 	<link>https://ahmed-mek.github.io</link>
 	<description>موقع تعليمي للهواة و المهندسين</description>
-	<lastBuildDate>Wed, 06 Apr 2022 13:44:58 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 06 Apr 2022 21:50:32 +0000</lastBuildDate>
 	<language>ar</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,8 +21,8 @@
 	<generator>https://wordpress.org/?v=5.9.3</generator>
 	<item>
 		<title>كتاب stm32</title>
-		<link>https://ahmed-mek.github.io/2022/04/06/%d9%83%d8%aa%d8%a7%d8%a8-stm32/</link>
-					<comments>https://ahmed-mek.github.io/2022/04/06/%d9%83%d8%aa%d8%a7%d8%a8-stm32/#respond</comments>
+		<link>https://ahmed-mek.github.io/2022/04/06/book-stm32/</link>
+					<comments>https://ahmed-mek.github.io/2022/04/06/book-stm32/#respond</comments>
 		
 		<dc:creator><![CDATA[ahmed]]></dc:creator>
 		<pubDate>Wed, 06 Apr 2022 11:54:31 +0000</pubDate>
@@ -62,7 +62,7 @@
 							</div>
 		]]></content:encoded>
 					
-					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/06/%d9%83%d8%aa%d8%a7%d8%a8-stm32/feed/</wfw:commentRss>
+					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/06/book-stm32/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

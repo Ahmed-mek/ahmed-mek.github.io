@@ -7,9 +7,9 @@
 	>
 <channel>
 	<title>
-	تعليقات لموقع Ahmed Mekatronik	</title>
-	<atom:link href="https://ahmed-mek.github.io/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>https://ahmed-mek.github.io</link>
+	التعليقات على: كتاب stm32	</title>
+	<atom:link href="https://ahmed-mek.github.io/2022/04/06/book-stm32/feed/" rel="self" type="application/rss+xml" />
+	<link>https://ahmed-mek.github.io/2022/04/06/book-stm32/</link>
 	<description>موقع تعليمي للهواة و المهندسين</description>
 	<lastBuildDate>Wed, 06 Apr 2022 21:50:32 +0000</lastBuildDate>
 	<sy:updatePeriod>
