@@ -12,14 +12,62 @@
 	<atom:link href="https://ahmed-mek.github.io/feed/" rel="self" type="application/rss+xml" />
 	<link>https://ahmed-mek.github.io</link>
 	<description>موقع تعليمي للهواة و المهندسين</description>
-	<lastBuildDate>Sun, 03 Apr 2022 14:27:48 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 06 Apr 2022 13:44:58 +0000</lastBuildDate>
 	<language>ar</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.2</generator>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
 	<item>
+		<title>كتاب stm32</title>
+		<link>https://ahmed-mek.github.io/2022/04/06/%d9%83%d8%aa%d8%a7%d8%a8-stm32/</link>
+					<comments>https://ahmed-mek.github.io/2022/04/06/%d9%83%d8%aa%d8%a7%d8%a8-stm32/#respond</comments>
+		
+		<dc:creator><![CDATA[ahmed]]></dc:creator>
+		<pubDate>Wed, 06 Apr 2022 11:54:31 +0000</pubDate>
+				<category><![CDATA[STM32]]></category>
+		<category><![CDATA[STM32_course]]></category>
+		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=604</guid>
+
+					<description><![CDATA[PDF Title Download]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="604" class="elementor elementor-604">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-963f1a5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="963f1a5" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e3ee9a6" data-id="e3ee9a6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-8a19ddf elementor-widget elementor-widget-ha-pdf-view happy-addon ha-pdf-view" data-id="8a19ddf" data-element_type="widget" data-widget_type="ha-pdf-view.default">
+				<div class="elementor-widget-container">
+			        <div class="pdf_viewer_container">
+            <div class="pdf_viewer_options viewer-8a19ddf" data-pdf-settings="{&quot;unique_id&quot;:&quot;viewer-8a19ddf&quot;,&quot;pdf_url&quot;:&quot;https:\/\/docdro.id\/gBqkR1f&quot;,&quot;file_type&quot;:&quot;upload_file&quot;,&quot;page_number&quot;:&quot;1&quot;,&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;600px&quot;}">
+				<span class="ha-title-flex">
+					<span class="pdf-icon">
+						<i aria-hidden="true" class="fas fa-file-pdf"></i>					</span>
+					<h2 class="ha-pdf-title">PDF Title</h2>				</span>
+				                <div class="pdf-button">
+                <a href="https://docdro.id/gBqkR1f" class="ha-btn" download title="PDF Title">Download</a>                </div>
+            </div>
+            
+			<div>
+				<div id="viewer-8a19ddf"></div>
+			</div>
+			
+        </div>
+        		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		]]></content:encoded>
+					
+					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/06/%d9%83%d8%aa%d8%a7%d8%a8-stm32/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>مكتبة HAL_GPIO</title>
 		<link>https://ahmed-mek.github.io/2022/04/02/hal_gpio/</link>
 					<comments>https://ahmed-mek.github.io/2022/04/02/hal_gpio/#respond</comments>

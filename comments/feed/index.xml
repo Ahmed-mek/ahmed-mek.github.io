@@ -11,11 +11,11 @@
 	<atom:link href="https://ahmed-mek.github.io/comments/feed/" rel="self" type="application/rss+xml" />
 	<link>https://ahmed-mek.github.io</link>
 	<description>موقع تعليمي للهواة و المهندسين</description>
-	<lastBuildDate>Sun, 03 Apr 2022 14:27:48 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 06 Apr 2022 13:44:58 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.2</generator>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
 </channel>
 </rss>
