@@ -12,7 +12,7 @@
 	<atom:link href="https://ahmed-mek.github.io/feed/" rel="self" type="application/rss+xml" />
 	<link>https://ahmed-mek.github.io</link>
 	<description>موقع تعليمي للهواة و المهندسين</description>
-	<lastBuildDate>Wed, 06 Apr 2022 21:50:32 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 16 Apr 2022 22:01:08 +0000</lastBuildDate>
 	<language>ar</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,251 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.9.3</generator>
 	<item>
+		<title>ADC</title>
+		<link>https://ahmed-mek.github.io/2022/04/15/adc/</link>
+					<comments>https://ahmed-mek.github.io/2022/04/15/adc/#respond</comments>
+		
+		<dc:creator><![CDATA[ahmed]]></dc:creator>
+		<pubDate>Fri, 15 Apr 2022 13:42:22 +0000</pubDate>
+				<category><![CDATA[STM32]]></category>
+		<category><![CDATA[STM32_course]]></category>
+		<category><![CDATA[STM32_projects]]></category>
+		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=620</guid>
+
+					<description><![CDATA[select PA0 as ADC1_IN0 select  temperature sensor Channel ADC_Settings Continuous Conversion Mode &#62;&#62; Enable ADC_Regular_ConversionMode SamplingTime Common 1 &#62;&#62; 12.5 Cycles SamplingTime Common 2 &#62;&#62;&#8230;]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="620" class="elementor elementor-620">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-4bfc326 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4bfc326" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f2b0051" data-id="f2b0051" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5dd5b7c elementor-widget elementor-widget-text-editor" data-id="5dd5b7c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.1 - 23-03-2022 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:right;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p dir="ltr">select PA0 as ADC1_IN0</p><p dir="ltr">select  temperature sensor Channel</p><p dir="ltr"><strong>ADC_Settings</strong></p><p dir="ltr">Continuous Conversion Mode &gt;&gt; Enable</p><p dir="ltr"><strong>ADC_Regular_ConversionMode</strong></p><p dir="ltr">SamplingTime Common 1 &gt;&gt; 12.5 Cycles</p><p dir="ltr">SamplingTime Common 2 &gt;&gt; 12.5 Cycles</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-91c7937 elementor-widget elementor-widget-code-highlight" data-id="91c7937" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-okaidia copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>/* Private variables ---------------------------------------------------------*/
+ ADC_HandleTypeDef hadc1;
+/* USER CODE BEGIN PV */</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-63da675 elementor-widget elementor-widget-code-highlight" data-id="63da675" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-okaidia copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_ADC1_Init(void);
+/* USER CODE BEGIN PFP */</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-896c965 elementor-widget elementor-widget-code-highlight" data-id="896c965" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-okaidia copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>/**
+  * @brief ADC1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_ADC1_Init(void)
+{
+
+  /* USER CODE BEGIN ADC1_Init 0 */
+
+  /* USER CODE END ADC1_Init 0 */
+
+  ADC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN ADC1_Init 1 */
+
+  /* USER CODE END ADC1_Init 1 */
+
+  /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
+  */
+  // اعدادات الـ ADC  بشكل عام
+  hadc1.Instance = ADC1;
+  hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV2;
+  hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+  hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
+  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  hadc1.Init.LowPowerAutoWait = DISABLE;
+  hadc1.Init.LowPowerAutoPowerOff = DISABLE;
+  hadc1.Init.ContinuousConvMode = ENABLE;
+  hadc1.Init.NbrOfConversion = 1;
+  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+  hadc1.Init.DMAContinuousRequests = DISABLE;
+  hadc1.Init.Overrun = ADC_OVR_DATA_PRESERVED;
+  hadc1.Init.SamplingTimeCommon1 = ADC_SAMPLETIME_12CYCLES_5;
+  hadc1.Init.SamplingTimeCommon2 = ADC_SAMPLETIME_12CYCLES_5;
+  hadc1.Init.OversamplingMode = DISABLE;
+  hadc1.Init.TriggerFrequencyMode = ADC_TRIGGER_FREQ_HIGH;
+  if (HAL_ADC_Init(&hadc1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  
+  // اعدادات الـ ADC  للقناة
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_0;
+  sConfig.Rank = ADC_REGULAR_RANK_1;
+  sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN ADC1_Init 2 */
+
+  /* USER CODE END ADC1_Init 2 */
+
+}</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-eb42e13 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="eb42e13" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f2b5232" data-id="f2b5232" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6e19ff1 elementor-widget elementor-widget-text-editor" data-id="6e19ff1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p dir="ltr">Core &gt;&gt; Src &gt;&gt; stm32g0xx_hal_msp.c</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-e2a481f elementor-widget elementor-widget-text-editor" data-id="e2a481f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>MSP &#8211; Microcontroler specific Peripheral</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-bad1dbe elementor-widget elementor-widget-code-highlight" data-id="bad1dbe" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-okaidia copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>
+/**
+* @brief ADC MSP Initialization
+* This function configures the hardware resources used in this example
+* @param hadc: ADC handle pointer
+* @retval None
+*/
+void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
+{
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
+  if(hadc->Instance==ADC1)
+  {
+
+
+  /** Initializes the peripherals clocks - تهيئة ساعات الوحدات الطرفية
+  */
+    PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
+    PeriphClkInit.AdcClockSelection = RCC_ADCCLKSOURCE_SYSCLK;
+    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
+    {
+      Error_Handler();
+    }
+
+    /* Peripheral clock enable - تمكين ساعة الوحدة الطرفية */
+    __HAL_RCC_ADC_CLK_ENABLE();
+
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+    
+    
+    /**ADC1 GPIO Configuration - تكوين ADC1 GPIO
+    PA0     ------> ADC1_IN0
+    */
+    // هنا تم اعداد الـPin
+    GPIO_InitStruct.Pin = GPIO_PIN_0;
+    GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+
+  }
+
+}</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3a7d029 elementor-widget elementor-widget-code-highlight" data-id="3a7d029" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-okaidia copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>
+/**
+* @brief ADC MSP De-Initialization
+* This function freeze the hardware resources used in this example
+* @param hadc: ADC handle pointer
+* @retval None
+*/
+void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
+{
+  if(hadc->Instance==ADC1)
+  {
+  /* USER CODE BEGIN ADC1_MspDeInit 0 */
+
+  /* USER CODE END ADC1_MspDeInit 0 */
+    /* Peripheral clock disable */
+    __HAL_RCC_ADC_CLK_DISABLE();
+
+    /**ADC1 GPIO Configuration
+    PA0     ------> ADC1_IN0
+    */
+    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_0);
+
+  /* USER CODE BEGIN ADC1_MspDeInit 1 */
+
+  /* USER CODE END ADC1_MspDeInit 1 */
+  }
+
+}</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5389897 elementor-widget elementor-widget-text-editor" data-id="5389897" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p dir="ltr"> /* USER CODE BEGIN WHILE */  &lt;&lt;   HAL_ADC_PollForConversion(ADC_HandleTypeDef *hadc, uint32_t Timeout);</p><p dir="ltr">Wait for regular group conversion to be completed.</p><p dir="ltr">ADC conversion flags EOS (end of sequence) and EOC (end ofconversion) are cleared by this function, with an exception: if low power feature &#8220;LowPowerAutoWait&#8221; is enabled, flags arenot cleared to not interfere with this feature until data registeris read using function HAL_ADC_GetValue().</p><p dir="ltr">This function cannot be used in a particular setup: ADC configuredin DMA mode and polling for end of each conversion (ADC init parameter &#8220;EOCSelection&#8221; set to ADC_EOC_SINGLE_CONV). In this case, DMA resets the flag EOC and polling cannot be performed on each conversion. Nevertheless, polling can still be performed on the complete sequence (ADC init parameter &#8220;EOCSelection&#8221; set to ADC_EOC_SEQ_CONV).</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		]]></content:encoded>
+					
+					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/15/adc/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>كتاب stm32</title>
 		<link>https://ahmed-mek.github.io/2022/04/06/book-stm32/</link>
 					<comments>https://ahmed-mek.github.io/2022/04/06/book-stm32/#respond</comments>
@@ -97,8 +342,7 @@
 				</div>
 				<div class="elementor-element elementor-element-8488307 elementor-widget elementor-widget-text-editor" data-id="8488307" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:right;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p> </p><ul dir="ltr"><li><strong>HAL_GPIO_Init(GPIO_TypeDef *GPIOx, GPIO_InitTypeDef *GPIO_Init);</strong></li><li>HAL_GPIO_DeInit(GPIO_TypeDef *GPIOx, uint32_t GPIO_Pin);</li><li><strong>HAL_GPIO_ReadPin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);</strong></li><li><strong>HAL_GPIO_TogglePin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);</strong></li><li>HAL_GPIO_LockPin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);</li><li>HAL_GPIO_EXTI_IRQHandler(uint16_t GPIO_Pin);</li><li>HAL_GPIO_EXTI_Rising_Callback(uint16_t GPIO_Pin);</li><li>HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin);</li></ul><p>لا داعي لحفظ اسماء الدوال حيث يمكن استدعاؤها من مكتبة HAL_GPIO</p>						</div>
+							<p> </p><ul dir="ltr"><li><strong>HAL_GPIO_Init(GPIO_TypeDef *GPIOx, GPIO_InitTypeDef *GPIO_Init);</strong></li><li>HAL_GPIO_DeInit(GPIO_TypeDef *GPIOx, uint32_t GPIO_Pin);</li><li><strong>HAL_GPIO_ReadPin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);</strong></li><li><strong>HAL_GPIO_TogglePin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);</strong></li><li>HAL_GPIO_LockPin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);</li><li>HAL_GPIO_EXTI_IRQHandler(uint16_t GPIO_Pin);</li><li>HAL_GPIO_EXTI_Rising_Callback(uint16_t GPIO_Pin);</li><li>HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin);</li></ul><p>لا داعي لحفظ اسماء الدوال حيث يمكن استدعاؤها من مكتبة HAL_GPIO</p>						</div>
 				</div>
 					</div>
 		</div>
