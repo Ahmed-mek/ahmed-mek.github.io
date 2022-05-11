@@ -12,7 +12,7 @@
 	<atom:link href="https://ahmed-mek.github.io/feed/" rel="self" type="application/rss+xml" />
 	<link>https://ahmed-mek.github.io</link>
 	<description>موقع تعليمي للهواة و المهندسين</description>
-	<lastBuildDate>Sat, 16 Apr 2022 22:01:08 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 11 May 2022 22:52:48 +0000</lastBuildDate>
 	<language>ar</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,210 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.9.3</generator>
 	<item>
+		<title>stm32 DMA</title>
+		<link>https://ahmed-mek.github.io/2022/05/11/stm32-dma/</link>
+					<comments>https://ahmed-mek.github.io/2022/05/11/stm32-dma/#respond</comments>
+		
+		<dc:creator><![CDATA[ahmed]]></dc:creator>
+		<pubDate>Tue, 10 May 2022 22:49:45 +0000</pubDate>
+				<category><![CDATA[STM32]]></category>
+		<category><![CDATA[STM32_course]]></category>
+		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=667</guid>
+
+					<description><![CDATA[DMA Sesttings 1- Add &#62;&#62; Select &#8211;&#62; ADC1 DMA Request Sesttings  Mode &#8211;&#62; Circular *Data Width &#8211;&#62; Word  *Data Width &#8211;&#62; Word ADC_Regular_ConversionMode SamplingTime Common&#8230;]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="667" class="elementor elementor-667">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-d6e1d4d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d6e1d4d" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ae0373e" data-id="ae0373e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3f0e648 elementor-widget elementor-widget-image" data-id="3f0e648" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.1 - 23-03-2022 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="843" height="384" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation1.gif" class="attachment-large size-large" alt="" loading="lazy" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a5730d0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a5730d0" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c0d1522" data-id="c0d1522" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a30a8fa elementor-widget elementor-widget-image" data-id="a30a8fa" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="787" height="441" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation2.gif" class="attachment-large size-large" alt="" loading="lazy" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-dcfbcaf elementor-widget elementor-widget-text-editor" data-id="dcfbcaf" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.1 - 23-03-2022 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:right;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p dir="ltr"><strong>DMA Sesttings</strong></p><p dir="ltr">1- Add &gt;&gt;</p><p dir="ltr">Select &#8211;&gt; ADC1</p><p dir="ltr"><strong>DMA Request Sesttings </strong></p><p dir="ltr">Mode &#8211;&gt; Circular</p><p dir="ltr">*Data Width &#8211;&gt; Word  *Data Width &#8211;&gt; Word</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0acdecb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0acdecb" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5a26e69" data-id="5a26e69" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-72335e0 elementor-widget elementor-widget-image" data-id="72335e0" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="787" height="470" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation3-1.gif" class="attachment-large size-large" alt="" loading="lazy" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-29d115c elementor-widget elementor-widget-text-editor" data-id="29d115c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p dir="ltr"><strong>ADC_Regular_ConversionMode</strong></p><p dir="ltr">SamplingTime Common 1 &#8211;&gt; 12.5 Cycles</p><p dir="ltr">SamplingTime Common 2 &#8211;&gt; 12.5 Cycles </p><p dir="ltr">Number Of Conversion &#8211;&gt; 3</p><p dir="ltr"><strong>Rank</strong></p><p dir="ltr">Rank 1 &#8211;&gt; channel 0 (PA0)</p><p dir="ltr">Rank 2 &#8211;&gt; channel 1 (PA1)</p><p dir="ltr">Rank 3 &#8211;&gt; channel 2 (PA2)</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3830ddd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3830ddd" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3098f70" data-id="3098f70" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4bef95a elementor-widget elementor-widget-image" data-id="4bef95a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="787" height="470" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation4.gif" class="attachment-large size-large" alt="" loading="lazy" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-7406e09 elementor-widget elementor-widget-text-editor" data-id="7406e09" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p dir="ltr" style="text-align: center;"><strong>Parameter_Settings</strong></p><p dir="ltr"><strong>ADC-Sesttings:-</strong></p><p dir="ltr">Clock Prescaler &#8211;&gt; divided by 4</p><p dir="ltr">Scan Conversion Mode &#8211;&gt; Enable (**)</p><p dir="ltr">Continuous Conversion Mode &#8211;&gt; Enable</p><p dir="ltr">DMA Continuous Requests &#8211;&gt; Enable </p><p>قد تواجه مشكلة في Scan Conversion Mode حيث ترفض ان تتحول إلى الحالة Enable نتيجة خطأ في CubeIDE لذلك يجب أن نقوم بتغيريها يدويا من الكود في ملف main.c</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-f876252 elementor-widget elementor-widget-code-highlight" data-id="f876252" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-tomorrow copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-javascript line-numbers">
+				<code readonly="true" class="language-javascript">
+					<xmp>    hadc1.Init.ContinuousConvMode = ENABLE;  //ENABLE
+    hadc1.Init.DiscontinuousConvMode = DISABLE;  //DISABLE</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-393f82a elementor-widget elementor-widget-image" data-id="393f82a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="548" height="96" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-12-at-01.48.56.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://ahmed-mek.github.io/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-12-at-01.48.56.jpeg 548w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-12-at-01.48.56-300x53.jpeg 300w" sizes="(max-width: 548px) 100vw, 548px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c2948f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c2948f1" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fbd5a3d" data-id="fbd5a3d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3f84e40 elementor-widget elementor-widget-image" data-id="3f84e40" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="787" height="470" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation5.gif" class="attachment-large size-large" alt="" loading="lazy" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-fc331d8 elementor-widget elementor-widget-text-editor" data-id="fc331d8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p dir="ltr" style="text-align: center;"><span style="font-weight: bolder;">NVIC Sesttings</span></p><p dir="ltr">Enable </p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3567526 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3567526" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-78d034c" data-id="78d034c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c89f070 elementor-widget elementor-widget-text-editor" data-id="c89f070" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p dir="ltr">If the ADC Frequency is very high, the DMA <strong>Interrupt </strong>will execute at very high rate, and this will render the while loop Useless.</p><p dir="ltr">There is a different way to handle multiple channels without the DMA and you can check it at <strong><a href="https://controllerstech.com/stm32-adc-multi-channel-without-dma/" target="_blank" rel="noreferrer noopener">https://controllerstech.com/stm32-adc-multi-channel-without-dma/</a></strong></p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f68bd7c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f68bd7c" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c4b18d4" data-id="c4b18d4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-24c7622 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="24c7622" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.1 - 23-03-2022 */
+.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#2c2c2c;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);-ms-flex-negative:0;flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}</style>		<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+							<span class="elementor-divider__text elementor-divider__element">
+				مُقسّم				</span>
+						</span>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1cee02b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1cee02b" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b94a239" data-id="b94a239" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c3e738b elementor-widget elementor-widget-code-highlight" data-id="c3e738b" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-tomorrow copy-to-clipboard ">
+			<pre data-line="2,4" class="highlight-height language-javascript line-numbers">
+				<code readonly="true" class="language-javascript">
+					<xmp>// --> USER CODE BEGIN PV
+uint32_t value[3]; //
+// --> USER CODE BEGIN 2
+HAL_ADC_Start_DMA(&hadc1, value, 3); // start adc in DMA mode </xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-de25a8f elementor-widget elementor-widget-text-editor" data-id="de25a8f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<ul><li>ابدأ تحويل ADC في وضع DMA و خزن القيم الناتجة في المتغير (<strong>buffer</strong>) &#8220;<strong>value</strong>&#8220;</li><li>&#8220;3&#8221; هو طول البينات التي سوف يتم نقلها من الوحدة الطرفية (<strong>peripheral</strong>) إلى الذاكرة.</li></ul>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		]]></content:encoded>
+					
+					<wfw:commentRss>https://ahmed-mek.github.io/2022/05/11/stm32-dma/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Elementor #647</title>
+		<link>https://ahmed-mek.github.io/2022/04/19/elementor-647/</link>
+					<comments>https://ahmed-mek.github.io/2022/04/19/elementor-647/#respond</comments>
+		
+		<dc:creator><![CDATA[ahmed]]></dc:creator>
+		<pubDate>Tue, 19 Apr 2022 00:14:22 +0000</pubDate>
+				<category><![CDATA[غير مصنف]]></category>
+		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=647</guid>
+
+					<description><![CDATA[Core &#62;&#62; Startup &#62;&#62; startup_stm32g071c8tx.s : .word DMA1_Channel2_3_IRQHandler /* DMA1 Channel 2 and Channel 3 */   Core &#62;&#62; Inc &#62;&#62; stm32g0xx_it.h : in &#8220;&#8221;&#8230;]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="647" class="elementor elementor-647">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-c66d189 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c66d189" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7bbc2b4" data-id="7bbc2b4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e27ab8b elementor-widget elementor-widget-text-editor" data-id="e27ab8b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p dir="ltr">Core &gt;&gt; Startup &gt;&gt; startup_stm32g071c8tx.s :</p><p dir="ltr">.word <span style="text-decoration: underline;"><em><strong>DMA1_Channel2_3_IRQHandler</strong></em></span> /* DMA1 Channel 2 and Channel 3 */</p><p dir="ltr"> </p><p dir="ltr">Core &gt;&gt; Inc &gt;&gt; stm32g0xx_it.h :</p><p dir="ltr">in &#8220;&#8221; Exported functions prototypes  &#8220;&#8221; make function named ==&gt;</p><p dir="ltr">void ADC1_COMP_IRQHandler(void);</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		]]></content:encoded>
+					
+					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/19/elementor-647/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>ADC</title>
 		<link>https://ahmed-mek.github.io/2022/04/15/adc/</link>
 					<comments>https://ahmed-mek.github.io/2022/04/15/adc/#respond</comments>
@@ -31,7 +235,7 @@
 		<category><![CDATA[STM32_projects]]></category>
 		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=620</guid>
 
-					<description><![CDATA[select PA0 as ADC1_IN0 select  temperature sensor Channel ADC_Settings Continuous Conversion Mode &#62;&#62; Enable ADC_Regular_ConversionMode SamplingTime Common 1 &#62;&#62; 12.5 Cycles SamplingTime Common 2 &#62;&#62;&#8230;]]></description>
+					<description><![CDATA[select PA0 as ADC1_IN0 select  temperature sensor Channel Parameter_Settings ADC_Settings Continuous Conversion Mode &#62;&#62; Enable ADC_Regular_ConversionMode SamplingTime Common 1 &#62;&#62; 12.5 Cycles SamplingTime Common 2&#8230;]]></description>
 										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="620" class="elementor elementor-620">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-4bfc326 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4bfc326" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
@@ -39,8 +243,7 @@
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-5dd5b7c elementor-widget elementor-widget-text-editor" data-id="5dd5b7c" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:right;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p dir="ltr">select PA0 as ADC1_IN0</p><p dir="ltr">select  temperature sensor Channel</p><p dir="ltr"><strong>ADC_Settings</strong></p><p dir="ltr">Continuous Conversion Mode &gt;&gt; Enable</p><p dir="ltr"><strong>ADC_Regular_ConversionMode</strong></p><p dir="ltr">SamplingTime Common 1 &gt;&gt; 12.5 Cycles</p><p dir="ltr">SamplingTime Common 2 &gt;&gt; 12.5 Cycles</p>						</div>
+							<p dir="ltr">select PA0 as ADC1_IN0</p><p dir="ltr">select  temperature sensor Channel</p><p dir="ltr"><strong>Parameter_Settings</strong></p><p dir="ltr"><strong>ADC_Settings</strong></p><p dir="ltr">Continuous Conversion Mode &gt;&gt; Enable</p><p dir="ltr"><strong>ADC_Regular_ConversionMode</strong></p><p dir="ltr">SamplingTime Common 1 &gt;&gt; 12.5 Cycles</p><p dir="ltr">SamplingTime Common 2 &gt;&gt; 12.5 Cycles </p><div id="gtx-trans" style="position: absolute; left: 11px; top: 158px;"><div class="gtx-trans-icon"> </div></div><div id="simple-translate"><div><div class="simple-translate-button isShow" style="background-image: url('chrome-extension://cllnohpbfenopiakdcjmjcbaeapmkcdl/icons/512.png'); height: 22px; width: 22px; top: 74px; left: 34px;"> </div><div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: #ffffff;"><div class="simple-translate-result-wrapper" style="overflow: hidden;"><div class="simple-translate-move" draggable="true"> </div><div class="simple-translate-result-contents"><p class="simple-translate-result" dir="auto" style="color: #000000;"> </p><p class="simple-translate-candidate" dir="auto" style="color: #737373;"> </p></div></div></div></div></div>						</div>
 				</div>
 				<div class="elementor-element elementor-element-91c7937 elementor-widget elementor-widget-code-highlight" data-id="91c7937" data-element_type="widget" data-widget_type="code-highlight.default">
 				<div class="elementor-widget-container">
@@ -250,7 +453,31 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
 				</div>
 				<div class="elementor-element elementor-element-5389897 elementor-widget elementor-widget-text-editor" data-id="5389897" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p dir="ltr"> /* USER CODE BEGIN WHILE */  &lt;&lt;   HAL_ADC_PollForConversion(ADC_HandleTypeDef *hadc, uint32_t Timeout);</p><p dir="ltr">Wait for regular group conversion to be completed.</p><p dir="ltr">ADC conversion flags EOS (end of sequence) and EOC (end ofconversion) are cleared by this function, with an exception: if low power feature &#8220;LowPowerAutoWait&#8221; is enabled, flags arenot cleared to not interfere with this feature until data registeris read using function HAL_ADC_GetValue().</p><p dir="ltr">This function cannot be used in a particular setup: ADC configuredin DMA mode and polling for end of each conversion (ADC init parameter &#8220;EOCSelection&#8221; set to ADC_EOC_SINGLE_CONV). In this case, DMA resets the flag EOC and polling cannot be performed on each conversion. Nevertheless, polling can still be performed on the complete sequence (ADC init parameter &#8220;EOCSelection&#8221; set to ADC_EOC_SEQ_CONV).</p>						</div>
+							<p dir="ltr"><strong> /* USER CODE BEGIN WHILE */  </strong></p><p dir="ltr"> HAL_ADC_PollForConversion(ADC_HandleTypeDef *hadc, uint32_t Timeout);</p><p dir="ltr"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/2665.png" alt="♥" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Wait for regular group conversion to be completed.<img src="https://s.w.org/images/core/emoji/13.1.0/72x72/2665.png" alt="♥" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p><p dir="ltr">ADC conversion flags EOS (end of sequence) and EOC (end ofconversion) are cleared by this function, with an exception: if low power feature &#8220;LowPowerAutoWait&#8221; is enabled, flags arenot cleared to not interfere with this feature until data registeris read using function HAL_ADC_GetValue().</p><p dir="ltr">This function cannot be used in a particular setup: ADC configuredin DMA mode and polling for end of each conversion (ADC init parameter &#8220;EOCSelection&#8221; set to ADC_EOC_SINGLE_CONV). In this case, DMA resets the flag EOC and polling cannot be performed on each conversion. Nevertheless, polling can still be performed on the complete sequence (ADC init parameter &#8220;EOCSelection&#8221; set to ADC_EOC_SEQ_CONV).</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-2486019 elementor-widget elementor-widget-code-highlight" data-id="2486019" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-okaidia copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp> HAL_ADC_PollForConversion(ADC_HandleTypeDef *hadc, uint32_t Timeout);</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-cd8461b elementor-widget elementor-widget-code-highlight" data-id="cd8461b" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-okaidia copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>  /* USER CODE BEGIN 2 */
+  HAL_ADC_Start(&hadc1);
+  /* USER CODE END 2 */</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
 				</div>
 					</div>
 		</div>
@@ -362,8 +589,7 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
 				</div>
 				<div class="elementor-element elementor-element-0165ce5 elementor-widget elementor-widget-image" data-id="0165ce5" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="843" height="333" src="https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-1024x404.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-1024x404.png 1024w, https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-300x118.png 300w, https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-768x303.png 768w, https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811.png 1342w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
+															<img width="843" height="333" src="https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-1024x404.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-1024x404.png 1024w, https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-300x118.png 300w, https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-768x303.png 768w, https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811.png 1342w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-a47ac58 elementor-widget elementor-widget-text-editor" data-id="a47ac58" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
@@ -628,6 +854,50 @@ else
   }
   /* USER CODE END 3 */
 }
+</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-cce2f7f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cce2f7f" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ac0e4c8" data-id="ac0e4c8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-409e824 elementor-widget elementor-widget-code-highlight" data-id="409e824" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-default copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-python line-numbers">
+				<code readonly="true" class="language-python">
+					<xmp>import tkinter as tk 
+form1 = tk.Tk()
+def transfer():
+    txt = entry1.get() 
+    entry2.insert(0, txt)
+
+def delete():
+    entry2.delete(0, "end")
+
+entry1 = tk.Entry() 
+entry1.pack()
+
+entry2 = tk.Entry() 
+entry2.pack()
+
+button1 = tk.Button(text = "Transfer", command =transfer)
+button1.pack(side = "left")
+
+button2 = tk.Button(text = "Delete", command = delete) 
+button2.pack(side = "right")
+
+button3 = tk.Button(text = "Close", command = form1.destroy)
+button3.pack(side = "right")
+
+form1.mainloop()
 </xmp>
 				</code>
 			</pre>

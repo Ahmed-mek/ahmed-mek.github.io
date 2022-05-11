@@ -4,12 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0, user-scalable=yes">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<title>stm32 GPIO &#8211; Ahmed Mekatronik</title>
+	<title>2022-05-11 &#8211; Ahmed Mekatronik</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//s.w.org">
 <link rel="alternate" type="application/rss+xml" title="Ahmed Mekatronik &laquo; الخلاصة" href="https://ahmed-mek.github.io/feed/">
 <link rel="alternate" type="application/rss+xml" title="Ahmed Mekatronik &laquo; خلاصة التعليقات" href="https://ahmed-mek.github.io/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="Ahmed Mekatronik &laquo; stm32 GPIO خلاصة التعليقات" href="https://ahmed-mek.github.io/2022/04/02/stm32-gpio-output-input/feed/">
 <script type="text/javascript">
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ahmed-mek.github.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.3"}};
 /*! This file is auto-generated */
@@ -39,11 +38,10 @@ img.emoji {
 <link rel="stylesheet" id="font-awesome-5-all-css" href="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.6.1" type="text/css" media="all">
 <link rel="stylesheet" id="font-awesome-4-shim-css" href="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.6.1" type="text/css" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="https://ahmed-mek.github.io/wp-content/uploads/elementor/css/global.css?ver=1648745137" type="text/css" media="all">
-<link rel="stylesheet" id="elementor-post-428-css" href="https://ahmed-mek.github.io/wp-content/uploads/elementor/css/post-428.css?ver=1651544139" type="text/css" media="all">
 <link rel="stylesheet" id="elementor-post-109-css" href="https://ahmed-mek.github.io/wp-content/uploads/elementor/css/post-109.css?ver=1648829286" type="text/css" media="all">
 <link rel="stylesheet" id="happy-icons-css" href="https://ahmed-mek.github.io/wp-content/plugins/happy-elementor-addons/assets/fonts/style.min.css?ver=3.5.1" type="text/css" media="all">
 <link rel="stylesheet" id="elementor-post-179-css" href="https://ahmed-mek.github.io/wp-content/uploads/elementor/css/post-179.css?ver=1648768489" type="text/css" media="all">
-<link rel="stylesheet" id="elementor-post-360-css" href="https://ahmed-mek.github.io/wp-content/uploads/elementor/css/post-360.css?ver=1648994016" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-327-css" href="https://ahmed-mek.github.io/wp-content/uploads/elementor/css/post-327.css?ver=1648853233" type="text/css" media="all">
 <link rel="stylesheet" id="font-awesome-css" href="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
 <link rel="stylesheet" id="customify-style-css" href="https://ahmed-mek.github.io/wp-content/themes/customify/style-rtl.min.css?ver=0.3.7" type="text/css" media="all">
 <style id="customify-style-inline-css" type="text/css">.header-top .header--row-inner,.button,button,button.button,input[type="button"],input[type="reset"],input[type="submit"],.button:not(.components-button):not(.customize-partial-edit-shortcut-button), input[type="button"]:not(.components-button):not(.customize-partial-edit-shortcut-button),input[type="reset"]:not(.components-button):not(.customize-partial-edit-shortcut-button), input[type="submit"]:not(.components-button):not(.customize-partial-edit-shortcut-button),.pagination .nav-links > *:hover,.pagination .nav-links span,.nav-menu-desktop.style-full-height .primary-menu-ul > li.current-menu-item > a, .nav-menu-desktop.style-full-height .primary-menu-ul > li.current-menu-ancestor > a,.nav-menu-desktop.style-full-height .primary-menu-ul > li > a:hover,.posts-layout .readmore-button:hover{    background-color: #235787;}.posts-layout .readmore-button {color: #235787;}.pagination .nav-links > *:hover,.pagination .nav-links span,.entry-single .tags-links a:hover, .entry-single .cat-links a:hover,.posts-layout .readmore-button,.posts-layout .readmore-button:hover{    border-color: #235787;}.customify-builder-btn{    background-color: #c3512f;}body{    color: #686868;}abbr, acronym {    border-bottom-color: #686868;}a                   {                    color: #1e4b75;}a:hover, a:focus,.link-meta:hover, .link-meta a:hover{    color: #111111;}h2 + h3, .comments-area h2 + .comments-title, .h2 + h3, .comments-area .h2 + .comments-title, .page-breadcrumb {    border-top-color: #eaecee;}blockquote,.site-content .widget-area .menu li.current-menu-item > a:before{    border-left-color: #eaecee;}@media screen and (min-width: 64em) {    .comment-list .children li.comment {        border-left-color: #eaecee;    }    .comment-list .children li.comment:after {        background-color: #eaecee;    }}.page-titlebar, .page-breadcrumb,.posts-layout .entry-inner {    border-bottom-color: #eaecee;}.header-search-form .search-field,.entry-content .page-links a,.header-search-modal,.pagination .nav-links > *,.entry-footer .tags-links a, .entry-footer .cat-links a,.search .content-area article,.site-content .widget-area .menu li.current-menu-item > a,.posts-layout .entry-inner,.post-navigation .nav-links,article.comment .comment-meta,.widget-area .widget_pages li a, .widget-area .widget_categories li a, .widget-area .widget_archive li a, .widget-area .widget_meta li a, .widget-area .widget_nav_menu li a, .widget-area .widget_product_categories li a, .widget-area .widget_recent_entries li a, .widget-area .widget_rss li a,.widget-area .widget_recent_comments li{    border-color: #eaecee;}.header-search-modal::before {    border-top-color: #eaecee;    border-left-color: #eaecee;}@media screen and (min-width: 48em) {    .content-sidebar.sidebar_vertical_border .content-area {        border-right-color: #eaecee;    }    .sidebar-content.sidebar_vertical_border .content-area {        border-left-color: #eaecee;    }    .sidebar-sidebar-content.sidebar_vertical_border .sidebar-primary {        border-right-color: #eaecee;    }    .sidebar-sidebar-content.sidebar_vertical_border .sidebar-secondary {        border-right-color: #eaecee;    }    .content-sidebar-sidebar.sidebar_vertical_border .sidebar-primary {        border-left-color: #eaecee;    }    .content-sidebar-sidebar.sidebar_vertical_border .sidebar-secondary {        border-left-color: #eaecee;    }    .sidebar-content-sidebar.sidebar_vertical_border .content-area {        border-left-color: #eaecee;        border-right-color: #eaecee;    }    .sidebar-content-sidebar.sidebar_vertical_border .content-area {        border-left-color: #eaecee;        border-right-color: #eaecee;    }}article.comment .comment-post-author {background: #6d6d6d;}.pagination .nav-links > *,.link-meta, .link-meta a,.color-meta,.entry-single .tags-links:before, .entry-single .cats-links:before{    color: #6d6d6d;}h1, h2, h3, h4, h5, h6 { color: #2b2b2b;}.site-content .widget-title { color: #444444;}#page-cover {background-image: url("https://ahmed-mek.github.io/wp-content/themes/customify/assets/images/default-cover.jpg");}.sub-menu .li-duplicator {display:none !important;}.header-search_icon-item .header-search-modal  {border-style: solid;} .header-search_icon-item .search-field  {border-style: solid;} .dark-mode .header-search_box-item .search-form-fields, .header-search_box-item .search-form-fields  {border-style: solid;} body  {background-color: #FFFFFF;} .site-content .content-area  {background-color: #FFFFFF;} /* CSS for desktop */#page-cover .page-cover-inner {min-height: 300px;}.header--row.header-top .customify-grid, .header--row.header-top .style-full-height .primary-menu-ul > li > a {min-height: 33px;}.header--row.header-bottom .customify-grid, .header--row.header-bottom .style-full-height .primary-menu-ul > li > a {min-height: 55px;}.header--row .builder-first--nav-icon {text-align: right;}.header-search_icon-item .search-submit {margin-left: -40px;}.rtl .header-search_box-item .search-submit{margin-right: -40px; margin-left:auto;} .rtl .header-search_box-item .woo_bootster_search .search-submit{margin-left: -40px;margin-left:auto;} .rtl .header-search_box-item .header-search-form button.search-submit{margin-left: -40px;margin-left:auto;}.header--row .builder-first--primary-menu {text-align: right;}/* CSS for tablet */@media screen and (max-width: 1024px) { #page-cover .page-cover-inner {min-height: 250px;}.header--row .builder-first--nav-icon {text-align: right;}.header-search_icon-item .search-submit {margin-left: -40px;}.rtl .header-search_box-item .search-submit{margin-right: -40px; margin-left:auto;} .rtl .header-search_box-item .woo_bootster_search .search-submit{margin-left: -40px;margin-left:auto;} .rtl .header-search_box-item .header-search-form button.search-submit{margin-left: -40px;margin-left:auto;} }/* CSS for mobile */@media screen and (max-width: 568px) { #page-cover .page-cover-inner {min-height: 200px;}.header--row.header-top .customify-grid, .header--row.header-top .style-full-height .primary-menu-ul > li > a {min-height: 33px;}.header--row .builder-first--nav-icon {text-align: right;}.header-search_icon-item .search-submit {margin-left: -40px;}.rtl .header-search_box-item .search-submit{margin-right: -40px; margin-left:auto;} .rtl .header-search_box-item .woo_bootster_search .search-submit{margin-left: -40px;margin-left:auto;} .rtl .header-search_box-item .header-search-form button.search-submit{margin-left: -40px;margin-left:auto;} }</style>
@@ -55,18 +53,13 @@ img.emoji {
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/wp-dark-mode/assets/js/dark-mode.min.js?ver=2.2.9" id="wp-dark-mode-js-js"></script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.6.1" id="font-awesome-4-shim-js"></script>
 <link rel="https://api.w.org/" href="https://ahmed-mek.github.io/wp-json/">
-<link rel="alternate" type="application/json" href="https://ahmed-mek.github.io/wp-json/wp/v2/posts/428">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ahmed-mek.github.io/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ahmed-mek.github.io/wp-includes/wlwmanifest.xml"> 
 <meta name="generator" content="WordPress 5.9.3">
-<link rel="canonical" href="https://ahmed-mek.github.io/2022/04/02/stm32-gpio-output-input/">
-<link rel="shortlink" href="https://ahmed-mek.github.io/?p=428">
-<link rel="alternate" type="application/json+oembed" href="https://ahmed-mek.github.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fahmed-mek.github.io%2F2022%2F04%2F02%2Fstm32-gpio-output-input%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://ahmed-mek.github.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fahmed-mek.github.io%2F2022%2F04%2F02%2Fstm32-gpio-output-input%2F&#038;format=xml">
                 <script>
 					(function() { window.wpDarkMode = {"config":{"brightness":100,"contrast":90,"sepia":10},"enable_preset":false,"customize_colors":false,"colors":{"bg":"#000","text":"#dfdedb","link":"#e58c17"},"enable_frontend":true,"enable_backend":false,"enable_os_mode":true,"excludes":"rs-fullwidth-wrap,.mejs-container","includes":"","is_excluded":false,"remember_darkmode":false,"default_mode":false,"keyboard_shortcut":true,"url_parameter":false,"images":"","videos":"","is_pro_active":false,"is_ultimate_active":false,"pro_version":0,"is_elementor_editor":false,"is_block_editor":false,"frontend_mode":false,"pluginUrl":"https:\/\/ahmed-mek.github.io\/wp-content\/plugins\/wp-dark-mode\/"} ; window.checkOsDarkMode = () => { if (!window.wpDarkMode.enable_os_mode || localStorage.getItem('wp_dark_mode_active')) return false; const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)'); if (darkMediaQuery.matches) return true; try { darkMediaQuery.addEventListener('change', function(e) { return e.matches == true; }); } catch (e1) { try { darkMediaQuery.addListener(function(e) { return e.matches == true; }); } catch (e2) { console.error(e2); return false; } } return false; }; const is_saved = localStorage.getItem('wp_dark_mode_active'); const isCustomColor = parseInt(""); const shouldDarkMode = is_saved == '1' || (!is_saved && window.checkOsDarkMode()); if (!shouldDarkMode) return; document.querySelector('html').classList.add('wp-dark-mode-active'); const isPerformanceMode = Boolean(  ); if (!isCustomColor && !isPerformanceMode) { var css = `body, div, section, header, article, main, aside{background-color: #2B2D2D !important;}`; var head = document.head || document.getElementsByTagName('head')[0], style = document.createElement('style'); style.setAttribute('id', 'pre_css'); head.appendChild(style); style.type = 'text/css'; if (style.styleSheet) { style.styleSheet.cssText = css; } else { style.appendChild(document.createTextNode(css)); } } })();
 				</script>
-				<link rel="pingback" href="https://ahmed-mek.github.io/xmlrpc.php">	
+					
 	<meta name="google-site-verification" content="GXWrtsXT302BTa8xSNtwCn5SgRzpz1oynMnHRqYilYg">
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -81,7 +74,7 @@ img.emoji {
 	
 </head>
 
-<body class="rtl post-template-default single single-post postid-428 single-format-standard content-sidebar main-layout-content-sidebar site-full-width menu_sidebar_slide_left elementor-default elementor-kit-5 elementor-page elementor-page-428 elementor-page-360">
+<body class="rtl archive date hfeed content-sidebar main-layout-content-sidebar site-full-width menu_sidebar_slide_left elementor-default elementor-template-full-width elementor-kit-5 elementor-page-327">
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><div id="page" class="site box-shadow">
 	<a class="skip-link screen-reader-text" href="#site-content">التجاوز إلى المحتوى</a>
 			<div data-elementor-type="header" data-elementor-id="109" class="elementor elementor-109 elementor-location-header">
@@ -155,283 +148,115 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 		<div class="customify-container">
 			<div class="customify-grid">
 				<main id="main" class="content-area customify-col-9_sm-12">
-						<div class="content-inner">
-				<div data-elementor-type="single-page" data-elementor-id="360" class="elementor elementor-360 elementor-location-single post-428 post type-post status-publish format-standard hentry category-stm32 category-stm32-course">
+							<div data-elementor-type="archive" data-elementor-id="327" class="elementor elementor-327 elementor-location-archive">
 		<div class="elementor-section-wrap">
-					<section class="elementor-section elementor-top-section elementor-element elementor-element-41e7749 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="41e7749" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-7cb10f68 elementor-section-height-min-height elementor-section-content-middle elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-items-middle" data-id="7cb10f68" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7fbce5a0" data-id="7fbce5a0" data-element_type="column">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-50172b00" data-id="50172b00" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1249ab3 elementor-widget elementor-widget-heading" data-id="1249ab3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Day: مايو 11, 2022</h1>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-18d926db" data-id="18d926db" data-element_type="column">
 			<div class="elementor-widget-wrap">
 									</div>
 		</div>
 							</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-2ded4a0 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="2ded4a0" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;_ha_eqh_enable&quot;:false}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7e054e7" data-id="7e054e7" data-element_type="column">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-14a0a482 elementor-section-content-top elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="14a0a482" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f18f651" data-id="f18f651" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-efb98a3 elementor-widget elementor-widget-heading" data-id="efb98a3" data-element_type="widget" data-widget_type="heading.default">
+								<div class="elementor-element elementor-element-76fc4c3 elementor-grid-3 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-posts--show-avatar elementor-card-shadow-yes elementor-posts__hover-gradient elementor-widget elementor-widget-archive-posts" data-id="76fc4c3" data-element_type="widget" data-settings="{&quot;archive_cards_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:49,&quot;sizes&quot;:[]},&quot;archive_cards_columns&quot;:&quot;3&quot;,&quot;archive_cards_columns_tablet&quot;:&quot;2&quot;,&quot;archive_cards_columns_mobile&quot;:&quot;1&quot;,&quot;archive_cards_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;archive_cards_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;pagination_type&quot;:&quot;numbers&quot;}" data-widget_type="archive-posts.archive_cards">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">الدرس : </h2>		</div>
+			<link rel="stylesheet" href="https://ahmed-mek.github.io/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css">		<div class="elementor-posts-container elementor-posts elementor-posts--skin-cards elementor-grid">
+				<article class="elementor-post elementor-grid-item post-667 post type-post status-publish format-standard hentry category-stm32 category-stm32-course">
+			<div class="elementor-post__card">
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://ahmed-mek.github.io/2022/05/11/stm32-dma/">
+				stm32 DMA			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>DMA Sesttings 1- Add &gt;&gt; Select &#8211;&gt; ADC1 DMA Request Sesttings  Mode &#8211;&gt; Circular *Data Width &#8211;&gt; Word  *Data Width &#8211;&gt; Word ADC_Regular_ConversionMode SamplingTime Common</p>
+		</div>
+					<a class="elementor-post__read-more" href="https://ahmed-mek.github.io/2022/05/11/stm32-dma/">
+				Read More »			</a>
 				</div>
-				<div class="elementor-element elementor-element-4905a5c8 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="4905a5c8" data-element_type="widget" data-widget_type="theme-post-title.default">
-				<div class="elementor-widget-container">
-			<h1 class="elementor-heading-title elementor-size-default">stm32 GPIO</h1>		</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			2022-05-11		</span>
+				<span class="elementor-post-avatar">
+			لا توجد تعليقات		</span>
 				</div>
 					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7210637" data-id="7210637" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-b114ea6 elementor-widget elementor-widget-theme-post-content" data-id="b114ea6" data-element_type="widget" data-widget_type="theme-post-content.default">
-				<div class="elementor-widget-container">
-			<style>.elementor-428 .elementor-element.elementor-element-6e4c132{text-align:center;}.elementor-428 .elementor-element.elementor-element-b5b25d2{text-align:center;}.elementor-428 .elementor-element.elementor-element-9c6853c{text-align:center;}</style>		<div data-elementor-type="wp-post" data-elementor-id="428" class="elementor elementor-428">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-73d0413 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="73d0413" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f63bdd3" data-id="f63bdd3" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-9df13c3 elementor-widget elementor-widget-shortcode" data-id="9df13c3" data-element_type="widget" data-widget_type="shortcode.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-shortcode"></div>
+		</article>
 				</div>
-				</div>
-				<div class="elementor-element elementor-element-e7e53e2 elementor-widget elementor-widget-text-editor" data-id="e7e53e2" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:right;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>اولا يتم التاكد انه تم ادراج مكتبة الـ GPIO في ملفات المشروع :</p>
-<p dir="ltr">Drivers &gt;&gt; STM32G0xx_HAL_Driver &gt;&gt; Inc &gt;&gt; Legacy &gt;&gt; (1) : stm32g0xx_hal_gpio_ex.h (2) : stm32g0xx_hal_gpio.h</p>
-<p dir="ltr">Drivers &gt;&gt; STM32G0xx_HAL_Driver &gt;&gt; Src&gt;&gt; (1) : stm32g0xx_hal_gpio.c</p>
-<p></p>
-<p><br></p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-14dc617 elementor-widget elementor-widget-text-editor" data-id="14dc617" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>بعد ذلك يتم تفعيل مكتبة GPIO من خلال حذف علامتي التنصيص */&nbsp; الملف&nbsp;#define HAL_GPIO_MODULE_ENABLED في المسار<span style="color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-weight: var( --e-global-typography-text-font-weight );">&nbsp; stm32g0xx_hal_conf.h :Drivers &gt;&gt; STM32G0xx_HAL_Driver &gt;&gt; Core &gt;&gt; Inc &gt;&gt; stm32g0xx_hal_conf.h</span><br></p>
-<p></p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-6e4c132 elementor-widget elementor-widget-heading" data-id="6e4c132" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h4 class="elementor-heading-title elementor-size-default">Module Selection</h4>		</div>
-				</div>
-				<div class="elementor-element elementor-element-7383ecb elementor-widget elementor-widget-code-highlight" data-id="7383ecb" data-element_type="widget" data-widget_type="code-highlight.default">
-				<div class="elementor-widget-container">
-					<div class="prismjs-tomorrow copy-to-clipboard ">
-			<pre data-line="" class="highlight-height language-c line-numbers">
-				<code readonly class="language-c">
-					<xmp>/* ########################## Module Selection ############################## */
-/**
-  * @brief This is the list of modules to be used in the HAL driver
-  */
-#define HAL_MODULE_ENABLED
-
-/* #define HAL_WWDG_MODULE_ENABLED   */
-
-/* يتم التاكد من ازالة علامة التنصيص*/
-#define HAL_GPIO_MODULE_ENABLED
-
-#define HAL_EXTI_MODULE_ENABLED
-
-</xmp>
-				</code>
-			</pre>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-b5b25d2 elementor-widget elementor-widget-heading" data-id="b5b25d2" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h4 class="elementor-heading-title elementor-size-default">MX_GPIO_Init</h4>		</div>
-				</div>
-				<div class="elementor-element elementor-element-661a397 elementor-widget elementor-widget-code-highlight" data-id="661a397" data-element_type="widget" data-widget_type="code-highlight.default">
-				<div class="elementor-widget-container">
-					<div class="prismjs-tomorrow copy-to-clipboard ">
-			<pre data-line="" class="highlight-height language-c line-numbers">
-				<code readonly class="language-c">
-					<xmp>static void MX_GPIO_Init(void)
-{
-
-  /*  e */
-  GPIO_InitTypeDef pinYapilandir ={0};  //Initializing a struct to 0 //reset gibi...
-  __HAL_RCC_GPIOA_CLK_ENABLE(); //Enable clock for GPIO A port
-  __HAL_RCC_GPIOC_CLK_ENABLE(); //Enable clock for GPIO C port
-  //  whates menis of (__function....) ?
-
-HAL_GPIO_WritePin(GPIOA,  GPIO_PIN_5  | GPIO_PIN_4, GPIO_PIN_RESET);
-pinYapilandir.Mode=GPIO_MODE_OUTPUT_PP;
-pinYapilandir.Pin=GPIO_PIN_5  | GPIO_PIN_4;
-pinYapilandir.Pull=GPIO_NOPULL;
-pinYapilandir.Speed=GPIO_SPEED_FREQ_HIGH;
-HAL_GPIO_Init(GPIOA, &pinYapilandir);  //Initialization function
-
-HAL_GPIO_WritePin(GPIOC,  GPIO_PIN_13, GPIO_PIN_RESET);
-pinYapilandir.Mode=GPIO_MODE_INPUT;
-pinYapilandir.Pin=GPIO_PIN_13;
-pinYapilandir.Pull=GPIO_NOPULL;
-HAL_GPIO_Init(GPIOC, &pinYapilandir);  //Initialization function
 
 
-}
-</xmp>
-				</code>
-			</pre>
-		</div>
+		
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-3028879 elementor-widget elementor-widget-text-editor" data-id="3028879" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-1a66d28c elementor-grid-5 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-card-shadow-yes elementor-posts__hover-gradient elementor-widget elementor-widget-archive-posts" data-id="1a66d28c" data-element_type="widget" data-settings="{&quot;archive_cards_columns&quot;:&quot;5&quot;,&quot;archive_cards_columns_tablet&quot;:&quot;2&quot;,&quot;archive_cards_columns_mobile&quot;:&quot;1&quot;,&quot;archive_cards_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;archive_cards_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;archive_cards_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;pagination_type&quot;:&quot;numbers&quot;}" data-widget_type="archive-posts.archive_cards">
 				<div class="elementor-widget-container">
-							<p>بعد الإنتهاء من اعداد دالة MX_GPIO_Init  يتم استدعاؤها في قسم </p>
-<p><strong>Initialize all configured peripherals</strong></p>						</div>
+					<div class="elementor-posts-container elementor-posts elementor-posts--skin-cards elementor-grid">
+				<article class="elementor-post elementor-grid-item post-667 post type-post status-publish format-standard hentry category-stm32 category-stm32-course">
+			<div class="elementor-post__card">
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://ahmed-mek.github.io/2022/05/11/stm32-dma/" target="&quot;_blank&quot;">
+				stm32 DMA			</a>
+		</h3>
+					<a class="elementor-post__read-more" href="https://ahmed-mek.github.io/2022/05/11/stm32-dma/" target="_blank">
+				Read More »			</a>
 				</div>
-				<div class="elementor-element elementor-element-44842fd elementor-widget elementor-widget-code-highlight" data-id="44842fd" data-element_type="widget" data-widget_type="code-highlight.default">
-				<div class="elementor-widget-container">
-					<div class="prismjs-tomorrow copy-to-clipboard ">
-			<pre data-line="" class="highlight-height language-c line-numbers">
-				<code readonly class="language-c">
-					<xmp>  /* Initialize all configured peripherals */
-  MX_GPIO_Init();</xmp>
-				</code>
-			</pre>
-		</div>
+					</div>
+		</article>
 				</div>
-				</div>
-				<div class="elementor-element elementor-element-625f9f7 elementor-widget elementor-widget-text-editor" data-id="625f9f7" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>بعد الإنتهاء من اعداد دالة MX_GPIO_Init  يتم استدعاؤها في قسم </p>
-<p><strong>Initialize all configured peripherals</strong></p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-9c6853c elementor-widget elementor-widget-heading" data-id="9c6853c" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">WHILE</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-fd62b94 elementor-widget elementor-widget-code-highlight" data-id="fd62b94" data-element_type="widget" data-widget_type="code-highlight.default">
-				<div class="elementor-widget-container">
-					<div class="prismjs-tomorrow copy-to-clipboard ">
-			<pre data-line="" class="highlight-height language-c line-numbers">
-				<code readonly class="language-c">
-					<xmp>  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
 
-if (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13)==GPIO_PIN_RESET)
-{
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5,GPIO_PIN_SET);
-}
-else
-{
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5,GPIO_PIN_RESET);
-}
 
- {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-  }
-  /* USER CODE END 3 */
-}
-</xmp>
-				</code>
-			</pre>
-		</div>
+		
 				</div>
 				</div>
 					</div>
 		</div>
 							</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-cce2f7f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cce2f7f" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ac0e4c8" data-id="ac0e4c8" data-element_type="column">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8117e2c elementor-section-content-top elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8117e2c" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9731214" data-id="9731214" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-409e824 elementor-widget elementor-widget-code-highlight" data-id="409e824" data-element_type="widget" data-widget_type="code-highlight.default">
+								<div class="elementor-element elementor-element-7f0792d elementor-grid-3 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-card-shadow-yes elementor-posts__hover-gradient elementor-widget elementor-widget-archive-posts" data-id="7f0792d" data-element_type="widget" data-settings="{&quot;archive_cards_columns&quot;:&quot;3&quot;,&quot;archive_cards_columns_tablet&quot;:&quot;2&quot;,&quot;archive_cards_columns_mobile&quot;:&quot;1&quot;,&quot;archive_cards_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;archive_cards_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;archive_cards_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;pagination_type&quot;:&quot;numbers&quot;}" data-widget_type="archive-posts.archive_cards">
 				<div class="elementor-widget-container">
-					<div class="prismjs-default copy-to-clipboard ">
-			<pre data-line="" class="highlight-height language-python line-numbers">
-				<code readonly class="language-python">
-					<xmp>import tkinter as tk 
-form1 = tk.Tk()
-def transfer():
-    txt = entry1.get() 
-    entry2.insert(0, txt)
-
-def delete():
-    entry2.delete(0, "end")
-
-entry1 = tk.Entry() 
-entry1.pack()
-
-entry2 = tk.Entry() 
-entry2.pack()
-
-button1 = tk.Button(text = "Transfer", command =transfer)
-button1.pack(side = "left")
-
-button2 = tk.Button(text = "Delete", command = delete) 
-button2.pack(side = "right")
-
-button3 = tk.Button(text = "Close", command = form1.destroy)
-button3.pack(side = "right")
-
-form1.mainloop()
-</xmp>
-				</code>
-			</pre>
+					<div class="elementor-posts-container elementor-posts elementor-posts--skin-cards elementor-grid">
+				<article class="elementor-post elementor-grid-item post-667 post type-post status-publish format-standard hentry category-stm32 category-stm32-course">
+			<div class="elementor-post__card">
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://ahmed-mek.github.io/2022/05/11/stm32-dma/">
+				stm32 DMA			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>DMA Sesttings 1- Add &gt;&gt; Select &#8211;&gt; ADC1 DMA Request Sesttings  Mode &#8211;&gt; Circular *Data Width &#8211;&gt; Word  *Data Width &#8211;&gt; Word ADC_Regular_ConversionMode SamplingTime Common</p>
 		</div>
+					<a class="elementor-post__read-more" href="https://ahmed-mek.github.io/2022/05/11/stm32-dma/">
+				Read More »			</a>
 				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			2022-05-11		</span>
+				<span class="elementor-post-avatar">
+			لا توجد تعليقات		</span>
 				</div>
 					</div>
-		</div>
-							</div>
-		</section>
-							</div>
+		</article>
 				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-29c03ea elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="29c03ea" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-31a749a" data-id="31a749a" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-047cf23 elementor-widget elementor-widget-post-info" data-id="047cf23" data-element_type="widget" data-widget_type="post-info.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget.elementor-icon-list--layout-inline .elementor-widget-container{overflow:hidden}.elementor-widget .elementor-icon-list-items.elementor-inline-items{margin-right:-8px;margin-left:-8px}.elementor-widget .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-right:8px;margin-left:8px}.elementor-widget .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{width:auto;left:auto;right:auto;position:relative;height:100%;border-top:0;border-bottom:0;border-right:0;border-left-width:1px;border-style:solid;left:-8px}.elementor-widget .elementor-icon-list-items{list-style-type:none;margin:0;padding:0}.elementor-widget .elementor-icon-list-item{margin:0;padding:0;position:relative}.elementor-widget .elementor-icon-list-item:after{position:absolute;bottom:0;width:100%}.elementor-widget .elementor-icon-list-item,.elementor-widget .elementor-icon-list-item a{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:inherit}.elementor-widget .elementor-icon-list-icon+.elementor-icon-list-text{-ms-flex-item-align:center;align-self:center;padding-right:5px}.elementor-widget .elementor-icon-list-icon{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget .elementor-icon-list-icon svg{width:var(--e-icon-list-icon-size,1em);height:var(--e-icon-list-icon-size,1em)}.elementor-widget .elementor-icon-list-icon i{width:1.25em;font-size:var(--e-icon-list-icon-size)}.elementor-widget.elementor-widget-icon-list .elementor-icon-list-icon{text-align:var(--e-icon-list-icon-align)}.elementor-widget.elementor-widget-icon-list .elementor-icon-list-icon svg{margin:var(--e-icon-list-icon-margin,0 calc(var(--e-icon-list-icon-size, 1em) * .25) 0 0)}.elementor-widget.elementor-list-item-link-full_width a{width:100%}.elementor-widget.elementor-align-center .elementor-icon-list-item,.elementor-widget.elementor-align-center .elementor-icon-list-item a{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-align-center .elementor-icon-list-item:after{margin:auto}.elementor-widget.elementor-align-center .elementor-inline-items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-align-left .elementor-icon-list-item,.elementor-widget.elementor-align-left .elementor-icon-list-item a{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:left}.elementor-widget.elementor-align-left .elementor-inline-items{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget.elementor-align-right .elementor-icon-list-item,.elementor-widget.elementor-align-right .elementor-icon-list-item a{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:right}.elementor-widget.elementor-align-right .elementor-icon-list-items{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.elementor-widget:not(.elementor-align-right) .elementor-icon-list-item:after{right:0}.elementor-widget:not(.elementor-align-left) .elementor-icon-list-item:after{left:0}@media (max-width:1024px){.elementor-widget.elementor-tablet-align-center .elementor-icon-list-item,.elementor-widget.elementor-tablet-align-center .elementor-icon-list-item a,.elementor-widget.elementor-tablet-align-center .elementor-icon-list-items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-tablet-align-center .elementor-icon-list-item:after{margin:auto}.elementor-widget.elementor-tablet-align-left .elementor-icon-list-items{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget.elementor-tablet-align-left .elementor-icon-list-item,.elementor-widget.elementor-tablet-align-left .elementor-icon-list-item a{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:left}.elementor-widget.elementor-tablet-align-right .elementor-icon-list-items{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.elementor-widget.elementor-tablet-align-right .elementor-icon-list-item,.elementor-widget.elementor-tablet-align-right .elementor-icon-list-item a{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:right}.elementor-widget:not(.elementor-tablet-align-right) .elementor-icon-list-item:after{right:0}.elementor-widget:not(.elementor-tablet-align-left) .elementor-icon-list-item:after{left:0}}@media (max-width:767px){.elementor-widget.elementor-mobile-align-center .elementor-icon-list-item,.elementor-widget.elementor-mobile-align-center .elementor-icon-list-item a,.elementor-widget.elementor-mobile-align-center .elementor-icon-list-items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-mobile-align-center .elementor-icon-list-item:after{margin:auto}.elementor-widget.elementor-mobile-align-left .elementor-icon-list-items{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget.elementor-mobile-align-left .elementor-icon-list-item,.elementor-widget.elementor-mobile-align-left .elementor-icon-list-item a{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:left}.elementor-widget.elementor-mobile-align-right .elementor-icon-list-items{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.elementor-widget.elementor-mobile-align-right .elementor-icon-list-item,.elementor-widget.elementor-mobile-align-right .elementor-icon-list-item a{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:right}.elementor-widget:not(.elementor-mobile-align-right) .elementor-icon-list-item:after{right:0}.elementor-widget:not(.elementor-mobile-align-left) .elementor-icon-list-item:after{left:0}}</style>		<ul class="elementor-inline-items elementor-icon-list-items elementor-post-info">
-								<li class="elementor-icon-list-item elementor-repeater-item-9dca3d5 elementor-inline-item" itemprop="author">
-						<a href="https://ahmed-mek.github.io/author/ahmed/">
-											<span class="elementor-icon-list-icon">
-								<i aria-hidden="true" class="far fa-user-circle"></i>							</span>
-									<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-author">
-										ahmed					</span>
-									</a>
-				</li>
-				<li class="elementor-icon-list-item elementor-repeater-item-9660b41 elementor-inline-item" itemprop="datePublished">
-						<a href="https://ahmed-mek.github.io/2022/04/02/">
-											<span class="elementor-icon-list-icon">
-								<i aria-hidden="true" class="fas fa-calendar"></i>							</span>
-									<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-date">
-										أبريل 2, 2022					</span>
-									</a>
-				</li>
-				<li class="elementor-icon-list-item elementor-repeater-item-2d71de4 elementor-inline-item">
-										<span class="elementor-icon-list-icon">
-								<i aria-hidden="true" class="far fa-clock"></i>							</span>
-									<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-time">
-										2:53 ص					</span>
-								</li>
-				<li class="elementor-icon-list-item elementor-repeater-item-30381d1 elementor-inline-item" itemprop="commentCount">
-						<a href="https://ahmed-mek.github.io/2022/04/02/stm32-gpio-output-input/#respond">
-											<span class="elementor-icon-list-icon">
-								<i aria-hidden="true" class="far fa-comment-dots"></i>							</span>
-									<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-comments">
-										No Comments					</span>
-									</a>
-				</li>
-				<li class="elementor-icon-list-item elementor-repeater-item-4e9f4aa elementor-inline-item">
-										<span class="elementor-icon-list-icon">
-								<i aria-hidden="true" class="far fa-tags"></i>							</span>
-									<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-custom">
-										stm32 GPIO					</span>
-								</li>
-				</ul>
+
+
+		
 				</div>
 				</div>
 					</div>
@@ -440,9 +265,7 @@ form1.mainloop()
 		</section>
 				</div>
 		</div>
-			</div>
-<!-- #.content-inner -->
-              			</main><!-- #main -->
+		              			</main><!-- #main -->
 					</div>
 <!-- #.customify-grid -->
 	</div>
@@ -459,12 +282,12 @@ form1.mainloop()
 				<div class="elementor-widget-container">
 					<div class="elementor-post-navigation">
 			<div class="elementor-post-navigation__prev elementor-post-navigation__link">
-				<a href="https://ahmed-mek.github.io/2022/04/02/cubeide-cubmx-keilide/" rel="prev"><span class="post-navigation__arrow-wrapper post-navigation__arrow-prev"><i class="fa fa-angle-right" aria-hidden="true"></i><span class="elementor-screen-only">Prev</span></span><span class="elementor-post-navigation__link__prev"><span class="post-navigation__prev--label">Previous</span><span class="post-navigation__prev--title">cubeIDE , cubMX , keilIDE</span></span></a>			</div>
+				<a href="https://ahmed-mek.github.io/2022/04/19/elementor-647/" rel="prev"><span class="post-navigation__arrow-wrapper post-navigation__arrow-prev"><i class="fa fa-angle-right" aria-hidden="true"></i><span class="elementor-screen-only">Prev</span></span><span class="elementor-post-navigation__link__prev"><span class="post-navigation__prev--label">Previous</span><span class="post-navigation__prev--title">Elementor #647</span></span></a>			</div>
 							<div class="elementor-post-navigation__separator-wrapper">
 					<div class="elementor-post-navigation__separator"></div>
 				</div>
 						<div class="elementor-post-navigation__next elementor-post-navigation__link">
-				<a href="https://ahmed-mek.github.io/2022/04/02/hal_gpio/" rel="next"><span class="elementor-post-navigation__link__next"><span class="post-navigation__next--label">Next</span><span class="post-navigation__next--title">مكتبة HAL_GPIO</span></span><span class="post-navigation__arrow-wrapper post-navigation__arrow-next"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="elementor-screen-only">Next</span></span></a>			</div>
+							</div>
 		</div>
 				</div>
 				</div>
@@ -529,9 +352,6 @@ form1.mainloop()
     </label>
 
 </div>
-<link rel="stylesheet" id="prismjs_style-css" href="https://ahmed-mek.github.io/wp-content/plugins/elementor-pro/assets/css/modules/code-highlight.min.css?ver=1.23.0" type="text/css" media="">
-<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3" type="text/css" media="all">
-<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" type="text/css" media="all">
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-includes/js/underscore.min.js?ver=1.13.1" id="underscore-js"></script>
 <script type="text/javascript" id="wp-util-js-extra">
 /* <![CDATA[ */
@@ -557,13 +377,7 @@ var Customify_JS = {"is_rtl":"1","css_media_queries":{"all":"%s","desktop":"%s",
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/themes/customify/assets/js/theme.min.js?ver=0.3.7" id="customify-themejs-js"></script>
-<script type="text/javascript" src="https://ahmed-mek.github.io/wp-includes/js/comment-reply.min.js?ver=5.9.3" id="comment-reply-js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-core.min.js?ver=1.23.0" id="prismjs_core-js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js?ver=1.23.0" id="prismjs_loader-js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js?ver=1.23.0" id="prismjs_normalize-js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/line-numbers/prism-line-numbers.min.js?ver=1.23.0" id="prismjs_line_numbers-js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.js?ver=1.23.0" id="prismjs_toolbar-js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js?ver=1.23.0" id="prismjs_copy_to_clipboard-js"></script>
+<script type="text/javascript" src="https://ahmed-mek.github.io/wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.5.1" id="elementor-pro-webpack-runtime-js"></script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.6.1" id="elementor-webpack-runtime-js"></script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.6.1" id="elementor-frontend-modules-js"></script>
@@ -574,7 +388,7 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/ahmed-mek.github.io\/wp-a
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1" id="jquery-ui-core-js"></script>
 <script type="text/javascript" id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"شارك على فيسبوك","shareOnTwitter":"شارك على تويتر","pinIt":"ثبتها ","download":"تحميل","downloadImage":"تنزيل الصورة","fullscreen":"عرض شاشة كاملة","zoom":"تكبير","share":"مشاركة","playVideo":"تشغيل الفيديو","previous":"السابق","next":"التالي","close":"إغلاق"},"is_rtl":true,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"الهاتف المحمول","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"هاتف محمول - أفقي","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"الأجهزة اللوحية","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"جهاز لوحي -أفقي","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"حاسوب محمول","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"الشاشة العريضة","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.6.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/ahmed-mek.github.io\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":428,"title":"stm32%20GPIO%20%E2%80%93%20Ahmed%20Mekatronik","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"شارك على فيسبوك","shareOnTwitter":"شارك على تويتر","pinIt":"ثبتها ","download":"تحميل","downloadImage":"تنزيل الصورة","fullscreen":"عرض شاشة كاملة","zoom":"تكبير","share":"مشاركة","playVideo":"تشغيل الفيديو","previous":"السابق","next":"التالي","close":"إغلاق"},"is_rtl":true,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"الهاتف المحمول","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"هاتف محمول - أفقي","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"الأجهزة اللوحية","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"جهاز لوحي -أفقي","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"حاسوب محمول","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"الشاشة العريضة","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.6.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/ahmed-mek.github.io\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":0,"title":"2022-05-11 &#8211; Ahmed Mekatronik","excerpt":""}};
 </script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.6.1" id="elementor-frontend-js"></script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.5.1" id="pro-elements-handlers-js"></script>

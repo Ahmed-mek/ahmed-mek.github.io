@@ -193,11 +193,23 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 			<style>/*! elementor - v3.6.1 - 23-03-2022 */
 .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:right;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p dir="ltr">select PA0 as ADC1_IN0</p>
 <p dir="ltr">select  temperature sensor Channel</p>
+<p dir="ltr"><strong>Parameter_Settings</strong></p>
 <p dir="ltr"><strong>ADC_Settings</strong></p>
 <p dir="ltr">Continuous Conversion Mode &gt;&gt; Enable</p>
 <p dir="ltr"><strong>ADC_Regular_ConversionMode</strong></p>
 <p dir="ltr">SamplingTime Common 1 &gt;&gt; 12.5 Cycles</p>
-<p dir="ltr">SamplingTime Common 2 &gt;&gt; 12.5 Cycles</p>						</div>
+<p dir="ltr">SamplingTime Common 2 &gt;&gt; 12.5 Cycles </p>
+<div id="gtx-trans" style="position: absolute; left: 11px; top: 158px;"><div class="gtx-trans-icon"> </div></div>
+<div id="simple-translate"><div>
+<div class="simple-translate-button isShow" style="background-image: url('chrome-extension://cllnohpbfenopiakdcjmjcbaeapmkcdl/icons/512.png'); height: 22px; width: 22px; top: 74px; left: 34px;"> </div>
+<div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: #ffffff;"><div class="simple-translate-result-wrapper" style="overflow: hidden;">
+<div class="simple-translate-move" draggable="true"> </div>
+<div class="simple-translate-result-contents">
+<p class="simple-translate-result" dir="auto" style="color: #000000;"> </p>
+<p class="simple-translate-candidate" dir="auto" style="color: #737373;"> </p>
+</div>
+</div></div>
+</div></div>						</div>
 				</div>
 				<div class="elementor-element elementor-element-91c7937 elementor-widget elementor-widget-code-highlight" data-id="91c7937" data-element_type="widget" data-widget_type="code-highlight.default">
 				<div class="elementor-widget-container">
@@ -407,10 +419,35 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
 				</div>
 				<div class="elementor-element elementor-element-5389897 elementor-widget elementor-widget-text-editor" data-id="5389897" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p dir="ltr"> /* USER CODE BEGIN WHILE */  &lt;&lt;   HAL_ADC_PollForConversion(ADC_HandleTypeDef *hadc, uint32_t Timeout);</p>
-<p dir="ltr">Wait for regular group conversion to be completed.</p>
+							<p dir="ltr"><strong> /* USER CODE BEGIN WHILE */  </strong></p>
+<p dir="ltr"> HAL_ADC_PollForConversion(ADC_HandleTypeDef *hadc, uint32_t Timeout);</p>
+<p dir="ltr">♥ Wait for regular group conversion to be completed.♥</p>
 <p dir="ltr">ADC conversion flags EOS (end of sequence) and EOC (end ofconversion) are cleared by this function, with an exception: if low power feature &#8220;LowPowerAutoWait&#8221; is enabled, flags arenot cleared to not interfere with this feature until data registeris read using function HAL_ADC_GetValue().</p>
 <p dir="ltr">This function cannot be used in a particular setup: ADC configuredin DMA mode and polling for end of each conversion (ADC init parameter &#8220;EOCSelection&#8221; set to ADC_EOC_SINGLE_CONV). In this case, DMA resets the flag EOC and polling cannot be performed on each conversion. Nevertheless, polling can still be performed on the complete sequence (ADC init parameter &#8220;EOCSelection&#8221; set to ADC_EOC_SEQ_CONV).</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-2486019 elementor-widget elementor-widget-code-highlight" data-id="2486019" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-okaidia copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-c line-numbers">
+				<code readonly class="language-c">
+					<xmp> HAL_ADC_PollForConversion(ADC_HandleTypeDef *hadc, uint32_t Timeout);</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-cd8461b elementor-widget elementor-widget-code-highlight" data-id="cd8461b" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-okaidia copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-c line-numbers">
+				<code readonly class="language-c">
+					<xmp>  /* USER CODE BEGIN 2 */
+  HAL_ADC_Start(&hadc1);
+  /* USER CODE END 2 */</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
 				</div>
 					</div>
 		</div>
@@ -500,7 +537,7 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
 					<div class="elementor-post-navigation__separator"></div>
 				</div>
 						<div class="elementor-post-navigation__next elementor-post-navigation__link">
-							</div>
+				<a href="https://ahmed-mek.github.io/2022/04/19/elementor-647/" rel="next"><span class="elementor-post-navigation__link__next"><span class="post-navigation__next--label">Next</span><span class="post-navigation__next--title">Elementor #647</span></span><span class="post-navigation__arrow-wrapper post-navigation__arrow-next"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="elementor-screen-only">Next</span></span></a>			</div>
 		</div>
 				</div>
 				</div>
@@ -583,7 +620,7 @@ var wpDarkMode = {"config":{"brightness":100,"contrast":90,"sepia":10},"enable_p
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/wp-dark-mode/assets/js/frontend.min.js?ver=2.2.9" id="wp-dark-mode-frontend-js"></script>
 <script type="text/javascript" id="happy-elementor-addons-js-extra">
 /* <![CDATA[ */
-var HappyLocalize = {"ajax_url":"https:\/\/ahmed-mek.github.io\/wp-admin\/admin-ajax.php","nonce":"d18d7d1937","pdf_js_lib":"https:\/\/ahmed-mek.github.io\/wp-content\/plugins\/happy-elementor-addons\/assets\/vendor\/pdfjs\/lib"};
+var HappyLocalize = {"ajax_url":"https:\/\/ahmed-mek.github.io\/wp-admin\/admin-ajax.php","nonce":"df93c72786","pdf_js_lib":"https:\/\/ahmed-mek.github.io\/wp-content\/plugins\/happy-elementor-addons\/assets\/vendor\/pdfjs\/lib"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/happy-elementor-addons/assets/js/happy-addons.min.js?ver=3.5.1" id="happy-elementor-addons-js"></script>
@@ -604,7 +641,7 @@ var Customify_JS = {"is_rtl":"1","css_media_queries":{"all":"%s","desktop":"%s",
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.6.1" id="elementor-webpack-runtime-js"></script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.6.1" id="elementor-frontend-modules-js"></script>
 <script type="text/javascript" id="elementor-pro-frontend-js-before">
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/ahmed-mek.github.io\/wp-admin\/admin-ajax.php","nonce":"f680276844","urls":{"assets":"https:\/\/ahmed-mek.github.io\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/ahmed-mek.github.io\/wp-json\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"ar","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/ahmed-mek.github.io\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/ahmed-mek.github.io\/wp-admin\/admin-ajax.php","nonce":"5519560b71","urls":{"assets":"https:\/\/ahmed-mek.github.io\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/ahmed-mek.github.io\/wp-json\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"ar","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/ahmed-mek.github.io\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 </script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.5.1" id="elementor-pro-frontend-js"></script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
