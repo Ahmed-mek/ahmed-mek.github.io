@@ -4,8 +4,123 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0, user-scalable=yes">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<title>مكتبة HAL_GPIO &#8211; Ahmed Mekatronik</title>
-<meta name="robots" content="max-image-preview:large">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v18.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>مكتبة HAL_GPIO - Ahmed Mekatronik</title>
+	<link rel="canonical" href="https://ahmed-mek.github.io/2022/04/02/hal_gpio/">
+	<meta property="og:locale" content="ar_AR">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="مكتبة HAL_GPIO - Ahmed Mekatronik">
+	<meta property="og:description" content="الدوال المدرجة في GPIO_HAL   HAL_GPIO_Init(GPIO_TypeDef *GPIOx, GPIO_InitTypeDef *GPIO_Init); HAL_GPIO_DeInit(GPIO_TypeDef *GPIOx, uint32_t GPIO_Pin); HAL_GPIO_ReadPin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin); HAL_GPIO_TogglePin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin); HAL_GPIO_LockPin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);&hellip;">
+	<meta property="og:url" content="https://ahmed-mek.github.io/2022/04/02/hal_gpio/">
+	<meta property="og:site_name" content="Ahmed Mekatronik">
+	<meta property="article:published_time" content="2022-04-02T13:07:14+00:00">
+	<meta property="article:modified_time" content="2022-04-03T14:25:17+00:00">
+	<meta property="og:image" content="https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811-1024x404.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="كُتب بواسطة">
+	<meta name="twitter:data1" content="ahmed">
+	<meta name="twitter:label2" content="وقت القراءة المُقدّر">
+	<meta name="twitter:data2" content="دقيقتان">
+	<script type="application/ld+json" class="yoast-schema-graph">{
+	    "@context": "https://schema.org",
+	    "@graph": [
+	        {
+	            "@type": "WebSite",
+	            "@id": "https://ahmed-mek.github.io/#website",
+	            "url": "https://ahmed-mek.github.io/",
+	            "name": "Ahmed Mekatronik",
+	            "description": "موقع تعليمي للهواة و المهندسين",
+	            "potentialAction": [
+	                {
+	                    "@type": "SearchAction",
+	                    "target": {
+	                        "@type": "EntryPoint",
+	                        "urlTemplate": "https://ahmed-mek.github.io/?s={search_term_string}"
+	                    },
+	                    "query-input": "required name=search_term_string"
+	                }
+	            ],
+	            "inLanguage": "ar"
+	        },
+	        {
+	            "@type": "ImageObject",
+	            "inLanguage": "ar",
+	            "@id": "https://ahmed-mek.github.io/2022/04/02/hal_gpio/#primaryimage",
+	            "url": "https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811.png",
+	            "contentUrl": "https://ahmed-mek.github.io/wp-content/uploads/2022/04/Ekran-goruntusu-2022-04-02-160811.png",
+	            "width": 1342,
+	            "height": 530
+	        },
+	        {
+	            "@type": "WebPage",
+	            "@id": "https://ahmed-mek.github.io/2022/04/02/hal_gpio/#webpage",
+	            "url": "https://ahmed-mek.github.io/2022/04/02/hal_gpio/",
+	            "name": "مكتبة HAL_GPIO - Ahmed Mekatronik",
+	            "isPartOf": {
+	                "@id": "https://ahmed-mek.github.io/#website"
+	            },
+	            "primaryImageOfPage": {
+	                "@id": "https://ahmed-mek.github.io/2022/04/02/hal_gpio/#primaryimage"
+	            },
+	            "datePublished": "2022-04-02T13:07:14+00:00",
+	            "dateModified": "2022-04-03T14:25:17+00:00",
+	            "author": {
+	                "@id": "https://ahmed-mek.github.io/#/schema/person/4df9923a984b66a2645cc8932e73d24b"
+	            },
+	            "breadcrumb": {
+	                "@id": "https://ahmed-mek.github.io/2022/04/02/hal_gpio/#breadcrumb"
+	            },
+	            "inLanguage": "ar",
+	            "potentialAction": [
+	                {
+	                    "@type": "ReadAction",
+	                    "target": [
+	                        "https://ahmed-mek.github.io/2022/04/02/hal_gpio/"
+	                    ]
+	                }
+	            ]
+	        },
+	        {
+	            "@type": "BreadcrumbList",
+	            "@id": "https://ahmed-mek.github.io/2022/04/02/hal_gpio/#breadcrumb",
+	            "itemListElement": [
+	                {
+	                    "@type": "ListItem",
+	                    "position": 1,
+	                    "name": "الرئيسية",
+	                    "item": "https://ahmed-mek.github.io/"
+	                },
+	                {
+	                    "@type": "ListItem",
+	                    "position": 2,
+	                    "name": "مكتبة HAL_GPIO"
+	                }
+	            ]
+	        },
+	        {
+	            "@type": "Person",
+	            "@id": "https://ahmed-mek.github.io/#/schema/person/4df9923a984b66a2645cc8932e73d24b",
+	            "name": "ahmed",
+	            "image": {
+	                "@type": "ImageObject",
+	                "inLanguage": "ar",
+	                "@id": "https://ahmed-mek.github.io/#/schema/person/image/",
+	                "url": "http://0.gravatar.com/avatar/07d802d78d2f138e5e72dc116d3be2cf?s=96&d=mm&r=g",
+	                "contentUrl": "http://0.gravatar.com/avatar/07d802d78d2f138e5e72dc116d3be2cf?s=96&d=mm&r=g",
+	                "caption": "ahmed"
+	            },
+	            "sameAs": [
+	                "https://ahmed-mek.github.io"
+	            ],
+	            "url": "https://ahmed-mek.github.io/author/ahmed/"
+	        }
+	    ]
+	}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
 <link rel="dns-prefetch" href="//s.w.org">
 <link rel="alternate" type="application/rss+xml" title="Ahmed Mekatronik &laquo; الخلاصة" href="https://ahmed-mek.github.io/feed/">
 <link rel="alternate" type="application/rss+xml" title="Ahmed Mekatronik &laquo; خلاصة التعليقات" href="https://ahmed-mek.github.io/comments/feed/">
@@ -59,7 +174,6 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ahmed-mek.github.io/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ahmed-mek.github.io/wp-includes/wlwmanifest.xml"> 
 <meta name="generator" content="WordPress 5.9.3">
-<link rel="canonical" href="https://ahmed-mek.github.io/2022/04/02/hal_gpio/">
 <link rel="shortlink" href="https://ahmed-mek.github.io/?p=549">
 <link rel="alternate" type="application/json+oembed" href="https://ahmed-mek.github.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fahmed-mek.github.io%2F2022%2F04%2F02%2Fhal_gpio%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://ahmed-mek.github.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fahmed-mek.github.io%2F2022%2F04%2F02%2Fhal_gpio%2F&#038;format=xml">
@@ -589,7 +703,7 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/ahmed-mek.github.io\/wp-a
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1" id="jquery-ui-core-js"></script>
 <script type="text/javascript" id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"شارك على فيسبوك","shareOnTwitter":"شارك على تويتر","pinIt":"ثبتها ","download":"تحميل","downloadImage":"تنزيل الصورة","fullscreen":"عرض شاشة كاملة","zoom":"تكبير","share":"مشاركة","playVideo":"تشغيل الفيديو","previous":"السابق","next":"التالي","close":"إغلاق"},"is_rtl":true,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"الهاتف المحمول","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"هاتف محمول - أفقي","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"الأجهزة اللوحية","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"جهاز لوحي -أفقي","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"حاسوب محمول","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"الشاشة العريضة","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.6.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/ahmed-mek.github.io\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":549,"title":"%D9%85%D9%83%D8%AA%D8%A8%D8%A9%20HAL_GPIO%20%E2%80%93%20Ahmed%20Mekatronik","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"شارك على فيسبوك","shareOnTwitter":"شارك على تويتر","pinIt":"ثبتها ","download":"تحميل","downloadImage":"تنزيل الصورة","fullscreen":"عرض شاشة كاملة","zoom":"تكبير","share":"مشاركة","playVideo":"تشغيل الفيديو","previous":"السابق","next":"التالي","close":"إغلاق"},"is_rtl":true,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"الهاتف المحمول","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"هاتف محمول - أفقي","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"الأجهزة اللوحية","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"جهاز لوحي -أفقي","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"حاسوب محمول","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"الشاشة العريضة","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.6.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/ahmed-mek.github.io\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":549,"title":"%D9%85%D9%83%D8%AA%D8%A8%D8%A9%20HAL_GPIO%20-%20Ahmed%20Mekatronik","excerpt":"","featuredImage":false}};
 </script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.6.1" id="elementor-frontend-js"></script>
 <script type="text/javascript" src="https://ahmed-mek.github.io/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.5.1" id="pro-elements-handlers-js"></script>

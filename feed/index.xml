@@ -30,7 +30,9 @@
 		<category><![CDATA[STM32_course]]></category>
 		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=667</guid>
 
-					<description><![CDATA[DMA Sesttings 1- Add &#62;&#62; Select &#8211;&#62; ADC1 DMA Request Sesttings  Mode &#8211;&#62; Circular *Data Width &#8211;&#62; Word  *Data Width &#8211;&#62; Word ADC_Regular_ConversionMode SamplingTime Common&#8230;]]></description>
+					<description><![CDATA[<p>DMA Sesttings 1- Add &#62;&#62; Select &#8211;&#62; ADC1 DMA Request Sesttings  Mode &#8211;&#62; Circular *Data Width &#8211;&#62; Word  *Data Width &#8211;&#62; Word ADC_Regular_ConversionMode SamplingTime Common&#8230;</p>
+<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/05/11/stm32-dma/">stm32 DMA</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="667" class="elementor elementor-667">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-d6e1d4d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d6e1d4d" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
@@ -236,7 +238,8 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 							</div>
 		</section>
 							</div>
-		]]></content:encoded>
+		<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/05/11/stm32-dma/">stm32 DMA</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></content:encoded>
 					
 					<wfw:commentRss>https://ahmed-mek.github.io/2022/05/11/stm32-dma/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
@@ -253,7 +256,9 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 				<category><![CDATA[غير مصنف]]></category>
 		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=647</guid>
 
-					<description><![CDATA[Core &#62;&#62; Startup &#62;&#62; startup_stm32g071c8tx.s : .word DMA1_Channel2_3_IRQHandler /* DMA1 Channel 2 and Channel 3 */   Core &#62;&#62; Inc &#62;&#62; stm32g0xx_it.h : in &#8220;&#8221;&#8230;]]></description>
+					<description><![CDATA[<p>Core &#62;&#62; Startup &#62;&#62; startup_stm32g071c8tx.s : .word DMA1_Channel2_3_IRQHandler /* DMA1 Channel 2 and Channel 3 */   Core &#62;&#62; Inc &#62;&#62; stm32g0xx_it.h : in &#8220;&#8221;&#8230;</p>
+<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/04/19/elementor-647/">Elementor #647</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="647" class="elementor elementor-647">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-c66d189 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c66d189" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
@@ -268,7 +273,8 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 							</div>
 		</section>
 							</div>
-		]]></content:encoded>
+		<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/04/19/elementor-647/">Elementor #647</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></content:encoded>
 					
 					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/19/elementor-647/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
@@ -287,7 +293,9 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 		<category><![CDATA[STM32_projects]]></category>
 		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=620</guid>
 
-					<description><![CDATA[select PA0 as ADC1_IN0 select  temperature sensor Channel Parameter_Settings ADC_Settings Continuous Conversion Mode &#62;&#62; Enable ADC_Regular_ConversionMode SamplingTime Common 1 &#62;&#62; 12.5 Cycles SamplingTime Common 2&#8230;]]></description>
+					<description><![CDATA[<p>select PA0 as ADC1_IN0 select  temperature sensor Channel Parameter_Settings ADC_Settings Continuous Conversion Mode &#62;&#62; Enable ADC_Regular_ConversionMode SamplingTime Common 1 &#62;&#62; 12.5 Cycles SamplingTime Common 2&#8230;</p>
+<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/04/15/adc/">ADC</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="620" class="elementor elementor-620">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-4bfc326 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4bfc326" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
@@ -536,7 +544,8 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
 							</div>
 		</section>
 							</div>
-		]]></content:encoded>
+		<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/04/15/adc/">ADC</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></content:encoded>
 					
 					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/15/adc/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
@@ -554,7 +563,9 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
 		<category><![CDATA[STM32_course]]></category>
 		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=604</guid>
 
-					<description><![CDATA[PDF Title Download]]></description>
+					<description><![CDATA[<p>PDF Title Download</p>
+<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/04/06/book-stm32/">كتاب stm32</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="604" class="elementor elementor-604">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-963f1a5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="963f1a5" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
@@ -584,7 +595,8 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
 							</div>
 		</section>
 							</div>
-		]]></content:encoded>
+		<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/04/06/book-stm32/">كتاب stm32</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></content:encoded>
 					
 					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/06/book-stm32/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
@@ -606,7 +618,9 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
 		<category><![CDATA[STM32G07]]></category>
 		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=549</guid>
 
-					<description><![CDATA[الدوال المدرجة في GPIO_HAL   HAL_GPIO_Init(GPIO_TypeDef *GPIOx, GPIO_InitTypeDef *GPIO_Init); HAL_GPIO_DeInit(GPIO_TypeDef *GPIOx, uint32_t GPIO_Pin); HAL_GPIO_ReadPin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin); HAL_GPIO_TogglePin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin); HAL_GPIO_LockPin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);&#8230;]]></description>
+					<description><![CDATA[<p>الدوال المدرجة في GPIO_HAL   HAL_GPIO_Init(GPIO_TypeDef *GPIOx, GPIO_InitTypeDef *GPIO_Init); HAL_GPIO_DeInit(GPIO_TypeDef *GPIOx, uint32_t GPIO_Pin); HAL_GPIO_ReadPin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin); HAL_GPIO_TogglePin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin); HAL_GPIO_LockPin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);&#8230;</p>
+<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/04/02/hal_gpio/">مكتبة HAL_GPIO</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="549" class="elementor elementor-549">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-f65538b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f65538b" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
@@ -748,7 +762,8 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
 							</div>
 		</section>
 							</div>
-		]]></content:encoded>
+		<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/04/02/hal_gpio/">مكتبة HAL_GPIO</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></content:encoded>
 					
 					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/02/hal_gpio/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
@@ -766,7 +781,9 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
 		<category><![CDATA[STM32_course]]></category>
 		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=428</guid>
 
-					<description><![CDATA[اولا يتم التاكد انه تم ادراج مكتبة الـ GPIO في ملفات المشروع : Drivers &#62;&#62; STM32G0xx_HAL_Driver &#62;&#62; Inc &#62;&#62; Legacy &#62;&#62; (1) : stm32g0xx_hal_gpio_ex.h (2)&#8230;]]></description>
+					<description><![CDATA[<p>اولا يتم التاكد انه تم ادراج مكتبة الـ GPIO في ملفات المشروع : Drivers &#62;&#62; STM32G0xx_HAL_Driver &#62;&#62; Inc &#62;&#62; Legacy &#62;&#62; (1) : stm32g0xx_hal_gpio_ex.h (2)&#8230;</p>
+<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/04/02/stm32-gpio-output-input/">stm32 GPIO</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="428" class="elementor elementor-428">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-73d0413 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="73d0413" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
@@ -961,7 +978,8 @@ form1.mainloop()
 							</div>
 		</section>
 							</div>
-		]]></content:encoded>
+		<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/04/02/stm32-gpio-output-input/">stm32 GPIO</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></content:encoded>
 					
 					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/02/stm32-gpio-output-input/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
@@ -980,7 +998,9 @@ form1.mainloop()
 		<category><![CDATA[STM32_projects]]></category>
 		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=410</guid>
 
-					<description><![CDATA[تبويب #1 علامة التبويب #2 تبويب #1 أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ علامة التبويب #2 أبجد هوز حطي كلمن سعفص قرشت ثخذ&#8230;]]></description>
+					<description><![CDATA[<p>تبويب #1 علامة التبويب #2 تبويب #1 أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ علامة التبويب #2 أبجد هوز حطي كلمن سعفص قرشت ثخذ&#8230;</p>
+<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/04/02/cubeide-cubmx-keilide/">cubeIDE , cubMX , keilIDE</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="410" class="elementor elementor-410">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-3eb834a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3eb834a" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
@@ -1080,7 +1100,8 @@ form1.mainloop()
 							</div>
 		</section>
 							</div>
-		]]></content:encoded>
+		<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/04/02/cubeide-cubmx-keilide/">cubeIDE , cubMX , keilIDE</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></content:encoded>
 					
 					<wfw:commentRss>https://ahmed-mek.github.io/2022/04/02/cubeide-cubmx-keilide/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
