@@ -12,7 +12,7 @@
 	<atom:link href="https://ahmed-mek.github.io/author/ahmed/feed/" rel="self" type="application/rss+xml" />
 	<link>https://ahmed-mek.github.io</link>
 	<description>موقع تعليمي للهواة و المهندسين</description>
-	<lastBuildDate>Wed, 11 May 2022 22:52:48 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 12 May 2022 00:50:41 +0000</lastBuildDate>
 	<language>ar</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -88,7 +88,7 @@
 				</div>
 				<div class="elementor-element elementor-element-7406e09 elementor-widget elementor-widget-text-editor" data-id="7406e09" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p dir="ltr" style="text-align: center;"><strong>Parameter_Settings</strong></p><p dir="ltr"><strong>ADC-Sesttings:-</strong></p><p dir="ltr">Clock Prescaler &#8211;&gt; divided by 4</p><p dir="ltr">Scan Conversion Mode &#8211;&gt; Enable (**)</p><p dir="ltr">Continuous Conversion Mode &#8211;&gt; Enable</p><p dir="ltr">DMA Continuous Requests &#8211;&gt; Enable </p><p>قد تواجه مشكلة في Scan Conversion Mode حيث ترفض ان تتحول إلى الحالة Enable نتيجة خطأ في CubeIDE لذلك يجب أن نقوم بتغيريها يدويا من الكود في ملف main.c</p>						</div>
+							<p dir="ltr" style="text-align: center;"><strong>Parameter_Settings</strong></p><p dir="ltr"><strong>ADC-Sesttings:-</strong></p><p dir="ltr">Clock Prescaler &#8211;&gt; divided by 4</p><p dir="ltr">Scan Conversion Mode &#8211;&gt; Enable (**)</p><p dir="ltr">Continuous Conversion Mode &#8211;&gt; Enable</p><p dir="ltr">DMA Continuous Requests &#8211;&gt; Enable </p><blockquote><p>قد تواجه مشكلة في Scan Conversion Mode حيث ترفض ان تتحول إلى الحالة Enable نتيجة خطأ في CubeIDE لذلك يجب أن نقوم بتغيريها يدويا من الكود في ملف main.c</p></blockquote>						</div>
 				</div>
 				<div class="elementor-element elementor-element-f876252 elementor-widget elementor-widget-code-highlight" data-id="f876252" data-element_type="widget" data-widget_type="code-highlight.default">
 				<div class="elementor-widget-container">
@@ -178,6 +178,58 @@ HAL_ADC_Start_DMA(&hadc1, value, 3); // start adc in DMA mode </xmp>
 				<div class="elementor-element elementor-element-de25a8f elementor-widget elementor-widget-text-editor" data-id="de25a8f" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 							<ul><li>ابدأ تحويل ADC في وضع DMA و خزن القيم الناتجة في المتغير (<strong>buffer</strong>) &#8220;<strong>value</strong>&#8220;</li><li>&#8220;3&#8221; هو طول البينات التي سوف يتم نقلها من الوحدة الطرفية (<strong>peripheral</strong>) إلى الذاكرة.</li></ul>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4207ad0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4207ad0" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0fe8e27" data-id="0fe8e27" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b0a195f elementor-widget elementor-widget-text-editor" data-id="b0a195f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>يجب التعامل مع مخرجات ADC بوضع DMA في دالة <strong>HAL_ADC_ConvCpltCallback</strong> التي يتم استدعاؤها بعد كل عملية تحويل أي عند التقاط اشارة من العلم EOC flag  <strong>(End Of Conversion flag)</strong> وليس في دالة While حيث ان مخرجات ADC في وضع DMA لا تمر عبر CPU بل تذهب إلى الذاكرة مباشرا.</p><p>بمعنى اخر , عندما يكون تردد قناة ADC مرتفعًا ، يتم تشغيل مقاطعات DMA كثيرًا ويظل عنصر التحكم دائمًا في وظيفة رد الاتصال ، وتظل حلقة while غير نشطة إلى الأبد.</p><p> </p><blockquote><p dir="ltr"> When the ADC channel frequency is high, the DMA interrupts gets triggered very often and the control always remains in the <strong>callback function</strong>, and the while loop remains inactive forever.</p></blockquote>						</div>
+				</div>
+				<div class="elementor-element elementor-element-ab9b06b elementor-widget elementor-widget-text-editor" data-id="ab9b06b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>في المثال التالي يضيء PIN5 اذا كانت قيمة اول قناة Rank1 أقل من 2000</p><blockquote><p>لاحظ انه لم يتم كتابته داخل دالة While حيث انه لن يعمل هناك </p></blockquote>						</div>
+				</div>
+				<div class="elementor-element elementor-element-5505377 elementor-widget elementor-widget-code-highlight" data-id="5505377" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-tomorrow copy-to-clipboard ">
+			<pre data-line="" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>// USER CODE BEGIN 4 
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
+{
+	if (value[0]<2000)
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+	else
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+}</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1077c39 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1077c39" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3db0d3b" data-id="3db0d3b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fffbbba elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="fffbbba" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+							<span class="elementor-divider__text elementor-divider__element">
+				مُقسّم				</span>
+						</span>
+		</div>
+				</div>
 				</div>
 					</div>
 		</div>
