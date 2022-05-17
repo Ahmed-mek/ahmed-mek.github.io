@@ -12,7 +12,7 @@
 	<atom:link href="https://ahmed-mek.github.io/feed/" rel="self" type="application/rss+xml" />
 	<link>https://ahmed-mek.github.io</link>
 	<description>موقع تعليمي للهواة و المهندسين</description>
-	<lastBuildDate>Thu, 12 May 2022 00:50:41 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 17 May 2022 19:45:24 +0000</lastBuildDate>
 	<language>ar</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,119 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.9.3</generator>
 	<item>
+		<title>test</title>
+		<link>https://ahmed-mek.github.io/2022/05/17/test/</link>
+					<comments>https://ahmed-mek.github.io/2022/05/17/test/#respond</comments>
+		
+		<dc:creator><![CDATA[ahmed]]></dc:creator>
+		<pubDate>Tue, 17 May 2022 09:50:48 +0000</pubDate>
+				<category><![CDATA[غير مصنف]]></category>
+		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=717</guid>
+
+					<description><![CDATA[<p>Core &#62;&#62; Inc &#62;&#62; stm32g0xx_hal_conf.h DriversSTM32G0xx_HAL_DriverSrc DriversSTM32G0xx_HAL_DriverInc   STM32CubeRepositorySTM32Cube_FW_G0_V1.5.1DriversSTM32G0xx_HAL_DriverInc STM32CubeRepositorySTM32Cube_FW_G0_V1.5.1DriversSTM32G0xx_HAL_DriverSrc        Core &#62;&#62; Startup &#62;&#62; startup_stm32g071rbtx.s Core &#62;&#62; Inc &#62;&#62;stm32g0xx_it.h Core &#62;&#62; Src&#8230;</p>
+<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/05/17/test/">test</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="717" class="elementor elementor-717">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-062bc4c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="062bc4c" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c4967d1" data-id="c4967d1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b9ef90f elementor-widget elementor-widget-text-editor" data-id="b9ef90f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.1 - 23-03-2022 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:right;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p dir="ltr">Core &gt;&gt; Inc &gt;&gt; stm32g0xx_hal_conf.h</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-f39c1a0 elementor-widget elementor-widget-image" data-id="f39c1a0" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.1 - 23-03-2022 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="831" height="549" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation11.gif" class="attachment-large size-large" alt="" loading="lazy" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-da77b24 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="da77b24" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-72b52f8" data-id="72b52f8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-068b1b5 elementor-widget elementor-widget-text-editor" data-id="068b1b5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>\Drivers\STM32G0xx_HAL_Driver\Src</p><p>\Drivers\STM32G0xx_HAL_Driver\Inc</p><p> </p><p>STM32Cube\Repository\STM32Cube_FW_G0_V1.5.1\Drivers\STM32G0xx_HAL_Driver\Inc</p><p>STM32Cube\Repository\STM32Cube_FW_G0_V1.5.1\Drivers\STM32G0xx_HAL_Driver\Src</p><div id="simple-translate"><div><div class="simple-translate-button isShow" style="background-image: url('chrome-extension://cllnohpbfenopiakdcjmjcbaeapmkcdl/icons/512.png'); height: 22px; width: 22px; top: 68px; left: 326px;"> </div><div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: #ffffff; --darkreader-inline-bgcolor: #1b1d1d;" data-darkreader-inline-bgcolor=""><div class="simple-translate-result-wrapper" style="overflow: hidden;"><div class="simple-translate-move" draggable="true"> </div><div class="simple-translate-result-contents"><p class="simple-translate-result" dir="auto" style="color: #000000; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color=""> </p><p class="simple-translate-candidate" dir="auto" style="color: #737373; --darkreader-inline-color: #90897d;" data-darkreader-inline-color=""> </p></div></div></div></div></div>						</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-971f70b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="971f70b" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d19061e" data-id="d19061e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-74e1dc1 elementor-widget elementor-widget-image" data-id="74e1dc1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="270" height="100" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/33.png" class="attachment-large size-large" alt="" loading="lazy" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-befffdf" data-id="befffdf" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-37613db elementor-widget elementor-widget-image" data-id="37613db" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="299" height="96" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/22.png" class="attachment-large size-large" alt="" loading="lazy" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-03a2e4f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="03a2e4f" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-15cf364" data-id="15cf364" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b2f7354 elementor-widget elementor-widget-text-editor" data-id="b2f7354" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p dir="ltr">Core &gt;&gt; Startup &gt;&gt; startup_stm32g071rbtx.s</p><p dir="ltr">Core &gt;&gt; Inc &gt;&gt;stm32g0xx_it.h</p><p dir="ltr">Core &gt;&gt; Src &gt;&gt;stm32g0xx_it.c</p><p dir="ltr">/* Exported functions prototypes &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;*/</p><p dir="ltr">void DMA1_Channel1_IRQHandler(void);<br />void ADC1_COMP_IRQHandler(void);</p><p dir="ltr">NVIC (Nested Vectored Interrupt Controller) functions prototypes :&#8211;</p><p dir="ltr" style="text-align: left;"> </p><p dir="ltr"> </p><p dir="ltr" style="text-align: left;">void DMA1_Channel1_IRQHandler(void)<br />{</p><p dir="ltr" style="text-align: left;">}<br />void ADC1_COMP_IRQHandler(void)<br />{</p><p dir="ltr" style="text-align: left;">}</p><p dir="ltr" style="text-align: left;"> </p><p dir="ltr" style="text-align: left;">void DMA1_Channel1_IRQHandler(void);<br />void ADC1_COMP_IRQHandler(void);</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dfb9632 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dfb9632" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d5b5266" data-id="d5b5266" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-752f520 elementor-widget elementor-widget-image" data-id="752f520" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="843" height="396" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-2-1024x481.gif" class="attachment-large size-large" alt="" loading="lazy" srcset="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-2-1024x481.gif 1024w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-2-300x141.gif 300w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-2-768x361.gif 768w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-cb0c9c9 elementor-widget elementor-widget-text-editor" data-id="cb0c9c9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p dir="ltr"> </p><p dir="ltr">Drivers &gt;&gt; STM32G0xx_HAL_Driver &gt;&gt; stm32g0xx_hal_adc.h</p><p dir="ltr">ADC_HandleTypeDef</p><p dir="ltr"> </p><p dir="ltr">&gt;&gt; mainc.c </p><p dir="ltr">/* USER CODE END 3 */<br />static void MX_ADC_HandleTypeDef(void)<br />{<br />}</p><p dir="ltr">/* Private function prototypes &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;*/</p><p dir="ltr">static void MX_ADC_HandleTypeDef(void);</p><p dir="ltr"> </p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-ce44ba6 elementor-widget elementor-widget-image" data-id="ce44ba6" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="843" height="396" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-1024x481.gif" class="attachment-large size-large" alt="" loading="lazy" srcset="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-1024x481.gif 1024w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-300x141.gif 300w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-768x361.gif 768w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f726a1c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f726a1c" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0a43894" data-id="0a43894" data-element_type="column">
+			<div class="elementor-widget-wrap">
+									</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		<p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/05/17/test/">test</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ahmed-mek.github.io/2022/05/17/test/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>stm32 DMA</title>
 		<link>https://ahmed-mek.github.io/2022/05/11/stm32-dma/</link>
 					<comments>https://ahmed-mek.github.io/2022/05/11/stm32-dma/#respond</comments>
@@ -40,8 +153,7 @@
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-3f0e648 elementor-widget elementor-widget-image" data-id="3f0e648" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="843" height="384" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation1.gif" class="attachment-large size-large" alt="" loading="lazy" />															</div>
+															<img width="843" height="384" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation1.gif" class="attachment-large size-large" alt="" loading="lazy" />															</div>
 				</div>
 					</div>
 		</div>
@@ -57,8 +169,7 @@
 				</div>
 				<div class="elementor-element elementor-element-dcfbcaf elementor-widget elementor-widget-text-editor" data-id="dcfbcaf" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:right;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p dir="ltr"><strong>DMA Sesttings</strong></p><p dir="ltr">1- Add &gt;&gt;</p><p dir="ltr">Select &#8211;&gt; ADC1</p><p dir="ltr"><strong>DMA Request Sesttings </strong></p><p dir="ltr">Mode &#8211;&gt; Circular</p><p dir="ltr">*Data Width &#8211;&gt; Word  *Data Width &#8211;&gt; Word</p>						</div>
+							<p dir="ltr"><strong>DMA Sesttings</strong></p><p dir="ltr">1- Add &gt;&gt;</p><p dir="ltr">Select &#8211;&gt; ADC1</p><p dir="ltr"><strong>DMA Request Sesttings </strong></p><p dir="ltr">Mode &#8211;&gt; Circular</p><p dir="ltr">*Data Width &#8211;&gt; Word  *Data Width &#8211;&gt; Word</p>						</div>
 				</div>
 					</div>
 		</div>
