@@ -12,7 +12,7 @@
 	<atom:link href="https://ahmed-mek.github.io/author/ahmed/feed/" rel="self" type="application/rss+xml" />
 	<link>https://ahmed-mek.github.io</link>
 	<description>موقع تعليمي للهواة و المهندسين</description>
-	<lastBuildDate>Tue, 17 May 2022 19:45:24 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 17 May 2022 20:30:41 +0000</lastBuildDate>
 	<language>ar</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -26,7 +26,8 @@
 		
 		<dc:creator><![CDATA[ahmed]]></dc:creator>
 		<pubDate>Tue, 17 May 2022 09:50:48 +0000</pubDate>
-				<category><![CDATA[غير مصنف]]></category>
+				<category><![CDATA[STM32]]></category>
+		<category><![CDATA[غير مصنف]]></category>
 		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=717</guid>
 
 					<description><![CDATA[<p>Core &#62;&#62; Inc &#62;&#62; stm32g0xx_hal_conf.h DriversSTM32G0xx_HAL_DriverSrc DriversSTM32G0xx_HAL_DriverInc   STM32CubeRepositorySTM32Cube_FW_G0_V1.5.1DriversSTM32G0xx_HAL_DriverInc STM32CubeRepositorySTM32Cube_FW_G0_V1.5.1DriversSTM32G0xx_HAL_DriverSrc        Core &#62;&#62; Startup &#62;&#62; startup_stm32g071rbtx.s Core &#62;&#62; Inc &#62;&#62;stm32g0xx_it.h Core &#62;&#62; Src&#8230;</p>
@@ -101,7 +102,7 @@
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-752f520 elementor-widget elementor-widget-image" data-id="752f520" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="843" height="396" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-2-1024x481.gif" class="attachment-large size-large" alt="" loading="lazy" srcset="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-2-1024x481.gif 1024w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-2-300x141.gif 300w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-2-768x361.gif 768w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
+															<img width="843" height="396" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-3-1024x481.gif" class="attachment-large size-large" alt="" loading="lazy" srcset="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-3-1024x481.gif 1024w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-3-300x141.gif 300w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-3-768x361.gif 768w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-cb0c9c9 elementor-widget elementor-widget-text-editor" data-id="cb0c9c9" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
@@ -109,7 +110,7 @@
 				</div>
 				<div class="elementor-element elementor-element-ce44ba6 elementor-widget elementor-widget-image" data-id="ce44ba6" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="843" height="396" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-1024x481.gif" class="attachment-large size-large" alt="" loading="lazy" srcset="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-1024x481.gif 1024w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-300x141.gif 300w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-768x361.gif 768w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
+															<img width="843" height="396" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-1-1024x481.gif" class="attachment-large size-large" alt="" loading="lazy" srcset="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-1-1024x481.gif 1024w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-1-300x141.gif 300w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-1-768x361.gif 768w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
 				</div>
 					</div>
 		</div>
