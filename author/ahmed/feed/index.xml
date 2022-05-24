@@ -12,7 +12,7 @@
 	<atom:link href="https://ahmed-mek.github.io/author/ahmed/feed/" rel="self" type="application/rss+xml" />
 	<link>https://ahmed-mek.github.io</link>
 	<description>موقع تعليمي للهواة و المهندسين</description>
-	<lastBuildDate>Thu, 19 May 2022 18:21:07 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 20 May 2022 16:42:38 +0000</lastBuildDate>
 	<language>ar</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -739,7 +739,7 @@ Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-bidi'><o:p>&n
 														</span>
 												<a class="elementor-accordion-title" href="">Peripheral State functions </a>
 					</div>
-					<div id="elementor-tab-content-1022" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-1022"><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color=""> ##### Peripheral state and errors functions #####</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color=""> [..] This subsection provides functions to get in run-time the status of the peripheral.</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color=""> (+) Check the ADC state</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color=""> (+) Check the ADC error code</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span class="SpellE"><b><span style="font-size: 10pt; font-family: Consolas; color: black; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color="">HAL_ADC_<span class="GramE">GetState</span></span></b></span><span class="GramE"><span style="font-size: 10pt; font-family: Consolas; color: black; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color="">(</span></span><span class="SpellE"><span style="font-size: 10pt; font-family: Consolas; color: #005032; --darkreader-inline-color: #bab6ae;" data-darkreader-inline-color="">ADC_HandleTypeDef</span></span><span style="font-size: 10pt; font-family: Consolas; color: black; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color=""> *<span class="SpellE">hadc</span>)</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #ccffcc; --darkreader-inline-color: #dd4644;" data-darkreader-inline-color="">==&gt; ADC state machine is managed by <u>bitfields</u>, ADC status must be compared with states bits.</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #c00000; --darkreader-inline-color: #dd4644;" data-darkreader-inline-color="">For example:</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; text-indent: 36.0pt; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #c00000; --darkreader-inline-color: #dd4644;" data-darkreader-inline-color="">&#8221; if ((<span class="SpellE">HAL_ADC_GetState</span>(hadc1) &amp; HAL_ADC_STATE_REG_BUSY<span class="GramE">) !</span>= 0UL) &#8220;</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; text-indent: 36.0pt; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #c00000; --darkreader-inline-color: #dd4644;" data-darkreader-inline-color="">&#8221; if ((<span class="SpellE">HAL_ADC_GetState</span>(hadc1) &amp; HAL_ADC_STATE_AWD1<span class="GramE">) !</span>= 0UL) &#8220;</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span class="SpellE"><u><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color="">hadc</span></u></span><span lang="TR" style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color="">:</span><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color=""> ADC handle</span></p><p> </p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span class="SpellE"><b><span style="font-size: 10pt; font-family: Consolas; color: black; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color="">HAL_ADC_<span class="GramE">GetError</span></span></b></span><span class="GramE"><span style="font-size: 10pt; font-family: Consolas; color: black; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color="">(</span></span><span class="SpellE"><span style="font-size: 10pt; font-family: Consolas; color: #005032; --darkreader-inline-color: #bab6ae;" data-darkreader-inline-color="">ADC_HandleTypeDef</span></span><span style="font-size: 10pt; font-family: Consolas; color: black; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color=""> *<span class="SpellE">hadc</span>)</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #ccffcc; --darkreader-inline-color: #dd4644;" data-darkreader-inline-color=""><span style="font-size: 13.3333px; font-weight: var( --e-global-typography-text-font-weight );">==&gt;</span><span style="font-size: 13.3333px; font-weight: var( --e-global-typography-text-font-weight );"> </span>Return the ADC error code.</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span class="SpellE"><u><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color="">hadc</span></u></span><span lang="TR" style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color="">:</span><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color=""> ADC handle</span></p></div>
+					<div id="elementor-tab-content-1022" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-1022"><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color=""> ##### Peripheral state and errors functions #####</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color=""> [..] This subsection provides functions to get in run-time the status of the peripheral.</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color=""> (+) Check the ADC state</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color=""> (+) Check the ADC error code</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span class="SpellE"><b><span style="font-size: 10pt; font-family: Consolas; color: black; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color="">HAL_ADC_<span class="GramE">GetState</span></span></b></span><span class="GramE"><span style="font-size: 10pt; font-family: Consolas; color: black; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color="">(</span></span><span class="SpellE"><span style="font-size: 10pt; font-family: Consolas; color: #005032; --darkreader-inline-color: #bab6ae;" data-darkreader-inline-color="">ADC_HandleTypeDef</span></span><span style="font-size: 10pt; font-family: Consolas; color: black; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color=""> *<span class="SpellE">hadc</span>)</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #ccffcc; --darkreader-inline-color: #dd4644;" data-darkreader-inline-color="">==&gt; ADC state machine is managed by <u>bitfields</u>, ADC status must be compared with states bits.</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #c00000; --darkreader-inline-color: #dd4644;" data-darkreader-inline-color="">For example:</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; text-indent: 36.0pt; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #c00000; --darkreader-inline-color: #dd4644;" data-darkreader-inline-color="">&#8221; if ((<span class="SpellE">HAL_ADC_GetState</span>(hadc1) &amp; HAL_ADC_STATE_REG_BUSY<span class="GramE">) !</span>= 0UL) &#8220;</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; text-indent: 36.0pt; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #c00000; --darkreader-inline-color: #dd4644;" data-darkreader-inline-color="">&#8221; if ((<span class="SpellE">HAL_ADC_GetState</span>(hadc1) &amp; HAL_ADC_STATE_AWD1<span class="GramE">) !</span>= 0UL) &#8220;</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span class="SpellE"><u><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color="">hadc</span></u></span><span lang="TR" style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color="">:</span><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color=""> ADC handle</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span class="SpellE"><b><span style="font-size: 10pt; font-family: Consolas; color: black; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color="">HAL_ADC_<span class="GramE">GetError</span></span></b></span><span class="GramE"><span style="font-size: 10pt; font-family: Consolas; color: black; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color="">(</span></span><span class="SpellE"><span style="font-size: 10pt; font-family: Consolas; color: #005032; --darkreader-inline-color: #bab6ae;" data-darkreader-inline-color="">ADC_HandleTypeDef</span></span><span style="font-size: 10pt; font-family: Consolas; color: black; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color=""> *<span class="SpellE">hadc</span>)</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span style="font-size: 10pt; font-family: Consolas; color: #ccffcc; --darkreader-inline-color: #dd4644;" data-darkreader-inline-color=""><span style="font-size: 13.3333px; font-weight: var( --e-global-typography-text-font-weight );">==&gt;</span><span style="font-size: 13.3333px; font-weight: var( --e-global-typography-text-font-weight );"> </span>Return the ADC error code.</span></p><p class="MsoNormal" style="margin-bottom: 0cm; text-align: left; line-height: normal; mso-layout-grid-align: none; text-autospace: none; direction: ltr; unicode-bidi: embed;"><span class="SpellE"><u><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color="">hadc</span></u></span><span lang="TR" style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color="">:</span><span style="font-size: 10pt; font-family: Consolas; color: #3f7f5f; --darkreader-inline-color: #7cad92;" data-darkreader-inline-color=""> ADC handle</span></p></div>
 				</div>
 							<div class="elementor-accordion-item">
 					<div id="elementor-tab-title-1023" class="elementor-tab-title" data-tab="3" role="tab" aria-controls="elementor-tab-content-1023" aria-expanded="false">
@@ -779,7 +779,7 @@ Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-bidi'><o:p>&n
 		<category><![CDATA[غير مصنف]]></category>
 		<guid isPermaLink="false">https://ahmed-mek.github.io/?p=717</guid>
 
-					<description><![CDATA[<p>Core &#62;&#62; Inc &#62;&#62; stm32g0xx_hal_conf.h DriversSTM32G0xx_HAL_DriverSrc DriversSTM32G0xx_HAL_DriverInc   STM32CubeRepositorySTM32Cube_FW_G0_V1.5.1DriversSTM32G0xx_HAL_DriverInc STM32CubeRepositorySTM32Cube_FW_G0_V1.5.1DriversSTM32G0xx_HAL_DriverSrc        Core &#62;&#62; Startup &#62;&#62; startup_stm32g071rbtx.s Core &#62;&#62; Inc &#62;&#62;stm32g0xx_it.h Core &#62;&#62; Src&#8230;</p>
+					<description><![CDATA[<p>إدراج مكتبة HAL_ADC اولا يجب علينا تفعيل مكتبة ADC من ملف الـ configuration :- Core &#62;&#62; Inc &#62;&#62; stm32g0xx_hal_conf.h         ثم نقوم بنسخ&#8230;</p>
 <p>ظهرت المقالة <a rel="nofollow" href="https://ahmed-mek.github.io/2022/05/17/dma-adc-manual-configuration/">DMA ADC manual configuration</a> أولاً على <a rel="nofollow" href="https://ahmed-mek.github.io">Ahmed Mekatronik</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="717" class="elementor elementor-717">
@@ -787,10 +787,14 @@ Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-bidi'><o:p>&n
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c4967d1" data-id="c4967d1" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-b9ef90f elementor-widget elementor-widget-text-editor" data-id="b9ef90f" data-element_type="widget" data-widget_type="text-editor.default">
+								<div class="elementor-element elementor-element-94bfe39 elementor-widget elementor-widget-heading" data-id="94bfe39" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">إدراج مكتبة HAL_ADC</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b9ef90f elementor-widget elementor-widget-text-editor" data-id="b9ef90f" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.6.1 - 23-03-2022 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:right;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p dir="ltr">Core &gt;&gt; Inc &gt;&gt; stm32g0xx_hal_conf.h</p>						</div>
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:right;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>اولا يجب علينا تفعيل مكتبة ADC من ملف الـ configuration :-</p><p dir="ltr">Core &gt;&gt; Inc &gt;&gt; stm32g0xx_hal_conf.h</p><div id="gtx-trans" style="position: absolute; left: 103px; top: -10px;"><div class="gtx-trans-icon"> </div></div><div id="simple-translate"><div><div class="simple-translate-button isShow" style="background-image: url('chrome-extension://cllnohpbfenopiakdcjmjcbaeapmkcdl/icons/512.png'); height: 22px; width: 22px; top: 36px; left: 126px;"> </div><div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: #ffffff; --darkreader-inline-bgcolor: #1b1d1d;" data-darkreader-inline-bgcolor=""><div class="simple-translate-result-wrapper" style="overflow: hidden;"><div class="simple-translate-move" draggable="true"> </div><div class="simple-translate-result-contents"><p class="simple-translate-result" dir="auto" style="color: #000000; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color=""> </p><p class="simple-translate-candidate" dir="auto" style="color: #737373; --darkreader-inline-color: #90897d;" data-darkreader-inline-color=""> </p></div></div></div></div></div>						</div>
 				</div>
 				<div class="elementor-element elementor-element-f39c1a0 elementor-widget elementor-widget-image" data-id="f39c1a0" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
@@ -807,7 +811,7 @@ Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-bidi'><o:p>&n
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-068b1b5 elementor-widget elementor-widget-text-editor" data-id="068b1b5" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p>\Drivers\STM32G0xx_HAL_Driver\Src</p><p>\Drivers\STM32G0xx_HAL_Driver\Inc</p><p> </p><p>STM32Cube\Repository\STM32Cube_FW_G0_V1.5.1\Drivers\STM32G0xx_HAL_Driver\Inc</p><p>STM32Cube\Repository\STM32Cube_FW_G0_V1.5.1\Drivers\STM32G0xx_HAL_Driver\Src</p><div id="simple-translate"><div><div class="simple-translate-button isShow" style="background-image: url('chrome-extension://cllnohpbfenopiakdcjmjcbaeapmkcdl/icons/512.png'); height: 22px; width: 22px; top: 68px; left: 326px;"> </div><div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: #ffffff; --darkreader-inline-bgcolor: #1b1d1d;" data-darkreader-inline-bgcolor=""><div class="simple-translate-result-wrapper" style="overflow: hidden;"><div class="simple-translate-move" draggable="true"> </div><div class="simple-translate-result-contents"><p class="simple-translate-result" dir="auto" style="color: #000000; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color=""> </p><p class="simple-translate-candidate" dir="auto" style="color: #737373; --darkreader-inline-color: #90897d;" data-darkreader-inline-color=""> </p></div></div></div></div></div>						</div>
+							<p>ثم نقوم بنسخ ملفات المكتبة و وضعها في المسار التالي:</p><p dir="ltr">from :-  \Drivers\STM32G0xx_HAL_Driver\Src</p><p dir="ltr">to :-      \STM32Cube\Repository\STM32Cube_FW_G0_V1.5.1\Drivers\STM32G0xx_HAL_Driver\Src</p><p dir="ltr">from :-  \Drivers\STM32G0xx_HAL_Driver\Inc</p><p dir="ltr">to :-      \STM32Cube\Repository\STM32Cube_FW_G0_V1.5.1\Drivers\STM32G0xx_HAL_Driver\Inc</p><p dir="ltr"> </p>						</div>
 				</div>
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-971f70b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="971f70b" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
@@ -833,33 +837,218 @@ Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-bidi'><o:p>&n
 		</div>
 							</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-03a2e4f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="03a2e4f" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dfb9632 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dfb9632" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-15cf364" data-id="15cf364" data-element_type="column">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d5b5266" data-id="d5b5266" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-b2f7354 elementor-widget elementor-widget-text-editor" data-id="b2f7354" data-element_type="widget" data-widget_type="text-editor.default">
+								<div class="elementor-element elementor-element-88adea3 elementor-widget elementor-widget-heading" data-id="88adea3" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-							<p dir="ltr">Core &gt;&gt; Startup &gt;&gt; startup_stm32g071rbtx.s</p><p dir="ltr">Core &gt;&gt; Inc &gt;&gt;stm32g0xx_it.h</p><p dir="ltr">Core &gt;&gt; Src &gt;&gt;stm32g0xx_it.c</p><p dir="ltr">/* Exported functions prototypes &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;*/</p><p dir="ltr">void DMA1_Channel1_IRQHandler(void);<br />void ADC1_COMP_IRQHandler(void);</p><p dir="ltr">NVIC (Nested Vectored Interrupt Controller) functions prototypes :&#8211;</p><p dir="ltr" style="text-align: left;"> </p><p dir="ltr"> </p><p dir="ltr" style="text-align: left;">void DMA1_Channel1_IRQHandler(void)<br />{</p><p dir="ltr" style="text-align: left;">}<br />void ADC1_COMP_IRQHandler(void)<br />{</p><p dir="ltr" style="text-align: left;">}</p><p dir="ltr" style="text-align: left;"> </p><p dir="ltr" style="text-align: left;">void DMA1_Channel1_IRQHandler(void);<br />void ADC1_COMP_IRQHandler(void);</p>						</div>
+			<h2 class="elementor-heading-title elementor-size-default">ADC Configuration</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cb0c9c9 elementor-widget elementor-widget-text-editor" data-id="cb0c9c9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>في ملف الـ ( main.c ) يجب علينا إعداد خصائص ( ADC Configuration ) العامة عن طريق تعريف متغير (prototype)  من نوع ( ADC_HandleTypeDef ) و ليكن اسمه hadc1 . ثم ننشأ دالة ADC Initialization Function تحتوي على خصائصها و يجب ان تكون خارج دالة الـ ( main(void) ) و نقوم باستدعائها من داخل الـ ( main(void) ). يتم استخدام دالة ( HAL_ADC_Init(&amp;hadc1) ) للتأكد من عدم وجود أخطاء.</p><p>الخطوة التالية يتم إعداد خصائص القنوات ( ADC Channels Configuration ) عن طريق تعريف متغير (prototype)  من نوع ( ADC_ChannelConfTypeDef) و ليكن اسمه ADC_Channel_Conf . يتم استخدام دالة ( HAL_ADC_ConfigChannel(&amp;hadc1, &amp;ADC_Channel_Conf) ) للتأكد من عدم وجود أخطاء.</p><div id="gtx-trans" style="position: absolute; left: 405px; top: 86px;"><div class="gtx-trans-icon"> </div></div><div id="simple-translate"><div><div class="simple-translate-button isShow" style="background-image: url('chrome-extension://cllnohpbfenopiakdcjmjcbaeapmkcdl/icons/512.png'); height: 22px; width: 22px; top: 89px; left: 428px;"> </div><div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: #ffffff;"><div class="simple-translate-result-wrapper" style="overflow: hidden;"><div class="simple-translate-move" draggable="true"> </div><div class="simple-translate-result-contents"><p class="simple-translate-result" dir="auto" style="color: #000000;"> </p><p class="simple-translate-candidate" dir="auto" style="color: #737373;"> </p></div></div></div></div></div>						</div>
+				</div>
+				<div class="elementor-element elementor-element-a351f99 elementor-widget elementor-widget-code-highlight" data-id="a351f99" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-default copy-to-clipboard ">
+			<pre data-line="1,3,5,8" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>/* Private variables ---------------------------------------------------------*/
+ ADC_HandleTypeDef hadc1;
+/* Private function prototypes -----------------------------------------------*/
+static void MX_ADC_Init(void);
+/* Initialize all configured peripherals */
+MX_ADC_Init();
+
+--------------------- OUT main(void) --------------------------*/
+
+static void MX_ADC_Init(void)
+{
+	  hadc1.Instance = ADC1;
+	  hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
+	  hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+	  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+	  hadc1.Init.ScanConvMode = ADC_SCAN_ENABLE;
+	  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+	  hadc1.Init.LowPowerAutoWait = DISABLE;
+	  hadc1.Init.LowPowerAutoPowerOff = DISABLE;
+	  hadc1.Init.ContinuousConvMode = ENABLE;///ENABLE
+	  hadc1.Init.NbrOfConversion = 3;
+	  hadc1.Init.DiscontinuousConvMode =DISABLE ;///DISABLE
+	  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+	  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+	  hadc1.Init.DMAContinuousRequests = ENABLE;
+	  hadc1.Init.Overrun = ADC_OVR_DATA_PRESERVED;
+	  hadc1.Init.SamplingTimeCommon1 = ADC_SAMPLETIME_12CYCLES_5;
+	  hadc1.Init.SamplingTimeCommon2 = ADC_SAMPLETIME_12CYCLES_5;
+	  hadc1.Init.OversamplingMode = DISABLE;
+	  hadc1.Init.TriggerFrequencyMode = ADC_TRIGGER_FREQ_HIGH;
+
+	  if (HAL_ADC_Init(&hadc1)!= HAL_OK)
+	  {
+		  Error_Handler();
+	  }
+	  /********************************/
+	  ADC_ChannelConfTypeDef ADC_Channel_Conf = {0};
+	  /********************************/
+	  ADC_Channel_Conf.Channel=ADC_CHANNEL_0;
+	  ADC_Channel_Conf.Rank=ADC_REGULAR_RANK_1;
+	  ADC_Channel_Conf.SamplingTime=ADC_SAMPLINGTIME_COMMON_1;
+	  if (HAL_ADC_ConfigChannel(&hadc1, &ADC_Channel_Conf)!= HAL_OK)
+	  {
+		  Error_Handler();
+	  }
+	  /********************************/
+	  ADC_Channel_Conf.Channel=ADC_CHANNEL_1;
+	  ADC_Channel_Conf.Rank=ADC_REGULAR_RANK_2;
+	  ADC_Channel_Conf.SamplingTime=ADC_SAMPLINGTIME_COMMON_1;
+	  if (HAL_ADC_ConfigChannel(&hadc1, &ADC_Channel_Conf)!= HAL_OK)
+	  {
+		  Error_Handler();
+	  }
+	  /********************************/
+	  ADC_Channel_Conf.Channel=ADC_CHANNEL_2;
+	  ADC_Channel_Conf.Rank=ADC_REGULAR_RANK_3;
+	  ADC_Channel_Conf.SamplingTime=ADC_SAMPLINGTIME_COMMON_1;
+	  if (HAL_ADC_ConfigChannel(&hadc1, &ADC_Channel_Conf)!= HAL_OK)
+	  {
+		  Error_Handler();
+	  }
+}</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
 				</div>
 					</div>
 		</div>
 							</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-dfb9632 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dfb9632" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-375b090 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="375b090" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d5b5266" data-id="d5b5266" data-element_type="column">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a94a922" data-id="a94a922" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-752f520 elementor-widget elementor-widget-image" data-id="752f520" data-element_type="widget" data-widget_type="image.default">
+								<div class="elementor-element elementor-element-d443a99 elementor-widget elementor-widget-heading" data-id="d443a99" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-															<img width="843" height="396" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-3-1024x481.gif" class="attachment-large size-large" alt="" loading="lazy" srcset="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-3-1024x481.gif 1024w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-3-300x141.gif 300w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation22-3-768x361.gif 768w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
+			<h2 class="elementor-heading-title elementor-size-default">DMA Configuration</h2>		</div>
 				</div>
-				<div class="elementor-element elementor-element-cb0c9c9 elementor-widget elementor-widget-text-editor" data-id="cb0c9c9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-13af2ce elementor-widget elementor-widget-text-editor" data-id="13af2ce" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p dir="ltr"> </p><p dir="ltr">Drivers &gt;&gt; STM32G0xx_HAL_Driver &gt;&gt; stm32g0xx_hal_adc.h</p><p dir="ltr">ADC_HandleTypeDef</p><p dir="ltr"> </p><p dir="ltr">&gt;&gt; mainc.c </p><p dir="ltr">/* USER CODE END 3 */<br />static void MX_ADC_HandleTypeDef(void)<br />{<br />}</p><p dir="ltr">/* Private function prototypes &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;*/</p><p dir="ltr">static void MX_ADC_HandleTypeDef(void);</p><p dir="ltr"> </p>						</div>
+							<p>في ملف الـ ( main.c ) يتم تعريف متغير (prototype)  من نوع ( DMA_HandleTypeDef) و ليكن اسمه hdma_adc1 الذي سوف يتم استخدامه لاحقا لإعداد خصائص ( DMAConfiguration ) العامة . ثم ننشأ دالة DMA Initialization Function تحتوي على خصائصها و يجب ان تكون خارج دالة الـ ( main(void) ) و نقوم باستدعائها من داخل الـ ( main(void) ). داخل الدالة التي قمنا بإنشائها ( MX_DMA_Init ) نقوم  بتفعيل الساعة للـDMA . بعد ذلك نقوم باعمل إعداد لمقاطعة DMA Interrupt و تفعيلها من خلال استدعاء الدالتين <strong>( HAL_NVIC_SetPriority )</strong> و <strong>( HAL_NVIC_EnableIRQ )</strong> من الملف ( Drivers &gt;&gt; STM32G0xx_HALDriver &gt;&gt; Inc &gt;&gt; stm32g0xx_hal_cortex.h )</p>						</div>
 				</div>
-				<div class="elementor-element elementor-element-ce44ba6 elementor-widget elementor-widget-image" data-id="ce44ba6" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-c8515bf elementor-widget elementor-widget-code-highlight" data-id="c8515bf" data-element_type="widget" data-widget_type="code-highlight.default">
 				<div class="elementor-widget-container">
-															<img width="843" height="396" src="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-1-1024x481.gif" class="attachment-large size-large" alt="" loading="lazy" srcset="https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-1-1024x481.gif 1024w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-1-300x141.gif 300w, https://ahmed-mek.github.io/wp-content/uploads/2022/05/Animation33-1-768x361.gif 768w" sizes="(max-width: 843px) 100vw, 843px" />															</div>
+					<div class="prismjs-default copy-to-clipboard ">
+			<pre data-line="1,3,5,8" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>/* Private variables ---------------------------------------------------------*/
+DMA_HandleTypeDef hdma_adc1;
+/* Private function prototypes -----------------------------------------------*/
+static void MX_DMA_Init(void);
+/* Initialize all configured peripherals */
+MX_DMA_Init();
+
+--------------------- OUT main(void) --------------------------*/
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA1_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA1_Channel1_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
+
+}</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-fb5bf5d elementor-widget elementor-widget-text-editor" data-id="fb5bf5d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>في ملف stm32g0xx_hal_msp.c ( حيث تدل MSP = MCU Support Package ) يتم استدعاء hdma_adc1 من ملف main ثم في دالة الـ HAL_ADC_MspInit  يتم إعداد خصائص ( DMAConfiguration ) العامة.  يتم استخدام دالة ( HAL_DMA_Init(&amp;hdma_adc1) ) للتأكد من عدم وجود أخطاء. و اخيرا نقوم بربط الـDMA و الـADC من خلال دالة الربط ( __HAL_LINKDMA )</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-3f49422 elementor-widget elementor-widget-code-highlight" data-id="3f49422" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-default copy-to-clipboard ">
+			<pre data-line="1,3,5,20" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>Core >> Src >> stm32g0xx_hal_msp.c
+/* USER CODE END Includes */
+extern DMA_HandleTypeDef hdma_adc1;
+
+void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
+{
+    hdma_adc1.Instance = DMA1_Channel1;
+    hdma_adc1.Init.Request = DMA_REQUEST_ADC1;
+    hdma_adc1.Init.Direction = DMA_PERIPH_TO_MEMORY;
+    hdma_adc1.Init.PeriphInc = DMA_PINC_DISABLE;
+    hdma_adc1.Init.MemInc = DMA_MINC_ENABLE;
+    hdma_adc1.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
+    hdma_adc1.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
+    hdma_adc1.Init.Mode = DMA_CIRCULAR;
+    hdma_adc1.Init.Priority = DMA_PRIORITY_LOW;
+    if (HAL_DMA_Init(&hdma_adc1) != HAL_OK)
+    {
+      Error_Handler();
+    }
+    __HAL_LINKDMA(hadc,DMA_Handle,hdma_adc1);
+}</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-03a2e4f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="03a2e4f" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-15cf364" data-id="15cf364" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fdb2e36 elementor-widget elementor-widget-heading" data-id="fdb2e36" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">إعداد Peripheral Interrupt Handlers</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b2f7354 elementor-widget elementor-widget-text-editor" data-id="b2f7354" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>نذهب الى جدول الـ vector table الموجود في الملف التالي <strong>&#8221; Core &gt;&gt; Startup &gt;&gt; startup_stm32g071rbtx.s &#8221; </strong> ما يهمنا في تطبيقنا الحالي هو الـ vector المتجهين  ( ADC1_COMP_IRQHandler + DMA1_Channel1_IRQHandler ) بعد ذلك في ملف ( Interrupt Service Routines ) ( stm32g0xx_it.c ) يجب عمل دالة  Interrupt Handler للـADC و للـDMA و في داخلهما يتم استدعاء دالة interrupt request تشير الى HandleType الذي قمنا باستدعائه سابقا  , بعد ذلك نقوم تضمين دالتي DMA1_Channel1_IRQHandler و ADC1_COMP_IRQHandler في الملف ( stm32g0xx_it.h ) في الجزء ( Exported  functions prototypes )</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-040050d elementor-widget elementor-widget-text-editor" data-id="040050d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-115eba9 elementor-widget elementor-widget-code-highlight" data-id="115eba9" data-element_type="widget" data-widget_type="code-highlight.default">
+				<div class="elementor-widget-container">
+					<div class="prismjs-default copy-to-clipboard ">
+			<pre data-line="1,6" class="highlight-height language-c line-numbers">
+				<code readonly="true" class="language-c">
+					<xmp>Core >> Inc >> stm32g0xx_it.h
+/* Exported  functions prototypes ---------------------------------------------*/
+void DMA1_Channel1_IRQHandler(void);
+void ADC1_COMP_IRQHandler(void);
+
+Core >> Src >> stm32g0xx_it.c
+/* External variables --------------------------------------------------------*/
+extern DMA_HandleTypeDef hdma_adc1;
+extern ADC_HandleTypeDef hadc1;
+
+void DMA1_Channel1_IRQHandler(void)
+{
+    HAL_DMA_IRQHandler(&hdma_adc1);
+}
+void ADC1_COMP_IRQHandler(void)
+{
+    HAL_ADC_IRQHandler(&hadc1);
+}</xmp>
+				</code>
+			</pre>
+		</div>
+				</div>
 				</div>
 					</div>
 		</div>
@@ -868,8 +1057,16 @@ Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-bidi'><o:p>&n
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-f726a1c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f726a1c" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0a43894" data-id="0a43894" data-element_type="column">
-			<div class="elementor-widget-wrap">
-									</div>
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2bb2265 elementor-widget elementor-widget-heading" data-id="2bb2265" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">GPIO ADC Configuration</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0867053 elementor-widget elementor-widget-text-editor" data-id="0867053" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>من اجل اعداد خصائص الـ ADC GPIO يجب استدعاء الدالتين (HAL_ADC_MspInit)  و (HAL_ADC_MspDeInit) عن طريق قصهما [ هما دالتين من نوع weak فيمكن حذفهما من ملف المكتبة دون حدوث مشاكل ] من ملف المكتبة (stm32g0xx_hal_adc.c) و وضعهما في ملف ( Core &gt;&gt; Src &gt;&gt; stm32g0xx_hal_msp.c ) . اولا يجب اعداد خصائص الساعة لـADC حيث نقوم بتعريف متغير (prototype)  من نوع ( RCC_PeriphCLKInitTypeDef ) و ليكن اسمه PeriphClkInit. ثم نقوم بتفعيل الساعة (clock) للـADC و للـ GPIO Port A الذي تم التوصيل عليه. ثانيا يتم اعداد خصائص GPIO ADC حيث نقوم بتعريف متغير (prototype)  من نوع ( GPIO_InitTypeDef ) و ليكن اسمه GPIO_InitStruct. </p><p dir="ltr"> </p><div id="gtx-trans" style="position: absolute; left: 1302px; top: 62px;"><div class="gtx-trans-icon"> </div></div><div id="simple-translate"><div><div class="simple-translate-button isShow" style="background-image: url('chrome-extension://cllnohpbfenopiakdcjmjcbaeapmkcdl/icons/512.png'); height: 22px; width: 22px; top: 103px; left: 1325px;"> </div><div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: #ffffff; --darkreader-inline-bgcolor: #1b1d1d;" data-darkreader-inline-bgcolor=""><div class="simple-translate-result-wrapper" style="overflow: hidden;"><div class="simple-translate-move" draggable="true"> </div><div class="simple-translate-result-contents"><p class="simple-translate-result" dir="auto" style="color: #000000; --darkreader-inline-color: #d0cdc8;" data-darkreader-inline-color=""> </p><p class="simple-translate-candidate" dir="auto" style="color: #737373; --darkreader-inline-color: #90897d;" data-darkreader-inline-color=""> </p></div></div></div></div></div>						</div>
+				</div>
+					</div>
 		</div>
 							</div>
 		</section>
