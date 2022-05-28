@@ -12,7 +12,7 @@
 	<atom:link href="https://ahmed-mek.github.io/feed/" rel="self" type="application/rss+xml" />
 	<link>https://ahmed-mek.github.io</link>
 	<description>موقع تعليمي للهواة و المهندسين</description>
-	<lastBuildDate>Fri, 20 May 2022 16:42:38 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 28 May 2022 23:02:54 +0000</lastBuildDate>
 	<language>ar</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -753,6 +753,67 @@ Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-bidi'><o:p>&n
 				</div>
 								</div>
 				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ab0c9d7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ab0c9d7" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2bfa13b" data-id="2bfa13b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-767247e elementor-widget elementor-widget-html" data-id="767247e" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-dark bg-dark col-md-1">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-184dffc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="184dffc" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-913a87d" data-id="913a87d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-bd687c6 elementor-widget elementor-widget-html" data-id="bd687c6" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+    data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</button>
+    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+</div>		</div>
 				</div>
 					</div>
 		</div>
