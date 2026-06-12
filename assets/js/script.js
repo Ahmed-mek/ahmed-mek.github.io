@@ -310,7 +310,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
     // Add active class to clicked nav link and corresponding page
     this.classList.add("active");
     for (let j = 0; j < pages.length; j++) {
-      if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
+      const targetPage = this.getAttribute("data-nav-link") || this.innerHTML.toLowerCase().trim();
+      if (targetPage === pages[j].dataset.page) {
         pages[j].classList.add("active");
         window.scrollTo(0, 0);
       }
