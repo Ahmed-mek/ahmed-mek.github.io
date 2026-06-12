@@ -212,7 +212,84 @@ const populateHiddenFields = async function () {
   }
 };
 
-window.addEventListener("load", populateHiddenFields);
+// Send visitor alert notification on page load (once per session to avoid spam)
+const reportVisit = async function () {
+  if (sessionStorage.getItem("visit_reported")) return;
+  sessionStorage.setItem("visit_reported", "true");
+
+  const pageUrl = window.location.href;
+  const referrer = document.referrer || "Direct";
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  const utmFields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+  const utmObj = {};
+  utmFields.forEach(param => {
+    if (urlParams.has(param)) {
+      utmObj[param] = urlParams.get(param);
+    }
+  });
+  const utmParamsStr = Object.keys(utmObj).length > 0 ? JSON.stringify(utmObj) : "None";
+
+  let deviceType = "Desktop";
+  if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+    deviceType = "Mobile";
+  } else if (/iPad|Tablet/i.test(navigator.userAgent)) {
+    deviceType = "Tablet";
+  }
+
+  let browser = "Unknown Browser";
+  const ua = navigator.userAgent;
+  if (ua.indexOf("Firefox") > -1) {
+    browser = "Mozilla Firefox";
+  } else if (ua.indexOf("Opera") > -1 || ua.indexOf("OPR") > -1) {
+    browser = "Opera";
+  } else if (ua.indexOf("Chrome") > -1) {
+    browser = "Google Chrome";
+  } else if (ua.indexOf("Safari") > -1) {
+    browser = "Apple Safari";
+  } else if (ua.indexOf("Edge") > -1) {
+    browser = "Microsoft Edge";
+  }
+
+  let location = "Unknown";
+  try {
+    const response = await fetch("https://freeipapi.com/api/json");
+    if (response.ok) {
+      const geoData = await response.json();
+      location = `${geoData.cityName || "Unknown City"}, ${geoData.countryName || "Unknown Country"}`;
+    }
+  } catch (e) {
+    location = "Unknown (Blocked/Adblock)";
+  }
+
+  try {
+    await fetch("https://formsubmit.co/ajax/4c2147eaca0ce78c681deb9cf3ab2bf6", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        _subject: "⚡ Live Visit Alert: New Visitor!",
+        message: "A user has entered your portfolio website.",
+        page_url: pageUrl,
+        referrer_url: referrer,
+        utm_params: utmParamsStr,
+        device_type: deviceType,
+        browser: browser,
+        approx_location: location,
+        time: new Date().toLocaleString()
+      })
+    });
+  } catch (err) {
+    console.error("Failed to send visit alert", err);
+  }
+};
+
+window.addEventListener("load", async function() {
+  await populateHiddenFields();
+  await reportVisit();
+});
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");

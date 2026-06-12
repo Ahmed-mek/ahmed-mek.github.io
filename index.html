@@ -1028,7 +1028,7 @@
           <form action="https://formsubmit.co/4c2147eaca0ce78c681deb9cf3ab2bf6" method="POST" class="form" data-form>
 
             <!-- Hidden fields for automatic data collection -->
-            <input type="hidden" name="_subject" value="New Portfolio Lead / Project Request">
+            <input type="hidden" name="_subject" value="New Portfolio Message">
             <input type="hidden" name="page_url" id="hidden_page_url">
             <input type="hidden" name="referrer_url" id="hidden_referrer_url">
             <input type="hidden" name="utm_params" id="hidden_utm_params">
@@ -1038,48 +1038,16 @@
             <input type="hidden" name="approx_location" id="hidden_approx_location">
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full Name *" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email Address *" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
-            <div class="input-wrapper">
-              <input type="tel" name="phone" class="form-input" placeholder="Phone / WhatsApp *" required data-form-input>
-
-              <input type="text" name="company" class="form-input" placeholder="Company Name (Optional)" data-form-input>
-            </div>
-
-            <div class="input-wrapper">
-              <select name="service" class="form-input" required data-form-input style="background: var(--eerie-black-1); color: var(--white-2); cursor: pointer; border: 1px solid var(--jet); border-radius: 14px;">
-                <option value="" disabled selected>Service Needed / Project Type *</option>
-                <option value="embedded_systems">Embedded Systems / Firmware</option>
-                <option value="power_electronics">Power Electronics &amp; WPT</option>
-                <option value="pcb_design">PCB Design (Altium/KiCad)</option>
-                <option value="motor_control">Motor Control &amp; FOC</option>
-                <option value="other">Other / Custom R&amp;D Project</option>
-              </select>
-
-              <input type="text" name="budget" class="form-input" placeholder="Estimated Budget (Optional)" data-form-input>
-            </div>
-
-            <div class="input-wrapper" style="grid-template-columns: 1fr;">
-              <select name="preferred_contact" class="form-input" required data-form-input style="background: var(--eerie-black-1); color: var(--white-2); cursor: pointer; border: 1px solid var(--jet); border-radius: 14px;">
-                <option value="" disabled selected>Preferred Contact Method *</option>
-                <option value="email">Email</option>
-                <option value="whatsapp">WhatsApp / Phone</option>
-              </select>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Project Details &amp; Message *" required data-form-input></textarea>
-
-            <div class="consent-wrapper" style="display: flex; align-items: center; gap: 10px; margin-bottom: 25px; padding: 0 5px;">
-              <input type="checkbox" name="consent" id="consent" required class="form-checkbox" data-form-input style="width: 18px; height: 18px; accent-color: var(--orange-yellow-crayola); cursor: pointer;">
-              <label for="consent" class="consent-label" style="color: var(--light-gray); font-size: var(--fs-6); cursor: pointer; user-select: none;">I agree to share my contact details for follow-up. *</label>
-            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Request</span>
+              <span>Send Message</span>
             </button>
 
           </form>
@@ -1094,42 +1062,45 @@
       <article class="privacy" data-page="privacy" style="display: none;">
 
         <header>
-          <h2 class="h2 article-title">Privacy Policy</h2>
+          <h2 class="h2 article-title">Privacy Policy / سياسة الخصوصية</h2>
         </header>
 
         <section class="privacy-text" style="color: var(--light-gray); font-size: var(--fs-6); line-height: 1.6; margin-bottom: 25px;">
-          <p style="margin-bottom: 15px;">
-            Your privacy is important to me. This Privacy Policy explains how this website collects, uses, and safeguards information when you visit.
+          <p style="margin-bottom: 15px; font-weight: var(--fw-600); color: var(--orange-yellow-crayola);">
+            عند دخولك للموقع، يرجى العلم بأنه يتم جمع وتحليل البيانات التالية لغرض تحسين تجربة المستخدم ومتابعة إحصائيات الزيارات:
           </p>
 
-          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">1. Analytics &amp; Tracking</h3>
+          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">1. تتبع الأحداث المخصصة (GA4 Events):</h3>
           <p style="margin-bottom: 15px;">
-            This website uses <strong>Google Analytics 4 (GA4)</strong> and <strong>Microsoft Clarity</strong> to analyze traffic and understand visitor behavior. These tools collect non-personal data, such as:
+            يتم ربط التفاعلات والأزرار بالأحداث التالية لـ Google Analytics:
+          </p>
+          <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px; direction: ltr; text-align: left;">
+            <li><strong>lead_form_submit:</strong> يتم إرساله عند قيامك بإرسال نموذج التواصل (مُحملاً بنوع الرسالة).</li>
+            <li><strong>click_whatsapp:</strong> يتم إرساله عند الضغط على زر الواتساب للتواصل المباشر.</li>
+            <li><strong>click_email:</strong> يتم إرساله عند الضغط على روابط البريد الإلكتروني.</li>
+            <li><strong>download_cv:</strong> يتم إرساله عند تحميل السيرة الذاتية (CV).</li>
+            <li><strong>view_project:</strong> يتم إرساله عند استعراض تفاصيل أي مشروع (مُحملاً باسم المشروع والملف الخاص به).</li>
+          </ul>
+
+          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">2. جمع البيانات الإضافية تلقائياً (Lead Metadata):</h3>
+          <p style="margin-bottom: 15px;">
+            يقوم الموقع تلقائياً وبشكل صامت عند دخولك أو عند إرسال النموذج بتجميع ودمج البيانات التالية:
           </p>
           <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px;">
-            <li>Device type (Mobile, Desktop, Tablet), browser, and operating system.</li>
-            <li>Approximate geographic location (country/city level).</li>
-            <li>Time of visit, pages viewed, and duration of stay.</li>
-            <li>Interaction events (e.g., clicking WhatsApp/email links, downloading the CV, viewing projects, submitting contact forms).</li>
+            <li>رابط الصفحة الحالية (Page URL)</li>
+            <li>الصفحة المُحيلة (Referrer URL مثل LinkedIn، أو Direct)</li>
+            <li>معاملات التتبع كاملة (UTM parameters مثل utm_source إن وجدت)</li>
+            <li>تاريخ ووقت الإرسال/الدخول بدقة (Date &amp; Time)</li>
+            <li>نوع جهاز الزائر (Desktop / Mobile / Tablet)</li>
+            <li>نوع المتصفح ونظام التشغيل (Browser)</li>
+            <li>الموقع الجغرافي التقريبي (المدينة والدولة) عبر اتصال سريع وآمن مع Free Geolocation API متوافق مع قوانين الخصوصية.</li>
           </ul>
-          <p style="margin-bottom: 15px;">
-            This information is used solely to improve the user experience and analyze portfolio performance. Microsoft Clarity also records anonymous user sessions (such as click heatmaps and scroll depth) to help optimize layout and navigation.
-          </p>
 
-          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">2. Contact / Request Form Data</h3>
+          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">3. أين يتم حفظ ومعالجة البيانات؟</h3>
           <p style="margin-bottom: 15px;">
-            If you choose to contact me via the form on this website, the information you enter (Name, Email, Phone/WhatsApp, Company, Service, Message, and Budget) is collected.
-          </p>
-          <p style="margin-bottom: 15px;">
-            <strong>No data is collected automatically without your consent.</strong> Your contact details are only submitted and processed when you manually check the consent box and click "Send Request".
-          </p>
-          <p style="margin-bottom: 15px;">
-            The form submission is processed securely via <strong>FormSubmit</strong> and delivered directly to my email (<a href="mailto:ahmedmikatronik@gmail.com" style="color: var(--orange-yellow-crayola);">ahmedmikatronik@gmail.com</a>) to handle your request.
-          </p>
-
-          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">3. Cookies</h3>
-          <p style="margin-bottom: 15px;">
-            Analytics services may place small files called cookies on your device to distinguish unique visitors. You can choose to disable cookies in your browser settings at any time.
+            عند ملء وإرسال نموذج التواصل، ستصل كامل البيانات منظمة ومقروءة مباشرة إلى البريد الإلكتروني: 
+            <a href="mailto:ahmedmikatronik@gmail.com" style="color: var(--orange-yellow-crayola);">ahmedmikatronik@gmail.com</a> 
+            وستُحفظ بأمان في لوحة تحكم <strong>FormSubmit</strong> الخاصة بي.
           </p>
 
           <p style="margin-top: 30px; font-size: var(--fs-7); color: var(--light-gray-70);">
