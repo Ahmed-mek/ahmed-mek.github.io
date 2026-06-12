@@ -1,0 +1,219 @@
+{
+  "_meta": {
+    "language": "Español",
+    "code": "es",
+    "dir": "ltr",
+    "font": "Poppins"
+  },
+
+  "sidebar": {
+    "title": "R&D Power & Embedded Electronics Engineer",
+    "show_contacts": "Show Contacts",
+    "hide_contacts": "Hide Contacts",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "whatsapp_chat": "WhatsApp Chat",
+    "birthday_label": "Birthday",
+    "birthday_value": "March 26, 2001",
+    "location_label": "Location",
+    "location_value": "Selçuklu/Konya, Türkiye"
+  },
+
+  "nav": {
+    "about": "About",
+    "resume": "Resume",
+    "portfolio": "Portfolio",
+    "cv": "CV",
+    "contact": "Contact"
+  },
+
+  "about": {
+    "title": "About me",
+    "bio_p1": "R&D engineer with 4 years delivering embedded power systems, motor-driver architectures, and advanced PCBs for UAV and robotics applications. Proven track record across BLDC/ESC development, battery and BMS design, 200W wireless power transfer, STM32 firmware on FreeRTOS, and high-density KiCad PCB layout — from concept through hardware validation, with the ability to interpret academic and technical literature and translate research concepts into functional engineering prototypes.",
+    "bio_p2": "Hands-on experience in government-funded R&D (TUBITAK), academic research, electric-vehicle power systems, and industrial embedded platforms. Strong fit for Revotronics Labs combining motor-driver design, power-conversion expertise, real-time firmware development, and rigorous prototype-to-system delivery in demanding R&D environments.",
+
+    "service_title": "What I'm doing",
+
+    "service_1_title": "Embedded Firmware & RTOS",
+    "service_1_text": "Building deterministic real-time firmware in C/C++ on STM32H7/F7 with FreeRTOS, FreeRTOS-MPU, and FreeRTOS+TCP — covering DMA, SPI, I2C, CAN, Ethernet, Modbus, and SMBus.",
+
+    "service_2_title": "Advanced PCB Design",
+    "service_2_text": "High-density schematic & layout with KiCad and Altium Designer — integrating motor drivers, power management, galvanic isolation, and EMC considerations into production-ready boards.",
+
+    "service_3_title": "Power Electronics & WPT",
+    "service_3_text": "Designing SMPS, BMS, gate drivers, and resonance-based wireless power transfer systems (200W WPT). Expertise in battery charging, BLDC motor drivers, and EV power conversion.",
+
+    "service_4_title": "Motor Control & Sensor Fusion",
+    "service_4_text": "Implementing FOC, Space Vector PWM, Six-Step Commutation, and PID loops. Kalman Filtering and Multi-IMU sensor fusion for GPS-denied UAV & robotics localization.",
+
+    "certifications_title": "Certifications & Achievements",
+
+    "cert_1_title": "Teknofest Finalist — EV Race 2025",
+    "cert_1_text": "International Efficiency Challenge Electric Vehicle finalist at Teknofest 2025. Designed the 4.5kW / 72V BLDC motor driver and contributed to BMS & SMPS development for the EV competition platform.",
+
+    "cert_2_title": "Teknofest Finalist — EV Race 2024",
+    "cert_2_text": "International Efficiency Challenge Electric Vehicle finalist at Teknofest 2024. Contributed motor driver design, 3kW power supply (220V→72V), and local charging unit with SMPS topologies.",
+
+    "cert_3_title": "Graduation with Honours (Onur Belgesi)",
+    "cert_3_text": "Graduated with Honours (Onur Belgesi) from Necmettin Erbakan University with a GPA of 3.06/4.00 — Mechatronics Engineering, 2024.",
+
+    "cert_4_title": "Mastering RTOS: FreeRTOS & STM32 — Udemy",
+    "cert_4_text": "Completed \"Mastering RTOS: Hands-on FreeRTOS and STM32Fx with Debugging\" on Udemy (2023). Applied directly to STM32H7 FreeRTOS-MPU multitasking and real-time safety firmware.",
+
+    "cert_5_title": "Embedded C Programming — Udemy",
+    "cert_5_text": "Completed \"Microcontroller Embedded C Programming: Absolute Beginners\" on Udemy (2023), establishing rigorous bare-metal C fundamentals for STM32 peripheral and register-level programming.",
+
+    "cert_6_title": "1st Place — Electronics Competition",
+    "cert_6_text": "Achieved first place in a middle-school electronics competition by accurately assembling a random schematic circuit in the shortest time — the earliest recognition of hardware intuition.",
+
+    "tech_stack_title": "Tools & Tech Stack"
+  },
+
+  "resume": {
+    "title": "Resume",
+    "education_title": "Education",
+    "experience_title": "Experience",
+    "skills_title": "My skills",
+
+    "edu_1_title": "M.S. in Mechatronics Engineering",
+    "edu_1_year": "2024 - Present",
+    "edu_1_place": "Necmettin Erbakan University",
+
+    "edu_2_title": "B.S. in Mechatronics Engineering",
+    "edu_2_year": "2020 - 2024",
+    "edu_2_place": "Necmettin Erbakan University",
+
+    "edu_3_title": "Turkish Language Course (C1)",
+    "edu_3_year": "2019 - 2020",
+    "edu_3_place": "TÖMER",
+
+    "edu_4_title": "High School, Natural Sciences",
+    "edu_4_year": "2016 - 2019",
+    "edu_4_place": "AL KINDY, Kuwait",
+
+    "exp_1_title": "UAV Wireless Charging Station",
+    "exp_1_year": "2026 — Present",
+    "exp_1_company": "Zenopix Technology, Konya, Turkey",
+    "exp_1_text": "Architected UAV ground Tx & onboard Rx WPT power electronics for autonomous drone charging. Developed custom BMS with safe charging profiles, real-time SMBus telemetry, and embedded fault handling.",
+
+    "exp_2_title": "Industrial BLDC Motor Driver",
+    "exp_2_year": "2026 — Present",
+    "exp_2_company": "Zenopix Technology, Konya, Turkey",
+    "exp_2_text": "Defined architecture for a high-reliability BLDC motor driver: FOC & Six-Step control, high-current PCB layout, gate driver selection, protection logic, thermal robustness, and firmware interface design.",
+
+    "exp_3_title": "Hologram Fan System — TUBITAK R&D",
+    "exp_3_year": "2024 — 2026",
+    "exp_3_company": "Zenopix Technology, Konya, Turkey",
+    "exp_3_text": "Engineered 0.5m high-density LED PCB for a POV display. Designed high-current KiCad PCBs with galvanic isolation. Implemented FOC, SVPWM, Six-Step & PID on STM32/FreeRTOS. Achieved 200W WPT using Fuzzy Logic Control.",
+
+    "exp_4_title": "Abrasion Tester — End-to-End Control System",
+    "exp_4_year": "2021 — 2023",
+    "exp_4_company": "Zenopix Technology, Konya, Turkey",
+    "exp_4_text": "Built full signal-processing pipeline (SPI/I2C), custom DC motor driver with PID, and a C# GUI for real-time machine control and data logging via UART.",
+
+    "exp_5_title": "Embedded Interface & UI Simulation",
+    "exp_5_year": "2021 — 2022",
+    "exp_5_company": "Zenopix Technology, Konya, Turkey",
+    "exp_5_text": "Developed JavaScript/CSS lighting simulation for product visualization. Launched four localized multilingual corporate websites with SEO optimization."
+  },
+
+  "portfolio": {
+    "title": "Portfolio",
+    "filter_all": "All",
+    "filter_hardware": "Hardware & PCB",
+    "filter_embedded": "Embedded Control",
+    "filter_software": "PC Software",
+    "select_category": "Select category",
+
+    "proj_1_title": "UAV Wireless Charging Station",
+    "proj_1_category": "Hardware & PCB",
+
+    "proj_2_title": "Industrial BLDC Motor Driver",
+    "proj_2_category": "Embedded Control",
+
+    "proj_3_title": "Hologram Fan — TUBITAK R&D",
+    "proj_3_category": "Embedded Control",
+
+    "proj_4_title": "Multi-IMU Sensor Fusion (M.S. Thesis)",
+    "proj_4_category": "Embedded Control",
+
+    "proj_5_title": "Flight Controller PCB — ArduPilot/PX4",
+    "proj_5_category": "Hardware & PCB",
+
+    "proj_6_title": "Electric Vehicle Motor Driver (4.5kW/72V)",
+    "proj_6_category": "Hardware & PCB",
+
+    "proj_7_title": "Laser Vibrometer PCB",
+    "proj_7_category": "Hardware & PCB",
+
+    "proj_8_title": "Temperature Control — Medical Furnace",
+    "proj_8_category": "Hardware & PCB",
+
+    "proj_9_title": "Abrasion Tester Control System",
+    "proj_9_category": "Embedded Control",
+
+    "proj_10_title": "Hyperloop Data Transmission (STM32F7)",
+    "proj_10_category": "Embedded Control",
+
+    "proj_11_title": "POSYAK Assistive Wearable Device",
+    "proj_11_category": "Embedded Control",
+
+    "proj_12_title": "Web & Lighting Simulation",
+    "proj_12_category": "PC Software"
+  },
+
+  "project_details": {
+    "title": "Project Details",
+    "back_btn": "Back to Portfolio",
+    "loading": "Loading project details...",
+    "error": "Error loading project details. Please try again later."
+  },
+
+  "cv_page": {
+    "title": "Curriculum Vitae",
+    "download_btn": "Download CV",
+    "pdf_fallback": "This browser does not support inline PDFs. Please use the download button above to view the CV."
+  },
+
+  "contact": {
+    "title": "Contact",
+    "form_title": "Contact Form",
+    "placeholder_name": "Full name",
+    "placeholder_email": "Email address",
+    "placeholder_message": "Your Message",
+    "send_btn": "Send Message"
+  },
+
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This Privacy Policy outlines how your personal information and usage data are collected, processed, and safeguarded when you access and interact with this website. I am committed to protecting your privacy and ensuring transparency regarding any data collected.",
+    "section_1_title": "1. Information Gathered Automatically",
+    "section_1_p1": "When you visit and navigate through this website, certain information about your session is automatically recorded. This data is non-personally identifiable and is used exclusively to evaluate site performance, understand visitor dynamics, and improve general user experience.",
+    "section_1_p2": "This automatically collected information includes:",
+    "section_1_li1": "Device and Technical Information: Details regarding your device type (desktop, mobile, or tablet), screen resolution, operating system, web browser type, and language settings.",
+    "section_1_li2": "Access and Referrer Logs: The origin of your visit (such as search engines, social media platforms, direct navigation, or campaigns), including specific UTM tracking parameters if applicable.",
+    "section_1_li3": "Interaction and Usage Patterns: The pages you view, navigation routes, timestamps of your visit, session durations, and specific interactions (such as link clicks, downloads of resources, and form submissions).",
+    "section_1_li4": "General Location Data: Your approximate geographic location (at a country or city level) estimated via network information.",
+    "section_2_title": "2. Information You Voluntarily Provide",
+    "section_2_p1": "If you choose to communicate with me via the contact form on this website, you voluntarily provide personal details such as your name, email address, and the content of your message.",
+    "section_2_p2": "To ensure the security, delivery, and appropriate routing of your inquiries, your submission is bundled with technical diagnostic metadata (such as device type, browser, approximate location, and timestamp of the transaction). This data is processed securely through specialized third-party services and forwarded directly to my primary contact address.",
+    "section_3_title": "3. Cookies and Tracking Technologies",
+    "section_3_p1": "This website utilizes cookies and similar tracking technologies to analyze trends and monitor user interactions. These technologies help recognize repeat visitors and optimize page load configurations. You can manage, block, or delete cookies through your individual browser settings; however, disabling cookies may impact your overall experience on the site.",
+    "section_4_title": "4. Third-Party Integrations",
+    "section_4_p1": "To support professional functionality, this site integrates industry-standard third-party tools (including Google Analytics, Microsoft Clarity, and FormSubmit). These services compile aggregated data and anonymous recordings of visitor behavior, helping to identify bugs and enhance site navigation. All third-party providers handle your data in strict compliance with their respective privacy policies and security regulations.",
+    "section_5_title": "5. Data Protection and Retention",
+    "section_5_p1": "I prioritize data safety and implement appropriate technical measures to prevent unauthorized access, alteration, or disclosure of collected logs and messages. Your information is retained only as long as necessary to address your inquiries or perform analytics. I do not sell, trade, or distribute your information to outside parties.",
+    "section_6_title": "6. Consent and Policy Updates",
+    "section_6_p1": "By using this website, you hereby consent to the terms of this Privacy Policy. I reserve the right to modify or update this document at any time to reflect updates in website features or legal requirements.",
+    "last_updated": "Last updated: June 2026"
+  },
+
+  "footer": {
+    "copyright": "© 2026 Ahmed Ahmed. All rights reserved.",
+    "privacy_link": "Privacy Policy"
+  },
+
+  "toast": {
+    "success_message": "Message sent successfully! Thank you."
+  }
+}

@@ -45,6 +45,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -70,11 +71,11 @@
         <div class="info-content">
           <h1 class="name" title="Ahmed Ahmed">Ahmed Ahmed</h1>
 
-          <p class="title">R&D Power & Embedded Electronics Engineer</p>
+          <p class="title" data-i18n="sidebar.title">R&D Power & Embedded Electronics Engineer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span data-i18n="sidebar.show_contacts">Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -94,7 +95,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <p class="contact-title" data-i18n="sidebar.email_label">Email</p>
 
               <a href="mailto:ahmedmikatronik@gmail.com" class="contact-link">ahmedmikatronik@gmail.com</a>
             </div>
@@ -108,13 +109,13 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
+              <p class="contact-title" data-i18n="sidebar.phone_label">Phone</p>
 
               <a href="tel:+905523135538" class="contact-link">+90 552 313 55 38</a>
 
               <a href="https://wa.me/905523135538" target="_blank" class="contact-link" id="whatsapp-link"
                 style="color: var(--orange-yellow-crayola); font-size: var(--fs-8); display: flex; align-items: center; gap: 4px; margin-top: 3px;">
-                <ion-icon name="logo-whatsapp"></ion-icon> WhatsApp Chat
+                <ion-icon name="logo-whatsapp"></ion-icon> <span data-i18n="sidebar.whatsapp_chat">WhatsApp Chat</span>
               </a>
             </div>
 
@@ -127,9 +128,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="contact-title" data-i18n="sidebar.birthday_label">Birthday</p>
 
-              <time datetime="2001-03-26">March 26, 2001</time>
+              <time datetime="2001-03-26" data-i18n="sidebar.birthday_value">March 26, 2001</time>
             </div>
 
           </li>
@@ -141,9 +142,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p class="contact-title" data-i18n="sidebar.location_label">Location</p>
 
-              <address>Selçuklu/Konya, Türkiye</address>
+              <address data-i18n="sidebar.location_value">Selçuklu/Konya, Türkiye</address>
             </div>
 
           </li>
@@ -191,23 +192,38 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link="about">About</button>
+            <button class="navbar-link  active" data-nav-link="about" data-i18n="nav.about">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="resume">Resume</button>
+            <button class="navbar-link" data-nav-link="resume" data-i18n="nav.resume">Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="portfolio">Portfolio</button>
+            <button class="navbar-link" data-nav-link="portfolio" data-i18n="nav.portfolio">Portfolio</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="cv">CV</button>
+            <button class="navbar-link" data-nav-link="cv" data-i18n="nav.cv">CV</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="contact">Contact</button>
+            <button class="navbar-link" data-nav-link="contact" data-i18n="nav.contact">Contact</button>
+          </li>
+
+          <!-- Language Switcher -->
+          <li class="navbar-item lang-switcher">
+            <button class="lang-toggle" id="lang-toggle">
+              <span id="lang-current-flag">🇬🇧</span>
+              <span id="lang-current-label">EN</span>
+              <ion-icon name="chevron-down" style="font-size: 12px;"></ion-icon>
+            </button>
+            <ul class="lang-dropdown" id="lang-dropdown">
+              <li class="lang-option active" data-lang="en">🇬🇧 English</li>
+              <li class="lang-option" data-lang="ar">🇸🇦 العربية</li>
+              <li class="lang-option" data-lang="tr">🇹🇷 Türkçe</li>
+              <li class="lang-option" data-lang="es">🇪🇸 Español</li>
+            </ul>
           </li>
 
         </ul>
@@ -225,11 +241,11 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title" data-i18n="about.title">About me</h2>
         </header>
 
         <section class="about-text">
-          <p>
+          <p data-i18n="about.bio_p1">
             R&amp;D engineer with 4 years delivering embedded power systems, motor-driver architectures, and
             advanced PCBs for UAV and robotics applications. Proven track record across BLDC/ESC
             development, battery and BMS design, 200W wireless power transfer, STM32 firmware on FreeRTOS,
@@ -238,7 +254,7 @@
             engineering prototypes.
           </p>
 
-          <p>
+          <p data-i18n="about.bio_p2">
             Hands-on experience in government-funded R&amp;D (TUBITAK), academic research,
             electric-vehicle power systems, and industrial embedded platforms. Strong fit for Revotronics
             Labs combining motor-driver design, power-conversion expertise, real-time firmware development,
@@ -253,7 +269,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What I'm doing</h3>
+          <h3 class="h3 service-title" data-i18n="about.service_title">What I'm doing</h3>
 
           <ul class="service-list">
 
@@ -262,8 +278,8 @@
                 <img src="./assets/images/icon-dev.svg" alt="Firmware icon" width="40">
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Embedded Firmware &amp; RTOS</h4>
-                <p class="service-item-text">
+                <h4 class="h4 service-item-title" data-i18n="about.service_1_title">Embedded Firmware &amp; RTOS</h4>
+                <p class="service-item-text" data-i18n="about.service_1_text">
                   Building deterministic real-time firmware in C/C++ on STM32H7/F7 with FreeRTOS, FreeRTOS-MPU, and
                   FreeRTOS+TCP — covering DMA, SPI, I2C, CAN, Ethernet, Modbus, and SMBus.
                 </p>
@@ -275,8 +291,8 @@
                 <img src="./assets/images/icon-design.svg" alt="PCB icon" width="40">
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Advanced PCB Design</h4>
-                <p class="service-item-text">
+                <h4 class="h4 service-item-title" data-i18n="about.service_2_title">Advanced PCB Design</h4>
+                <p class="service-item-text" data-i18n="about.service_2_text">
                   High-density schematic &amp; layout with KiCad and Altium Designer — integrating motor drivers,
                   power management, galvanic isolation, and EMC considerations into production-ready boards.
                 </p>
@@ -288,8 +304,8 @@
                 <img src="./assets/images/icon-app.svg?v=2.2" alt="Power icon" width="40">
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Power Electronics &amp; WPT</h4>
-                <p class="service-item-text">
+                <h4 class="h4 service-item-title" data-i18n="about.service_3_title">Power Electronics &amp; WPT</h4>
+                <p class="service-item-text" data-i18n="about.service_3_text">
                   Designing SMPS, BMS, gate drivers, and resonance-based wireless power transfer systems (200W WPT).
                   Expertise in battery charging, BLDC motor drivers, and EV power conversion.
                 </p>
@@ -301,8 +317,8 @@
                 <img src="./assets/images/icon-photo.svg?v=2.2" alt="Control icon" width="40">
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Motor Control &amp; Sensor Fusion</h4>
-                <p class="service-item-text">
+                <h4 class="h4 service-item-title" data-i18n="about.service_4_title">Motor Control &amp; Sensor Fusion</h4>
+                <p class="service-item-text" data-i18n="about.service_4_text">
                   Implementing FOC, Space Vector PWM, Six-Step Commutation, and PID loops. Kalman Filtering and
                   Multi-IMU sensor fusion for GPS-denied UAV &amp; robotics localization.
                 </p>
@@ -320,7 +336,7 @@
 
         <section class="testimonials">
 
-          <h3 class="h3 testimonials-title">Certifications & Achievements</h3>
+          <h3 class="h3 testimonials-title" data-i18n="about.certifications_title">Certifications & Achievements</h3>
 
           <ul class="testimonials-list has-scrollbar">
 
@@ -477,7 +493,7 @@
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Tools & Tech Stack</h3>
+          <h3 class="h3 clients-title" data-i18n="about.tech_stack_title">Tools & Tech Stack</h3>
 
           <ul class="clients-list has-scrollbar">
 
@@ -540,7 +556,7 @@
       <article class="resume" data-page="resume">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title" data-i18n="resume.title">Resume</h2>
         </header>
 
         <section class="timeline">
@@ -550,7 +566,7 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3" data-i18n="resume.education_title">Education</h3>
           </div>
 
           <ol class="timeline-list">
@@ -614,7 +630,7 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3" data-i18n="resume.experience_title">Experience</h3>
           </div>
 
           <ol class="timeline-list">
@@ -679,7 +695,7 @@
 
         <section class="skill">
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <h3 class="h3 skills-title" data-i18n="resume.skills_title">My skills</h3>
 
           <ul class="skills-list content-card">
 
@@ -770,7 +786,7 @@
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title" data-i18n="portfolio.title">Portfolio</h2>
         </header>
 
         <section class="projects">
@@ -1007,7 +1023,7 @@
           <button class="back-btn" data-project-details-back
             style="margin-bottom: 25px; display: flex; align-items: center; gap: 10px; color: var(--orange-yellow-crayola); font-size: var(--fs-6); background: var(--border-gradient-onyx); padding: 10px 20px; border-radius: 12px; box-shadow: var(--shadow-2); transition: var(--transition-1);">
             <ion-icon name="arrow-back-outline"></ion-icon>
-            <span>Back to Portfolio</span>
+            <span data-i18n="project_details.back_btn">Back to Portfolio</span>
           </button>
 
           <div class="markdown-container" data-markdown-container>
@@ -1025,13 +1041,13 @@
       <article class="cv" data-page="cv">
 
         <header>
-          <h2 class="h2 article-title">Curriculum Vitae</h2>
+          <h2 class="h2 article-title" data-i18n="cv_page.title">Curriculum Vitae</h2>
         </header>
 
         <div style="margin-bottom: 25px; display: flex; justify-content: flex-start;">
           <a href="./main.pdf" download="Ahmed_Ahmed_CV.pdf" class="download-cv-btn">
             <ion-icon name="download-outline" style="font-size: 18px;"></ion-icon>
-            <span>Download CV</span>
+            <span data-i18n="cv_page.download_btn">Download CV</span>
           </a>
         </div>
 
@@ -1055,7 +1071,7 @@
       <article class="contact" data-page="contact">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title" data-i18n="contact.title">Contact</h2>
         </header>
 
         <section class="mapbox" data-mapbox>
@@ -1067,7 +1083,7 @@
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title" data-i18n="contact.form_title">Contact Form</h3>
 
           <form action="https://formsubmit.co/4c2147eaca0ce78c681deb9cf3ab2bf6" method="POST" class="form" data-form>
 
@@ -1082,16 +1098,16 @@
             <input type="hidden" name="approx_location" id="hidden_approx_location">
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input data-i18n-placeholder="contact.placeholder_name">
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input data-i18n-placeholder="contact.placeholder_email">
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input data-i18n-placeholder="contact.placeholder_message"></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <span data-i18n="contact.send_btn">Send Message</span>
             </button>
 
           </form>
@@ -1106,7 +1122,7 @@
       <article class="privacy" data-page="privacy">
 
         <header>
-          <h2 class="h2 article-title">Privacy Policy</h2>
+          <h2 class="h2 article-title" data-i18n="privacy.title">Privacy Policy</h2>
         </header>
 
         <section class="privacy-text"
@@ -1198,8 +1214,8 @@
       <!-- Footer -->
       <footer
         style="margin-top: 40px; padding: 20px 0; text-align: center; border-top: 1px solid var(--jet); font-size: var(--fs-8); color: var(--light-gray-70);">
-        <p>© 2026 Ahmed Ahmed. All rights reserved. | <a href="#" id="privacy-link"
-            style="color: var(--orange-yellow-crayola); text-decoration: underline;">Privacy Policy</a></p>
+        <p><span data-i18n="footer.copyright">© 2026 Ahmed Ahmed. All rights reserved.</span> | <a href="#" id="privacy-link"
+            style="color: var(--orange-yellow-crayola); text-decoration: underline;" data-i18n="footer.privacy_link">Privacy Policy</a></p>
       </footer>
 
     </div>
@@ -1218,13 +1234,14 @@
   -->
   <div class="toast-notification" id="toast-notification">
     <ion-icon name="checkmark-circle-outline" class="toast-icon"></ion-icon>
-    <span class="toast-text">Message sent successfully! Thank you.</span>
+    <span class="toast-text" data-i18n="toast.success_message">Message sent successfully! Thank you.</span>
   </div>
 
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js?v=2.3"></script>
+  <script src="./assets/js/i18n.js?v=1.0"></script>
+  <script src="./assets/js/script.js?v=2.4"></script>
 
   <!--
     - ionicon link
