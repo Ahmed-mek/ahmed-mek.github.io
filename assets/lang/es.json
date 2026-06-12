@@ -7,213 +7,213 @@
   },
 
   "sidebar": {
-    "title": "R&D Power & Embedded Electronics Engineer",
-    "show_contacts": "Show Contacts",
-    "hide_contacts": "Hide Contacts",
-    "email_label": "Email",
-    "phone_label": "Phone",
-    "whatsapp_chat": "WhatsApp Chat",
-    "birthday_label": "Birthday",
-    "birthday_value": "March 26, 2001",
-    "location_label": "Location",
-    "location_value": "Selçuklu/Konya, Türkiye"
+    "title": "Ingeniero de I+D en Electrónica de Potencia y Sistemas Embebidos",
+    "show_contacts": "Mostrar Contacto",
+    "hide_contacts": "Ocultar Contacto",
+    "email_label": "Correo",
+    "phone_label": "Teléfono",
+    "whatsapp_chat": "Chat de WhatsApp",
+    "birthday_label": "Nacimiento",
+    "birthday_value": "26 de marzo de 2001",
+    "location_label": "Ubicación",
+    "location_value": "Selçuklu/Konya, Turquía"
   },
 
   "nav": {
-    "about": "About",
-    "resume": "Resume",
-    "portfolio": "Portfolio",
+    "about": "Acerca de",
+    "resume": "Currículum",
+    "portfolio": "Portafolio",
     "cv": "CV",
-    "contact": "Contact"
+    "contact": "Contacto"
   },
 
   "about": {
-    "title": "About me",
-    "bio_p1": "R&D engineer with 4 years delivering embedded power systems, motor-driver architectures, and advanced PCBs for UAV and robotics applications. Proven track record across BLDC/ESC development, battery and BMS design, 200W wireless power transfer, STM32 firmware on FreeRTOS, and high-density KiCad PCB layout — from concept through hardware validation, with the ability to interpret academic and technical literature and translate research concepts into functional engineering prototypes.",
-    "bio_p2": "Hands-on experience in government-funded R&D (TUBITAK), academic research, electric-vehicle power systems, and industrial embedded platforms. Strong fit for Revotronics Labs combining motor-driver design, power-conversion expertise, real-time firmware development, and rigorous prototype-to-system delivery in demanding R&D environments.",
+    "title": "Acerca de mí",
+    "bio_p1": "Ingeniero de I+D con 4 años de experiencia en sistemas de potencia embebidos, arquitecturas de controladores de motores y PCBs avanzados para aplicaciones de UAV y robótica. Trayectoria comprobada en desarrollo de BLDC/ESC, diseño de baterías y BMS, transferencia inalámbrica de energía de 200W, firmware STM32 sobre FreeRTOS y diseño de PCB de alta densidad con KiCad — desde el concepto hasta la validación del hardware, con capacidad para interpretar literatura académica y técnica y traducir conceptos de investigación en prototipos de ingeniería funcionales.",
+    "bio_p2": "Experiencia práctica en I+D financiada por el gobierno (TUBITAK), investigación académica, sistemas de potencia para vehículos eléctricos y plataformas embebidas industriales. Combinación sólida de diseño de controladores de motores, experiencia en conversión de energía, desarrollo de firmware en tiempo real y entrega rigurosa de prototipos a sistemas en entornos de I+D exigentes.",
 
-    "service_title": "What I'm doing",
+    "service_title": "Lo que hago",
 
-    "service_1_title": "Embedded Firmware & RTOS",
-    "service_1_text": "Building deterministic real-time firmware in C/C++ on STM32H7/F7 with FreeRTOS, FreeRTOS-MPU, and FreeRTOS+TCP — covering DMA, SPI, I2C, CAN, Ethernet, Modbus, and SMBus.",
+    "service_1_title": "Firmware Embebido y RTOS",
+    "service_1_text": "Desarrollo de firmware determinístico en tiempo real en C/C++ sobre STM32H7/F7 con FreeRTOS, FreeRTOS-MPU y FreeRTOS+TCP — cubriendo DMA, SPI, I2C, CAN, Ethernet, Modbus y SMBus.",
 
-    "service_2_title": "Advanced PCB Design",
-    "service_2_text": "High-density schematic & layout with KiCad and Altium Designer — integrating motor drivers, power management, galvanic isolation, and EMC considerations into production-ready boards.",
+    "service_2_title": "Diseño Avanzado de PCB",
+    "service_2_text": "Esquemático y layout de alta densidad con KiCad y Altium Designer — integrando controladores de motores, gestión de energía, aislamiento galvánico y consideraciones EMC en placas listas para producción.",
 
-    "service_3_title": "Power Electronics & WPT",
-    "service_3_text": "Designing SMPS, BMS, gate drivers, and resonance-based wireless power transfer systems (200W WPT). Expertise in battery charging, BLDC motor drivers, and EV power conversion.",
+    "service_3_title": "Electrónica de Potencia y WPT",
+    "service_3_text": "Diseño de SMPS, BMS, drivers de puerta y sistemas de transferencia inalámbrica de energía basados en resonancia (200W WPT). Experiencia en carga de baterías, controladores de motores BLDC y conversión de energía para EV.",
 
-    "service_4_title": "Motor Control & Sensor Fusion",
-    "service_4_text": "Implementing FOC, Space Vector PWM, Six-Step Commutation, and PID loops. Kalman Filtering and Multi-IMU sensor fusion for GPS-denied UAV & robotics localization.",
+    "service_4_title": "Control de Motores y Fusión de Sensores",
+    "service_4_text": "Implementación de FOC, PWM de Vector Espacial, Conmutación de Seis Pasos y lazos PID. Filtro de Kalman y fusión de sensores Multi-IMU para localización de UAV y robótica sin GPS.",
 
-    "certifications_title": "Certifications & Achievements",
+    "certifications_title": "Certificaciones y Logros",
 
-    "cert_1_title": "Teknofest Finalist — EV Race 2025",
-    "cert_1_text": "International Efficiency Challenge Electric Vehicle finalist at Teknofest 2025. Designed the 4.5kW / 72V BLDC motor driver and contributed to BMS & SMPS development for the EV competition platform.",
+    "cert_1_title": "Finalista Teknofest — Carrera EV 2025",
+    "cert_1_text": "Finalista en el Desafío Internacional de Eficiencia de Vehículos Eléctricos en Teknofest 2025. Diseño del controlador de motor BLDC de 4.5kW / 72V y contribución al desarrollo de BMS y SMPS para la plataforma de competición.",
 
-    "cert_2_title": "Teknofest Finalist — EV Race 2024",
-    "cert_2_text": "International Efficiency Challenge Electric Vehicle finalist at Teknofest 2024. Contributed motor driver design, 3kW power supply (220V→72V), and local charging unit with SMPS topologies.",
+    "cert_2_title": "Finalista Teknofest — Carrera EV 2024",
+    "cert_2_text": "Finalista en el Desafío Internacional de Eficiencia de Vehículos Eléctricos en Teknofest 2024. Contribución al diseño del controlador de motor, fuente de alimentación de 3kW (220V→72V) y unidad de carga local con topologías SMPS.",
 
-    "cert_3_title": "Graduation with Honours (Onur Belgesi)",
-    "cert_3_text": "Graduated with Honours (Onur Belgesi) from Necmettin Erbakan University with a GPA of 3.06/4.00 — Mechatronics Engineering, 2024.",
+    "cert_3_title": "Graduación con Honores (Onur Belgesi)",
+    "cert_3_text": "Graduado con Honores de la Universidad Necmettin Erbakan con un GPA de 3.06/4.00 — Ingeniería Mecatrónica, 2024.",
 
-    "cert_4_title": "Mastering RTOS: FreeRTOS & STM32 — Udemy",
-    "cert_4_text": "Completed \"Mastering RTOS: Hands-on FreeRTOS and STM32Fx with Debugging\" on Udemy (2023). Applied directly to STM32H7 FreeRTOS-MPU multitasking and real-time safety firmware.",
+    "cert_4_title": "Dominio de RTOS: FreeRTOS y STM32 — Udemy",
+    "cert_4_text": "Completó \"Dominio de RTOS: FreeRTOS práctico y STM32Fx con Depuración\" en Udemy (2023). Aplicado directamente a multitarea STM32H7 FreeRTOS-MPU y firmware de seguridad en tiempo real.",
 
-    "cert_5_title": "Embedded C Programming — Udemy",
-    "cert_5_text": "Completed \"Microcontroller Embedded C Programming: Absolute Beginners\" on Udemy (2023), establishing rigorous bare-metal C fundamentals for STM32 peripheral and register-level programming.",
+    "cert_5_title": "Programación C Embebida — Udemy",
+    "cert_5_text": "Completó \"Programación C Embebida para Microcontroladores: Principiantes Absolutos\" en Udemy (2023), estableciendo fundamentos rigurosos de C bare-metal para programación a nivel de periféricos y registros de STM32.",
 
-    "cert_6_title": "1st Place — Electronics Competition",
-    "cert_6_text": "Achieved first place in a middle-school electronics competition by accurately assembling a random schematic circuit in the shortest time — the earliest recognition of hardware intuition.",
+    "cert_6_title": "1er Lugar — Competencia de Electrónica",
+    "cert_6_text": "Obtuvo el primer lugar en una competencia escolar de electrónica ensamblando con precisión un circuito esquemático aleatorio en el menor tiempo — el reconocimiento más temprano de la intuición en hardware.",
 
-    "tech_stack_title": "Tools & Tech Stack"
+    "tech_stack_title": "Herramientas y Stack Tecnológico"
   },
 
   "resume": {
-    "title": "Resume",
-    "education_title": "Education",
-    "experience_title": "Experience",
-    "skills_title": "My skills",
+    "title": "Currículum",
+    "education_title": "Educación",
+    "experience_title": "Experiencia",
+    "skills_title": "Mis habilidades",
 
-    "edu_1_title": "M.S. in Mechatronics Engineering",
-    "edu_1_year": "2024 - Present",
-    "edu_1_place": "Necmettin Erbakan University",
+    "edu_1_title": "Maestría en Ingeniería Mecatrónica",
+    "edu_1_year": "2024 - Presente",
+    "edu_1_place": "Universidad Necmettin Erbakan",
 
-    "edu_2_title": "B.S. in Mechatronics Engineering",
+    "edu_2_title": "Licenciatura en Ingeniería Mecatrónica",
     "edu_2_year": "2020 - 2024",
-    "edu_2_place": "Necmettin Erbakan University",
+    "edu_2_place": "Universidad Necmettin Erbakan",
 
-    "edu_3_title": "Turkish Language Course (C1)",
+    "edu_3_title": "Curso de Idioma Turco (C1)",
     "edu_3_year": "2019 - 2020",
     "edu_3_place": "TÖMER",
 
-    "edu_4_title": "High School, Natural Sciences",
+    "edu_4_title": "Preparatoria, Ciencias Naturales",
     "edu_4_year": "2016 - 2019",
     "edu_4_place": "AL KINDY, Kuwait",
 
-    "exp_1_title": "UAV Wireless Charging Station",
-    "exp_1_year": "2026 — Present",
-    "exp_1_company": "Zenopix Technology, Konya, Turkey",
-    "exp_1_text": "Architected UAV ground Tx & onboard Rx WPT power electronics for autonomous drone charging. Developed custom BMS with safe charging profiles, real-time SMBus telemetry, and embedded fault handling.",
+    "exp_1_title": "Estación de Carga Inalámbrica para UAV",
+    "exp_1_year": "2026 — Presente",
+    "exp_1_company": "Zenopix Technology, Konya, Turquía",
+    "exp_1_text": "Arquitectura de electrónica de potencia WPT terrestre Tx y Rx a bordo para carga autónoma de drones. Desarrollo de BMS personalizado con perfiles de carga seguros, telemetría SMBus en tiempo real y manejo de fallos embebido.",
 
-    "exp_2_title": "Industrial BLDC Motor Driver",
-    "exp_2_year": "2026 — Present",
-    "exp_2_company": "Zenopix Technology, Konya, Turkey",
-    "exp_2_text": "Defined architecture for a high-reliability BLDC motor driver: FOC & Six-Step control, high-current PCB layout, gate driver selection, protection logic, thermal robustness, and firmware interface design.",
+    "exp_2_title": "Controlador de Motor BLDC Industrial",
+    "exp_2_year": "2026 — Presente",
+    "exp_2_company": "Zenopix Technology, Konya, Turquía",
+    "exp_2_text": "Definición de arquitectura para controlador de motor BLDC de alta confiabilidad: control FOC y Six-Step, layout PCB de alta corriente, selección de drivers de puerta, lógica de protección, robustez térmica y diseño de interfaz de firmware.",
 
-    "exp_3_title": "Hologram Fan System — TUBITAK R&D",
+    "exp_3_title": "Sistema de Ventilador Holográfico — I+D TUBITAK",
     "exp_3_year": "2024 — 2026",
-    "exp_3_company": "Zenopix Technology, Konya, Turkey",
-    "exp_3_text": "Engineered 0.5m high-density LED PCB for a POV display. Designed high-current KiCad PCBs with galvanic isolation. Implemented FOC, SVPWM, Six-Step & PID on STM32/FreeRTOS. Achieved 200W WPT using Fuzzy Logic Control.",
+    "exp_3_company": "Zenopix Technology, Konya, Turquía",
+    "exp_3_text": "Ingeniería de PCB LED de alta densidad de 0.5m para pantalla POV. Diseño de PCBs KiCad de alta corriente con aislamiento galvánico. Implementación de FOC, SVPWM, Six-Step y PID en STM32/FreeRTOS. Logro de 200W WPT usando Control de Lógica Difusa.",
 
-    "exp_4_title": "Abrasion Tester — End-to-End Control System",
+    "exp_4_title": "Probador de Abrasión — Sistema de Control Integral",
     "exp_4_year": "2021 — 2023",
-    "exp_4_company": "Zenopix Technology, Konya, Turkey",
-    "exp_4_text": "Built full signal-processing pipeline (SPI/I2C), custom DC motor driver with PID, and a C# GUI for real-time machine control and data logging via UART.",
+    "exp_4_company": "Zenopix Technology, Konya, Turquía",
+    "exp_4_text": "Construcción de pipeline completo de procesamiento de señales (SPI/I2C), controlador de motor DC personalizado con PID y GUI en C# para control de máquina en tiempo real y registro de datos vía UART.",
 
-    "exp_5_title": "Embedded Interface & UI Simulation",
+    "exp_5_title": "Interfaz Embebida y Simulación de UI",
     "exp_5_year": "2021 — 2022",
-    "exp_5_company": "Zenopix Technology, Konya, Turkey",
-    "exp_5_text": "Developed JavaScript/CSS lighting simulation for product visualization. Launched four localized multilingual corporate websites with SEO optimization."
+    "exp_5_company": "Zenopix Technology, Konya, Turquía",
+    "exp_5_text": "Desarrollo de simulación de iluminación en JavaScript/CSS para visualización de productos. Lanzamiento de cuatro sitios web corporativos localizados y multilingües con optimización SEO."
   },
 
   "portfolio": {
-    "title": "Portfolio",
-    "filter_all": "All",
-    "filter_hardware": "Hardware & PCB",
-    "filter_embedded": "Embedded Control",
-    "filter_software": "PC Software",
-    "select_category": "Select category",
+    "title": "Portafolio",
+    "filter_all": "Todos",
+    "filter_hardware": "Hardware y PCB",
+    "filter_embedded": "Control Embebido",
+    "filter_software": "Software PC",
+    "select_category": "Seleccionar categoría",
 
-    "proj_1_title": "UAV Wireless Charging Station",
-    "proj_1_category": "Hardware & PCB",
+    "proj_1_title": "Estación de Carga Inalámbrica para UAV",
+    "proj_1_category": "Hardware y PCB",
 
-    "proj_2_title": "Industrial BLDC Motor Driver",
-    "proj_2_category": "Embedded Control",
+    "proj_2_title": "Controlador de Motor BLDC Industrial",
+    "proj_2_category": "Control Embebido",
 
-    "proj_3_title": "Hologram Fan — TUBITAK R&D",
-    "proj_3_category": "Embedded Control",
+    "proj_3_title": "Ventilador Holográfico — I+D TUBITAK",
+    "proj_3_category": "Control Embebido",
 
-    "proj_4_title": "Multi-IMU Sensor Fusion (M.S. Thesis)",
-    "proj_4_category": "Embedded Control",
+    "proj_4_title": "Fusión de Sensores Multi-IMU (Tesis de Maestría)",
+    "proj_4_category": "Control Embebido",
 
-    "proj_5_title": "Flight Controller PCB — ArduPilot/PX4",
-    "proj_5_category": "Hardware & PCB",
+    "proj_5_title": "PCB de Controlador de Vuelo — ArduPilot/PX4",
+    "proj_5_category": "Hardware y PCB",
 
-    "proj_6_title": "Electric Vehicle Motor Driver (4.5kW/72V)",
-    "proj_6_category": "Hardware & PCB",
+    "proj_6_title": "Controlador de Motor para Vehículo Eléctrico (4.5kW/72V)",
+    "proj_6_category": "Hardware y PCB",
 
-    "proj_7_title": "Laser Vibrometer PCB",
-    "proj_7_category": "Hardware & PCB",
+    "proj_7_title": "PCB de Vibrómetro Láser",
+    "proj_7_category": "Hardware y PCB",
 
-    "proj_8_title": "Temperature Control — Medical Furnace",
-    "proj_8_category": "Hardware & PCB",
+    "proj_8_title": "Control de Temperatura — Horno Médico",
+    "proj_8_category": "Hardware y PCB",
 
-    "proj_9_title": "Abrasion Tester Control System",
-    "proj_9_category": "Embedded Control",
+    "proj_9_title": "Sistema de Control de Probador de Abrasión",
+    "proj_9_category": "Control Embebido",
 
-    "proj_10_title": "Hyperloop Data Transmission (STM32F7)",
-    "proj_10_category": "Embedded Control",
+    "proj_10_title": "Transmisión de Datos Hyperloop (STM32F7)",
+    "proj_10_category": "Control Embebido",
 
-    "proj_11_title": "POSYAK Assistive Wearable Device",
-    "proj_11_category": "Embedded Control",
+    "proj_11_title": "Dispositivo Asistivo POSYAK Vestible",
+    "proj_11_category": "Control Embebido",
 
-    "proj_12_title": "Web & Lighting Simulation",
-    "proj_12_category": "PC Software"
+    "proj_12_title": "Simulación Web e Iluminación",
+    "proj_12_category": "Software PC"
   },
 
   "project_details": {
-    "title": "Project Details",
-    "back_btn": "Back to Portfolio",
-    "loading": "Loading project details...",
-    "error": "Error loading project details. Please try again later."
+    "title": "Detalles del Proyecto",
+    "back_btn": "Volver al Portafolio",
+    "loading": "Cargando detalles del proyecto...",
+    "error": "Error al cargar detalles del proyecto. Por favor, inténtelo más tarde."
   },
 
   "cv_page": {
-    "title": "Curriculum Vitae",
-    "download_btn": "Download CV",
-    "pdf_fallback": "This browser does not support inline PDFs. Please use the download button above to view the CV."
+    "title": "Currículum Vitae",
+    "download_btn": "Descargar CV",
+    "pdf_fallback": "Este navegador no admite PDFs en línea. Por favor, use el botón de descarga anterior para ver el CV."
   },
 
   "contact": {
-    "title": "Contact",
-    "form_title": "Contact Form",
-    "placeholder_name": "Full name",
-    "placeholder_email": "Email address",
-    "placeholder_message": "Your Message",
-    "send_btn": "Send Message"
+    "title": "Contacto",
+    "form_title": "Formulario de Contacto",
+    "placeholder_name": "Nombre completo",
+    "placeholder_email": "Correo electrónico",
+    "placeholder_message": "Tu mensaje",
+    "send_btn": "Enviar Mensaje"
   },
 
   "privacy": {
-    "title": "Privacy Policy",
-    "intro": "This Privacy Policy outlines how your personal information and usage data are collected, processed, and safeguarded when you access and interact with this website. I am committed to protecting your privacy and ensuring transparency regarding any data collected.",
-    "section_1_title": "1. Information Gathered Automatically",
-    "section_1_p1": "When you visit and navigate through this website, certain information about your session is automatically recorded. This data is non-personally identifiable and is used exclusively to evaluate site performance, understand visitor dynamics, and improve general user experience.",
-    "section_1_p2": "This automatically collected information includes:",
-    "section_1_li1": "Device and Technical Information: Details regarding your device type (desktop, mobile, or tablet), screen resolution, operating system, web browser type, and language settings.",
-    "section_1_li2": "Access and Referrer Logs: The origin of your visit (such as search engines, social media platforms, direct navigation, or campaigns), including specific UTM tracking parameters if applicable.",
-    "section_1_li3": "Interaction and Usage Patterns: The pages you view, navigation routes, timestamps of your visit, session durations, and specific interactions (such as link clicks, downloads of resources, and form submissions).",
-    "section_1_li4": "General Location Data: Your approximate geographic location (at a country or city level) estimated via network information.",
-    "section_2_title": "2. Information You Voluntarily Provide",
-    "section_2_p1": "If you choose to communicate with me via the contact form on this website, you voluntarily provide personal details such as your name, email address, and the content of your message.",
-    "section_2_p2": "To ensure the security, delivery, and appropriate routing of your inquiries, your submission is bundled with technical diagnostic metadata (such as device type, browser, approximate location, and timestamp of the transaction). This data is processed securely through specialized third-party services and forwarded directly to my primary contact address.",
-    "section_3_title": "3. Cookies and Tracking Technologies",
-    "section_3_p1": "This website utilizes cookies and similar tracking technologies to analyze trends and monitor user interactions. These technologies help recognize repeat visitors and optimize page load configurations. You can manage, block, or delete cookies through your individual browser settings; however, disabling cookies may impact your overall experience on the site.",
-    "section_4_title": "4. Third-Party Integrations",
-    "section_4_p1": "To support professional functionality, this site integrates industry-standard third-party tools (including Google Analytics, Microsoft Clarity, and FormSubmit). These services compile aggregated data and anonymous recordings of visitor behavior, helping to identify bugs and enhance site navigation. All third-party providers handle your data in strict compliance with their respective privacy policies and security regulations.",
-    "section_5_title": "5. Data Protection and Retention",
-    "section_5_p1": "I prioritize data safety and implement appropriate technical measures to prevent unauthorized access, alteration, or disclosure of collected logs and messages. Your information is retained only as long as necessary to address your inquiries or perform analytics. I do not sell, trade, or distribute your information to outside parties.",
-    "section_6_title": "6. Consent and Policy Updates",
-    "section_6_p1": "By using this website, you hereby consent to the terms of this Privacy Policy. I reserve the right to modify or update this document at any time to reflect updates in website features or legal requirements.",
-    "last_updated": "Last updated: June 2026"
+    "title": "Política de Privacidad",
+    "intro": "Esta Política de Privacidad describe cómo se recopila, procesa y protege su información personal y datos de uso cuando accede e interactúa con este sitio web. Me comprometo a proteger su privacidad y garantizar la transparencia respecto a cualquier dato recopilado.",
+    "section_1_title": "1. Información Recopilada Automáticamente",
+    "section_1_p1": "Cuando visita y navega por este sitio web, cierta información sobre su sesión se registra automáticamente. Estos datos no son personalmente identificables y se utilizan exclusivamente para evaluar el rendimiento del sitio, comprender las dinámicas de los visitantes y mejorar la experiencia general del usuario.",
+    "section_1_p2": "Esta información recopilada automáticamente incluye:",
+    "section_1_li1": "Información del Dispositivo y Técnica: Detalles sobre el tipo de dispositivo (escritorio, móvil o tableta), resolución de pantalla, sistema operativo, tipo de navegador web y configuración de idioma.",
+    "section_1_li2": "Registros de Acceso y Referencia: El origen de su visita (como motores de búsqueda, plataformas de redes sociales, navegación directa o campañas), incluyendo parámetros de seguimiento UTM específicos si corresponde.",
+    "section_1_li3": "Patrones de Interacción y Uso: Las páginas que visualiza, rutas de navegación, marcas de tiempo de su visita, duraciones de sesión e interacciones específicas (como clics en enlaces, descargas de recursos y envíos de formularios).",
+    "section_1_li4": "Datos de Ubicación General: Su ubicación geográfica aproximada (a nivel de país o ciudad) estimada a través de información de red.",
+    "section_2_title": "2. Información que Usted Proporciona Voluntariamente",
+    "section_2_p1": "Si elige comunicarse conmigo a través del formulario de contacto en este sitio web, usted proporciona voluntariamente datos personales como su nombre, dirección de correo electrónico y el contenido de su mensaje.",
+    "section_2_p2": "Para garantizar la seguridad, entrega y enrutamiento adecuado de sus consultas, su envío se combina con metadatos de diagnóstico técnico (como tipo de dispositivo, navegador, ubicación aproximada y marca de tiempo de la transacción). Estos datos se procesan de forma segura a través de servicios de terceros especializados y se envían directamente a mi dirección de contacto principal.",
+    "section_3_title": "3. Cookies y Tecnologías de Seguimiento",
+    "section_3_p1": "Este sitio web utiliza cookies y tecnologías de seguimiento similares para analizar tendencias y monitorear las interacciones de los usuarios. Estas tecnologías ayudan a reconocer visitantes recurrentes y optimizar las configuraciones de carga de página. Puede gestionar, bloquear o eliminar cookies a través de la configuración individual de su navegador; sin embargo, deshabilitar las cookies puede afectar su experiencia general en el sitio.",
+    "section_4_title": "4. Integraciones de Terceros",
+    "section_4_p1": "Para soportar funcionalidades profesionales, este sitio integra herramientas estándar de la industria de terceros (incluyendo Google Analytics, Microsoft Clarity y FormSubmit). Estos servicios compilan datos agregados y grabaciones anónimas del comportamiento de los visitantes, ayudando a identificar errores y mejorar la navegación del sitio. Todos los proveedores de terceros manejan sus datos en estricto cumplimiento con sus respectivas políticas de privacidad y regulaciones de seguridad.",
+    "section_5_title": "5. Protección y Retención de Datos",
+    "section_5_p1": "Priorizo la seguridad de los datos e implemento medidas técnicas apropiadas para prevenir el acceso no autorizado, la alteración o divulgación de registros y mensajes recopilados. Su información se retiene solo durante el tiempo necesario para atender sus consultas o realizar análisis. No vendo, intercambio ni distribuyo su información a partes externas.",
+    "section_6_title": "6. Consentimiento y Actualizaciones de la Política",
+    "section_6_p1": "Al utilizar este sitio web, usted consiente los términos de esta Política de Privacidad. Me reservo el derecho de modificar o actualizar este documento en cualquier momento para reflejar actualizaciones en las funciones del sitio web o requisitos legales.",
+    "last_updated": "Última actualización: Junio 2026"
   },
 
   "footer": {
-    "copyright": "© 2026 Ahmed Ahmed. All rights reserved.",
-    "privacy_link": "Privacy Policy"
+    "copyright": "© 2026 Ahmed Ahmed. Todos los derechos reservados.",
+    "privacy_link": "Política de Privacidad"
   },
 
   "toast": {
-    "success_message": "Message sent successfully! Thank you."
+    "success_message": "¡Mensaje enviado con éxito! Gracias."
   }
 }

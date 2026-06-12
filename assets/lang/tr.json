@@ -7,213 +7,213 @@
   },
 
   "sidebar": {
-    "title": "R&D Power & Embedded Electronics Engineer",
-    "show_contacts": "Show Contacts",
-    "hide_contacts": "Hide Contacts",
-    "email_label": "Email",
-    "phone_label": "Phone",
-    "whatsapp_chat": "WhatsApp Chat",
-    "birthday_label": "Birthday",
-    "birthday_value": "March 26, 2001",
-    "location_label": "Location",
+    "title": "Ar-Ge Güç ve Gömülü Elektronik Mühendisi",
+    "show_contacts": "İletişimi Göster",
+    "hide_contacts": "İletişimi Gizle",
+    "email_label": "E-posta",
+    "phone_label": "Telefon",
+    "whatsapp_chat": "WhatsApp Sohbet",
+    "birthday_label": "Doğum Günü",
+    "birthday_value": "26 Mart 2001",
+    "location_label": "Konum",
     "location_value": "Selçuklu/Konya, Türkiye"
   },
 
   "nav": {
-    "about": "About",
-    "resume": "Resume",
-    "portfolio": "Portfolio",
+    "about": "Hakkımda",
+    "resume": "Özgeçmiş",
+    "portfolio": "Portföy",
     "cv": "CV",
-    "contact": "Contact"
+    "contact": "İletişim"
   },
 
   "about": {
-    "title": "About me",
-    "bio_p1": "R&D engineer with 4 years delivering embedded power systems, motor-driver architectures, and advanced PCBs for UAV and robotics applications. Proven track record across BLDC/ESC development, battery and BMS design, 200W wireless power transfer, STM32 firmware on FreeRTOS, and high-density KiCad PCB layout — from concept through hardware validation, with the ability to interpret academic and technical literature and translate research concepts into functional engineering prototypes.",
-    "bio_p2": "Hands-on experience in government-funded R&D (TUBITAK), academic research, electric-vehicle power systems, and industrial embedded platforms. Strong fit for Revotronics Labs combining motor-driver design, power-conversion expertise, real-time firmware development, and rigorous prototype-to-system delivery in demanding R&D environments.",
+    "title": "Hakkımda",
+    "bio_p1": "İHA ve robotik uygulamaları için gömülü güç sistemleri, motor sürücü mimarileri ve gelişmiş PCB'ler sunan 4 yıllık deneyime sahip Ar-Ge mühendisi. BLDC/ESC geliştirme, batarya ve BMS tasarımı, 200W kablosuz güç aktarımı, FreeRTOS üzerinde STM32 firmware ve yüksek yoğunluklu KiCad PCB tasarımında kanıtlanmış performans — konseptten donanım doğrulamaya kadar, akademik ve teknik literatürü yorumlama ve araştırma kavramlarını işlevsel mühendislik prototiplere dönüştürme yeteneği.",
+    "bio_p2": "Devlet destekli Ar-Ge (TÜBİTAK), akademik araştırma, elektrikli araç güç sistemleri ve endüstriyel gömülü platformlarda uygulamalı deneyim. Motor sürücü tasarımı, güç dönüşüm uzmanlığı, gerçek zamanlı firmware geliştirme ve zorlu Ar-Ge ortamlarında titiz prototipten sisteme teslimat kombinasyonu.",
 
-    "service_title": "What I'm doing",
+    "service_title": "Neler Yapıyorum",
 
-    "service_1_title": "Embedded Firmware & RTOS",
-    "service_1_text": "Building deterministic real-time firmware in C/C++ on STM32H7/F7 with FreeRTOS, FreeRTOS-MPU, and FreeRTOS+TCP — covering DMA, SPI, I2C, CAN, Ethernet, Modbus, and SMBus.",
+    "service_1_title": "Gömülü Firmware & RTOS",
+    "service_1_text": "FreeRTOS, FreeRTOS-MPU ve FreeRTOS+TCP ile STM32H7/F7 üzerinde C/C++ dilinde deterministik gerçek zamanlı firmware geliştirme — DMA, SPI, I2C, CAN, Ethernet, Modbus ve SMBus kapsayan.",
 
-    "service_2_title": "Advanced PCB Design",
-    "service_2_text": "High-density schematic & layout with KiCad and Altium Designer — integrating motor drivers, power management, galvanic isolation, and EMC considerations into production-ready boards.",
+    "service_2_title": "Gelişmiş PCB Tasarımı",
+    "service_2_text": "KiCad ve Altium Designer ile yüksek yoğunluklu şematik ve layout — motor sürücüler, güç yönetimi, galvanik izolasyon ve EMC gereksinimlerini üretime hazır kartlara entegre eden.",
 
-    "service_3_title": "Power Electronics & WPT",
-    "service_3_text": "Designing SMPS, BMS, gate drivers, and resonance-based wireless power transfer systems (200W WPT). Expertise in battery charging, BLDC motor drivers, and EV power conversion.",
+    "service_3_title": "Güç Elektroniği & WPT",
+    "service_3_text": "SMPS, BMS, kapı sürücüleri ve rezonans tabanlı kablosuz güç aktarım sistemleri (200W WPT) tasarımı. Batarya şarjı, BLDC motor sürücüleri ve EV güç dönüşümünde uzmanlık.",
 
-    "service_4_title": "Motor Control & Sensor Fusion",
-    "service_4_text": "Implementing FOC, Space Vector PWM, Six-Step Commutation, and PID loops. Kalman Filtering and Multi-IMU sensor fusion for GPS-denied UAV & robotics localization.",
+    "service_4_title": "Motor Kontrolü & Sensör Füzyonu",
+    "service_4_text": "FOC, Uzay Vektör PWM, Altı Adımlı Komütasyon ve PID döngüleri uygulaması. GPS'siz İHA ve robotik lokalizasyonu için Kalman Filtreleme ve Çoklu-IMU sensör füzyonu.",
 
-    "certifications_title": "Certifications & Achievements",
+    "certifications_title": "Sertifikalar & Başarılar",
 
-    "cert_1_title": "Teknofest Finalist — EV Race 2025",
-    "cert_1_text": "International Efficiency Challenge Electric Vehicle finalist at Teknofest 2025. Designed the 4.5kW / 72V BLDC motor driver and contributed to BMS & SMPS development for the EV competition platform.",
+    "cert_1_title": "Teknofest Finalisti — EV Yarışı 2025",
+    "cert_1_text": "Teknofest 2025 Uluslararası Verimlilik Yarışması Elektrikli Araç finalisti. EV yarışma platformu için 4.5kW / 72V BLDC motor sürücü tasarımı ve BMS & SMPS geliştirmeye katkı.",
 
-    "cert_2_title": "Teknofest Finalist — EV Race 2024",
-    "cert_2_text": "International Efficiency Challenge Electric Vehicle finalist at Teknofest 2024. Contributed motor driver design, 3kW power supply (220V→72V), and local charging unit with SMPS topologies.",
+    "cert_2_title": "Teknofest Finalisti — EV Yarışı 2024",
+    "cert_2_text": "Teknofest 2024 Uluslararası Verimlilik Yarışması Elektrikli Araç finalisti. Motor sürücü tasarımı, 3kW güç kaynağı (220V→72V) ve SMPS topolojileriyle yerel şarj ünitesine katkı.",
 
-    "cert_3_title": "Graduation with Honours (Onur Belgesi)",
-    "cert_3_text": "Graduated with Honours (Onur Belgesi) from Necmettin Erbakan University with a GPA of 3.06/4.00 — Mechatronics Engineering, 2024.",
+    "cert_3_title": "Onur Belgesi ile Mezuniyet",
+    "cert_3_text": "Necmettin Erbakan Üniversitesi'nden 3.06/4.00 GPA ile Onur Belgesi ile mezun — Mekatronik Mühendisliği, 2024.",
 
-    "cert_4_title": "Mastering RTOS: FreeRTOS & STM32 — Udemy",
-    "cert_4_text": "Completed \"Mastering RTOS: Hands-on FreeRTOS and STM32Fx with Debugging\" on Udemy (2023). Applied directly to STM32H7 FreeRTOS-MPU multitasking and real-time safety firmware.",
+    "cert_4_title": "RTOS Ustalığı: FreeRTOS & STM32 — Udemy",
+    "cert_4_text": "Udemy'de \"RTOS Ustalığı: FreeRTOS ve STM32Fx ile Uygulamalı Hata Ayıklama\" kursunu tamamladı (2023). STM32H7 FreeRTOS-MPU çoklu görev ve gerçek zamanlı güvenlik firmware'ine doğrudan uygulandı.",
 
-    "cert_5_title": "Embedded C Programming — Udemy",
-    "cert_5_text": "Completed \"Microcontroller Embedded C Programming: Absolute Beginners\" on Udemy (2023), establishing rigorous bare-metal C fundamentals for STM32 peripheral and register-level programming.",
+    "cert_5_title": "Gömülü C Programlama — Udemy",
+    "cert_5_text": "Udemy'de \"Mikrodenetleyici Gömülü C Programlama: Mutlak Başlangıç\" kursunu tamamladı (2023), STM32 çevresel ve register düzeyinde programlama için sağlam bare-metal C temelleri oluşturdu.",
 
-    "cert_6_title": "1st Place — Electronics Competition",
-    "cert_6_text": "Achieved first place in a middle-school electronics competition by accurately assembling a random schematic circuit in the shortest time — the earliest recognition of hardware intuition.",
+    "cert_6_title": "1. Yer — Elektronik Yarışması",
+    "cert_6_text": "Bir ortaokul elektronik yarışmasında rastgele bir şematik devreyi en kısa sürede doğru bir şekilde monte ederek birinci oldu — donanım sezgisinin en erken tanınması.",
 
-    "tech_stack_title": "Tools & Tech Stack"
+    "tech_stack_title": "Araçlar & Teknoloji Yığını"
   },
 
   "resume": {
-    "title": "Resume",
-    "education_title": "Education",
-    "experience_title": "Experience",
-    "skills_title": "My skills",
+    "title": "Özgeçmiş",
+    "education_title": "Eğitim",
+    "experience_title": "Deneyim",
+    "skills_title": "Yeteneklerim",
 
-    "edu_1_title": "M.S. in Mechatronics Engineering",
-    "edu_1_year": "2024 - Present",
-    "edu_1_place": "Necmettin Erbakan University",
+    "edu_1_title": "Mekatronik Mühendisliği Yüksek Lisans",
+    "edu_1_year": "2024 - Devam ediyor",
+    "edu_1_place": "Necmettin Erbakan Üniversitesi",
 
-    "edu_2_title": "B.S. in Mechatronics Engineering",
+    "edu_2_title": "Mekatronik Mühendisliği Lisans",
     "edu_2_year": "2020 - 2024",
-    "edu_2_place": "Necmettin Erbakan University",
+    "edu_2_place": "Necmettin Erbakan Üniversitesi",
 
-    "edu_3_title": "Turkish Language Course (C1)",
+    "edu_3_title": "Türkçe Dil Kursu (C1)",
     "edu_3_year": "2019 - 2020",
     "edu_3_place": "TÖMER",
 
-    "edu_4_title": "High School, Natural Sciences",
+    "edu_4_title": "Lise, Fen Bilimleri",
     "edu_4_year": "2016 - 2019",
-    "edu_4_place": "AL KINDY, Kuwait",
+    "edu_4_place": "AL KINDY, Kuveyt",
 
-    "exp_1_title": "UAV Wireless Charging Station",
-    "exp_1_year": "2026 — Present",
-    "exp_1_company": "Zenopix Technology, Konya, Turkey",
-    "exp_1_text": "Architected UAV ground Tx & onboard Rx WPT power electronics for autonomous drone charging. Developed custom BMS with safe charging profiles, real-time SMBus telemetry, and embedded fault handling.",
+    "exp_1_title": "İHA Kablosuz Şarj İstasyonu",
+    "exp_1_year": "2026 — Devam ediyor",
+    "exp_1_company": "Zenopix Teknoloji, Konya, Türkiye",
+    "exp_1_text": "Otonom drone şarjı için zemin Tx ve drone üstü Rx WPT güç elektroniği mimarisi. Güvenli şarj profilleri, gerçek zamanlı SMBus telemetrisi ve gömülü hata yönetimi ile özel BMS geliştirme.",
 
-    "exp_2_title": "Industrial BLDC Motor Driver",
-    "exp_2_year": "2026 — Present",
-    "exp_2_company": "Zenopix Technology, Konya, Turkey",
-    "exp_2_text": "Defined architecture for a high-reliability BLDC motor driver: FOC & Six-Step control, high-current PCB layout, gate driver selection, protection logic, thermal robustness, and firmware interface design.",
+    "exp_2_title": "Endüstriyel BLDC Motor Sürücü",
+    "exp_2_year": "2026 — Devam ediyor",
+    "exp_2_company": "Zenopix Teknoloji, Konya, Türkiye",
+    "exp_2_text": "Yüksek güvenilirlikli BLDC motor sürücü mimarisi tanımlama: FOC & Altı Adımlı kontrol, yüksek akım PCB layout, kapı sürücü seçimi, koruma mantığı, termal dayanıklılık ve firmware arayüz tasarımı.",
 
-    "exp_3_title": "Hologram Fan System — TUBITAK R&D",
+    "exp_3_title": "Hologram Fan Sistemi — TÜBİTAK Ar-Ge",
     "exp_3_year": "2024 — 2026",
-    "exp_3_company": "Zenopix Technology, Konya, Turkey",
-    "exp_3_text": "Engineered 0.5m high-density LED PCB for a POV display. Designed high-current KiCad PCBs with galvanic isolation. Implemented FOC, SVPWM, Six-Step & PID on STM32/FreeRTOS. Achieved 200W WPT using Fuzzy Logic Control.",
+    "exp_3_company": "Zenopix Teknoloji, Konya, Türkiye",
+    "exp_3_text": "POV ekranı için 0.5m yüksek yoğunluklu LED PCB mühendisliği. Galvanik izolasyonlu yüksek akım KiCad PCB tasarımı. STM32/FreeRTOS üzerinde FOC, SVPWM, Altı Adım & PID uygulaması. Bulanık Mantık Kontrolü ile 200W WPT başarısı.",
 
-    "exp_4_title": "Abrasion Tester — End-to-End Control System",
+    "exp_4_title": "Aşınma Test Cihazı — Uçtan Uca Kontrol Sistemi",
     "exp_4_year": "2021 — 2023",
-    "exp_4_company": "Zenopix Technology, Konya, Turkey",
-    "exp_4_text": "Built full signal-processing pipeline (SPI/I2C), custom DC motor driver with PID, and a C# GUI for real-time machine control and data logging via UART.",
+    "exp_4_company": "Zenopix Teknoloji, Konya, Türkiye",
+    "exp_4_text": "Tam sinyal işleme hattı (SPI/I2C), PID'li özel DC motor sürücü ve UART üzerinden gerçek zamanlı makine kontrolü ve veri kaydı için C# GUI geliştirme.",
 
-    "exp_5_title": "Embedded Interface & UI Simulation",
+    "exp_5_title": "Gömülü Arayüz & UI Simülasyonu",
     "exp_5_year": "2021 — 2022",
-    "exp_5_company": "Zenopix Technology, Konya, Turkey",
-    "exp_5_text": "Developed JavaScript/CSS lighting simulation for product visualization. Launched four localized multilingual corporate websites with SEO optimization."
+    "exp_5_company": "Zenopix Teknoloji, Konya, Türkiye",
+    "exp_5_text": "Ürün görselleştirmesi için JavaScript/CSS aydınlatma simülasyonu geliştirme. SEO optimizasyonu ile dört yerelleştirilmiş çok dilli kurumsal web sitesi yayınlama."
   },
 
   "portfolio": {
-    "title": "Portfolio",
-    "filter_all": "All",
-    "filter_hardware": "Hardware & PCB",
-    "filter_embedded": "Embedded Control",
-    "filter_software": "PC Software",
-    "select_category": "Select category",
+    "title": "Portföy",
+    "filter_all": "Tümü",
+    "filter_hardware": "Donanım & PCB",
+    "filter_embedded": "Gömülü Kontrol",
+    "filter_software": "PC Yazılımı",
+    "select_category": "Kategori seçin",
 
-    "proj_1_title": "UAV Wireless Charging Station",
-    "proj_1_category": "Hardware & PCB",
+    "proj_1_title": "İHA Kablosuz Şarj İstasyonu",
+    "proj_1_category": "Donanım & PCB",
 
-    "proj_2_title": "Industrial BLDC Motor Driver",
-    "proj_2_category": "Embedded Control",
+    "proj_2_title": "Endüstriyel BLDC Motor Sürücü",
+    "proj_2_category": "Gömülü Kontrol",
 
-    "proj_3_title": "Hologram Fan — TUBITAK R&D",
-    "proj_3_category": "Embedded Control",
+    "proj_3_title": "Hologram Fan — TÜBİTAK Ar-Ge",
+    "proj_3_category": "Gömülü Kontrol",
 
-    "proj_4_title": "Multi-IMU Sensor Fusion (M.S. Thesis)",
-    "proj_4_category": "Embedded Control",
+    "proj_4_title": "Çoklu-IMU Sensör Füzyonu (Yüksek Lisans Tezi)",
+    "proj_4_category": "Gömülü Kontrol",
 
-    "proj_5_title": "Flight Controller PCB — ArduPilot/PX4",
-    "proj_5_category": "Hardware & PCB",
+    "proj_5_title": "Uçuş Kontrolcü PCB — ArduPilot/PX4",
+    "proj_5_category": "Donanım & PCB",
 
-    "proj_6_title": "Electric Vehicle Motor Driver (4.5kW/72V)",
-    "proj_6_category": "Hardware & PCB",
+    "proj_6_title": "Elektrikli Araç Motor Sürücü (4.5kW/72V)",
+    "proj_6_category": "Donanım & PCB",
 
-    "proj_7_title": "Laser Vibrometer PCB",
-    "proj_7_category": "Hardware & PCB",
+    "proj_7_title": "Lazer Vibrometre PCB",
+    "proj_7_category": "Donanım & PCB",
 
-    "proj_8_title": "Temperature Control — Medical Furnace",
-    "proj_8_category": "Hardware & PCB",
+    "proj_8_title": "Sıcaklık Kontrolü — Medikal Fırın",
+    "proj_8_category": "Donanım & PCB",
 
-    "proj_9_title": "Abrasion Tester Control System",
-    "proj_9_category": "Embedded Control",
+    "proj_9_title": "Aşınma Testi Kontrol Sistemi",
+    "proj_9_category": "Gömülü Kontrol",
 
-    "proj_10_title": "Hyperloop Data Transmission (STM32F7)",
-    "proj_10_category": "Embedded Control",
+    "proj_10_title": "Hyperloop Veri Aktarımı (STM32F7)",
+    "proj_10_category": "Gömülü Kontrol",
 
-    "proj_11_title": "POSYAK Assistive Wearable Device",
-    "proj_11_category": "Embedded Control",
+    "proj_11_title": "POSYAK Yardımcı Giyilebilir Cihaz",
+    "proj_11_category": "Gömülü Kontrol",
 
-    "proj_12_title": "Web & Lighting Simulation",
-    "proj_12_category": "PC Software"
+    "proj_12_title": "Web & Aydınlatma Simülasyonu",
+    "proj_12_category": "PC Yazılımı"
   },
 
   "project_details": {
-    "title": "Project Details",
-    "back_btn": "Back to Portfolio",
-    "loading": "Loading project details...",
-    "error": "Error loading project details. Please try again later."
+    "title": "Proje Detayları",
+    "back_btn": "Portföye Dön",
+    "loading": "Proje detayları yükleniyor...",
+    "error": "Proje detayları yüklenirken hata oluştu. Lütfen daha sonra tekrar deneyin."
   },
 
   "cv_page": {
-    "title": "Curriculum Vitae",
-    "download_btn": "Download CV",
-    "pdf_fallback": "This browser does not support inline PDFs. Please use the download button above to view the CV."
+    "title": "Özgeçmiş",
+    "download_btn": "CV İndir",
+    "pdf_fallback": "Bu tarayıcı satır içi PDF'leri desteklemiyor. CV'yi görüntülemek için lütfen yukarıdaki indirme düğmesini kullanın."
   },
 
   "contact": {
-    "title": "Contact",
-    "form_title": "Contact Form",
-    "placeholder_name": "Full name",
-    "placeholder_email": "Email address",
-    "placeholder_message": "Your Message",
-    "send_btn": "Send Message"
+    "title": "İletişim",
+    "form_title": "İletişim Formu",
+    "placeholder_name": "Ad Soyad",
+    "placeholder_email": "E-posta adresi",
+    "placeholder_message": "Mesajınız",
+    "send_btn": "Mesaj Gönder"
   },
 
   "privacy": {
-    "title": "Privacy Policy",
-    "intro": "This Privacy Policy outlines how your personal information and usage data are collected, processed, and safeguarded when you access and interact with this website. I am committed to protecting your privacy and ensuring transparency regarding any data collected.",
-    "section_1_title": "1. Information Gathered Automatically",
-    "section_1_p1": "When you visit and navigate through this website, certain information about your session is automatically recorded. This data is non-personally identifiable and is used exclusively to evaluate site performance, understand visitor dynamics, and improve general user experience.",
-    "section_1_p2": "This automatically collected information includes:",
-    "section_1_li1": "Device and Technical Information: Details regarding your device type (desktop, mobile, or tablet), screen resolution, operating system, web browser type, and language settings.",
-    "section_1_li2": "Access and Referrer Logs: The origin of your visit (such as search engines, social media platforms, direct navigation, or campaigns), including specific UTM tracking parameters if applicable.",
-    "section_1_li3": "Interaction and Usage Patterns: The pages you view, navigation routes, timestamps of your visit, session durations, and specific interactions (such as link clicks, downloads of resources, and form submissions).",
-    "section_1_li4": "General Location Data: Your approximate geographic location (at a country or city level) estimated via network information.",
-    "section_2_title": "2. Information You Voluntarily Provide",
-    "section_2_p1": "If you choose to communicate with me via the contact form on this website, you voluntarily provide personal details such as your name, email address, and the content of your message.",
-    "section_2_p2": "To ensure the security, delivery, and appropriate routing of your inquiries, your submission is bundled with technical diagnostic metadata (such as device type, browser, approximate location, and timestamp of the transaction). This data is processed securely through specialized third-party services and forwarded directly to my primary contact address.",
-    "section_3_title": "3. Cookies and Tracking Technologies",
-    "section_3_p1": "This website utilizes cookies and similar tracking technologies to analyze trends and monitor user interactions. These technologies help recognize repeat visitors and optimize page load configurations. You can manage, block, or delete cookies through your individual browser settings; however, disabling cookies may impact your overall experience on the site.",
-    "section_4_title": "4. Third-Party Integrations",
-    "section_4_p1": "To support professional functionality, this site integrates industry-standard third-party tools (including Google Analytics, Microsoft Clarity, and FormSubmit). These services compile aggregated data and anonymous recordings of visitor behavior, helping to identify bugs and enhance site navigation. All third-party providers handle your data in strict compliance with their respective privacy policies and security regulations.",
-    "section_5_title": "5. Data Protection and Retention",
-    "section_5_p1": "I prioritize data safety and implement appropriate technical measures to prevent unauthorized access, alteration, or disclosure of collected logs and messages. Your information is retained only as long as necessary to address your inquiries or perform analytics. I do not sell, trade, or distribute your information to outside parties.",
-    "section_6_title": "6. Consent and Policy Updates",
-    "section_6_p1": "By using this website, you hereby consent to the terms of this Privacy Policy. I reserve the right to modify or update this document at any time to reflect updates in website features or legal requirements.",
-    "last_updated": "Last updated: June 2026"
+    "title": "Gizlilik Politikası",
+    "intro": "Bu Gizlilik Politikası, bu web sitesine eriştiğinizde ve etkileşim kurduğunuzda kişisel bilgilerinizin ve kullanım verilerinizin nasıl toplandığını, işlendiğini ve korunduğunu açıklar. Gizliliğinizi korumaya ve toplanan verilerle ilgili şeffaflığı sağlamaya kararlıyım.",
+    "section_1_title": "1. Otomatik Olarak Toplanan Bilgiler",
+    "section_1_p1": "Bu web sitesini ziyaret ettiğinizde ve gezindiğinizde, oturumunuz hakkında belirli bilgiler otomatik olarak kaydedilir. Bu veriler kişisel olarak tanımlanamaz ve yalnızca site performansını değerlendirmek, ziyaretçi dinamiklerini anlamak ve genel kullanıcı deneyimini iyileştirmek için kullanılır.",
+    "section_1_p2": "Bu otomatik olarak toplanan bilgiler şunları içerir:",
+    "section_1_li1": "Cihaz ve Teknik Bilgiler: Cihaz türünüz (masaüstü, mobil veya tablet), ekran çözünürlüğü, işletim sistemi, web tarayıcı türü ve dil ayarlarına ilişkin detaylar.",
+    "section_1_li2": "Erişim ve Yönlendirme Günlükleri: Ziyaretinizin kaynağı (arama motorları, sosyal medya platformları, doğrudan gezinme veya kampanyalar gibi), varsa UTM izleme parametreleri dahil.",
+    "section_1_li3": "Etkileşim ve Kullanım Kalıpları: Görüntülediğiniz sayfalar, gezinme rotaları, ziyaret zaman damgaları, oturum süreleri ve belirli etkileşimler (bağlantı tıklamaları, kaynak indirmeleri ve form gönderimleri gibi).",
+    "section_1_li4": "Genel Konum Verileri: Ağ bilgileri aracılığıyla tahmin edilen yaklaşık coğrafi konumunuz (ülke veya şehir düzeyinde).",
+    "section_2_title": "2. Gönüllü Olarak Sağladığınız Bilgiler",
+    "section_2_p1": "Bu web sitesindeki iletişim formu aracılığıyla benimle iletişim kurmayı seçerseniz, adınız, e-posta adresiniz ve mesajınızın içeriği gibi kişisel bilgileri gönüllü olarak sağlarsınız.",
+    "section_2_p2": "Sorgularınızın güvenliğini, teslimini ve uygun yönlendirilmesini sağlamak için, gönderiminiz teknik tanılama meta verileriyle (cihaz türü, tarayıcı, yaklaşık konum ve işlem zaman damgası gibi) birleştirilir. Bu veriler, uzmanlaşmış üçüncü taraf hizmetleri aracılığıyla güvenli bir şekilde işlenir ve doğrudan birincil iletişim adresime iletilir.",
+    "section_3_title": "3. Çerezler ve İzleme Teknolojileri",
+    "section_3_p1": "Bu web sitesi, eğilimleri analiz etmek ve kullanıcı etkileşimlerini izlemek için çerezler ve benzer izleme teknolojileri kullanır. Bu teknolojiler, tekrar eden ziyaretçileri tanımlamaya ve sayfa yükleme yapılandırmalarını optimize etmeye yardımcı olur. Çerezleri bireysel tarayıcı ayarlarınız aracılığıyla yönetebilir, engelleyebilir veya silebilirsiniz; ancak çerezlerin devre dışı bırakılması sitedeki genel deneyiminizi etkileyebilir.",
+    "section_4_title": "4. Üçüncü Taraf Entegrasyonları",
+    "section_4_p1": "Profesyonel işlevselliği desteklemek için bu site, endüstri standardı üçüncü taraf araçları (Google Analytics, Microsoft Clarity ve FormSubmit dahil) entegre eder. Bu hizmetler, toplu veriler ve anonim ziyaretçi davranışı kayıtları derleyerek hataları belirlemeye ve site gezinmesini geliştirmeye yardımcı olur. Tüm üçüncü taraf sağlayıcıları, verilerinizi kendi gizlilik politikaları ve güvenlik düzenlemelerine uygun olarak işler.",
+    "section_5_title": "5. Veri Koruma ve Saklama",
+    "section_5_p1": "Veri güvenliğine öncelik veriyorum ve toplanan günlüklerin ve mesajların yetkisiz erişimini, değiştirilmesini veya ifşa edilmesini önlemek için uygun teknik önlemler uyguluyorum. Bilgileriniz yalnızca sorgularınızı yanıtlamak veya analiz yapmak için gerekli olduğu sürece saklanır. Bilgilerinizi dışarıdaki taraflara satmıyorum, takas etmiyorum veya dağıtmıyorum.",
+    "section_6_title": "6. Onay ve Politika Güncellemeleri",
+    "section_6_p1": "Bu web sitesini kullanarak, bu Gizlilik Politikasının şartlarını kabul etmiş olursunuz. Web sitesi özelliklerindeki güncellemeleri veya yasal gereklilikleri yansıtmak için bu belgeyi istediğim zaman değiştirme veya güncelleme hakkını saklı tutarım.",
+    "last_updated": "Son güncelleme: Haziran 2026"
   },
 
   "footer": {
-    "copyright": "© 2026 Ahmed Ahmed. All rights reserved.",
-    "privacy_link": "Privacy Policy"
+    "copyright": "© 2026 Ahmed Ahmed. Tüm hakları saklıdır.",
+    "privacy_link": "Gizlilik Politikası"
   },
 
   "toast": {
-    "success_message": "Message sent successfully! Thank you."
+    "success_message": "Mesaj başarıyla gönderildi! Teşekkürler."
   }
 }

@@ -7,213 +7,213 @@
   },
 
   "sidebar": {
-    "title": "R&D Power & Embedded Electronics Engineer",
-    "show_contacts": "Show Contacts",
-    "hide_contacts": "Hide Contacts",
-    "email_label": "Email",
-    "phone_label": "Phone",
-    "whatsapp_chat": "WhatsApp Chat",
-    "birthday_label": "Birthday",
-    "birthday_value": "March 26, 2001",
-    "location_label": "Location",
-    "location_value": "Selçuklu/Konya, Türkiye"
+    "title": "مهندس بحث وتطوير — إلكترونيات القدرة والأنظمة المدمجة",
+    "show_contacts": "إظهار التواصل",
+    "hide_contacts": "إخفاء التواصل",
+    "email_label": "البريد الإلكتروني",
+    "phone_label": "الهاتف",
+    "whatsapp_chat": "محادثة واتساب",
+    "birthday_label": "تاريخ الميلاد",
+    "birthday_value": "26 مارس 2001",
+    "location_label": "الموقع",
+    "location_value": "سلجوقلو / قونيا، تركيا"
   },
 
   "nav": {
-    "about": "About",
-    "resume": "Resume",
-    "portfolio": "Portfolio",
+    "about": "نبذة عني",
+    "resume": "السيرة",
+    "portfolio": "المشاريع",
     "cv": "CV",
-    "contact": "Contact"
+    "contact": "تواصل"
   },
 
   "about": {
-    "title": "About me",
-    "bio_p1": "R&D engineer with 4 years delivering embedded power systems, motor-driver architectures, and advanced PCBs for UAV and robotics applications. Proven track record across BLDC/ESC development, battery and BMS design, 200W wireless power transfer, STM32 firmware on FreeRTOS, and high-density KiCad PCB layout — from concept through hardware validation, with the ability to interpret academic and technical literature and translate research concepts into functional engineering prototypes.",
-    "bio_p2": "Hands-on experience in government-funded R&D (TUBITAK), academic research, electric-vehicle power systems, and industrial embedded platforms. Strong fit for Revotronics Labs combining motor-driver design, power-conversion expertise, real-time firmware development, and rigorous prototype-to-system delivery in demanding R&D environments.",
+    "title": "نبذة عني",
+    "bio_p1": "مهندس بحث وتطوير بخبرة 4 سنوات في تصميم أنظمة القدرة المدمجة، بنيات دوائر التحكم بالمحركات، ولوحات الدوائر المطبوعة المتقدمة لتطبيقات الطائرات بدون طيار والروبوتات. سجل حافل في تطوير محركات BLDC/ESC، تصميم البطاريات وأنظمة BMS، نقل الطاقة لاسلكياً بقدرة 200 واط، وبرمجة المتحكمات STM32 على FreeRTOS، وتصميم لوحات PCB عالية الكثافة بـ KiCad — من مرحلة المفهوم وحتى التحقق من الأجهزة.",
+    "bio_p2": "خبرة عملية في مشاريع البحث والتطوير الحكومية (TUBITAK)، البحث الأكاديمي، أنظمة القدرة للسيارات الكهربائية، والمنصات الصناعية المدمجة. مزيج قوي من تصميم دوائر التحكم بالمحركات، خبرة تحويل الطاقة، تطوير البرمجيات المدمجة في الزمن الحقيقي، وتسليم النماذج الأولية بدقة في بيئات البحث والتطوير المتطلبة.",
 
-    "service_title": "What I'm doing",
+    "service_title": "ما أعمل عليه",
 
-    "service_1_title": "Embedded Firmware & RTOS",
-    "service_1_text": "Building deterministic real-time firmware in C/C++ on STM32H7/F7 with FreeRTOS, FreeRTOS-MPU, and FreeRTOS+TCP — covering DMA, SPI, I2C, CAN, Ethernet, Modbus, and SMBus.",
+    "service_1_title": "البرمجيات المدمجة و RTOS",
+    "service_1_text": "بناء برمجيات مدمجة حتمية في الزمن الحقيقي بلغة C/C++ على متحكمات STM32H7/F7 باستخدام FreeRTOS و FreeRTOS-MPU و FreeRTOS+TCP — تشمل DMA، SPI، I2C، CAN، Ethernet، Modbus و SMBus.",
 
-    "service_2_title": "Advanced PCB Design",
-    "service_2_text": "High-density schematic & layout with KiCad and Altium Designer — integrating motor drivers, power management, galvanic isolation, and EMC considerations into production-ready boards.",
+    "service_2_title": "تصميم لوحات PCB المتقدمة",
+    "service_2_text": "تصميم مخططات ولوحات عالية الكثافة باستخدام KiCad و Altium Designer — دمج دوائر التحكم بالمحركات، إدارة الطاقة، العزل الكلفاني، واعتبارات التوافق الكهرومغناطيسي في لوحات جاهزة للإنتاج.",
 
-    "service_3_title": "Power Electronics & WPT",
-    "service_3_text": "Designing SMPS, BMS, gate drivers, and resonance-based wireless power transfer systems (200W WPT). Expertise in battery charging, BLDC motor drivers, and EV power conversion.",
+    "service_3_title": "إلكترونيات القدرة و WPT",
+    "service_3_text": "تصميم مزودات الطاقة SMPS، أنظمة إدارة البطارية BMS، دوائر قيادة البوابات، وأنظمة نقل الطاقة اللاسلكي بالرنين (200 واط WPT). خبرة في شحن البطاريات، دوائر التحكم بمحركات BLDC، وتحويل الطاقة للسيارات الكهربائية.",
 
-    "service_4_title": "Motor Control & Sensor Fusion",
-    "service_4_text": "Implementing FOC, Space Vector PWM, Six-Step Commutation, and PID loops. Kalman Filtering and Multi-IMU sensor fusion for GPS-denied UAV & robotics localization.",
+    "service_4_title": "التحكم بالمحركات ودمج المستشعرات",
+    "service_4_text": "تنفيذ خوارزميات FOC، Space Vector PWM، Six-Step Commutation، وحلقات PID. تطبيق مرشح كالمان ودمج بيانات متعدد المستشعرات (Multi-IMU) لتحديد المواقع بدون GPS في الطائرات بدون طيار والروبوتات.",
 
-    "certifications_title": "Certifications & Achievements",
+    "certifications_title": "الشهادات والإنجازات",
 
-    "cert_1_title": "Teknofest Finalist — EV Race 2025",
-    "cert_1_text": "International Efficiency Challenge Electric Vehicle finalist at Teknofest 2025. Designed the 4.5kW / 72V BLDC motor driver and contributed to BMS & SMPS development for the EV competition platform.",
+    "cert_1_title": "نهائيات تكنوفست — سباق السيارات الكهربائية 2025",
+    "cert_1_text": "متأهل لنهائيات مسابقة تحدي الكفاءة الدولية للسيارات الكهربائية في تكنوفست 2025. تصميم دائرة التحكم بمحرك BLDC بقدرة 4.5 كيلوواط / 72 فولت والمساهمة في تطوير BMS و SMPS لمنصة المسابقة.",
 
-    "cert_2_title": "Teknofest Finalist — EV Race 2024",
-    "cert_2_text": "International Efficiency Challenge Electric Vehicle finalist at Teknofest 2024. Contributed motor driver design, 3kW power supply (220V→72V), and local charging unit with SMPS topologies.",
+    "cert_2_title": "نهائيات تكنوفست — سباق السيارات الكهربائية 2024",
+    "cert_2_text": "متأهل لنهائيات مسابقة تحدي الكفاءة الدولية للسيارات الكهربائية في تكنوفست 2024. المساهمة في تصميم دائرة التحكم بالمحرك، مزود طاقة 3 كيلوواط (220 فولت→72 فولت)، ووحدة شحن محلية بتقنيات SMPS.",
 
-    "cert_3_title": "Graduation with Honours (Onur Belgesi)",
-    "cert_3_text": "Graduated with Honours (Onur Belgesi) from Necmettin Erbakan University with a GPA of 3.06/4.00 — Mechatronics Engineering, 2024.",
+    "cert_3_title": "التخرج بمرتبة الشرف (Onur Belgesi)",
+    "cert_3_text": "تخرج بمرتبة الشرف من جامعة نجم الدين أربكان بمعدل تراكمي 3.06/4.00 — هندسة الميكاترونيكس، 2024.",
 
-    "cert_4_title": "Mastering RTOS: FreeRTOS & STM32 — Udemy",
-    "cert_4_text": "Completed \"Mastering RTOS: Hands-on FreeRTOS and STM32Fx with Debugging\" on Udemy (2023). Applied directly to STM32H7 FreeRTOS-MPU multitasking and real-time safety firmware.",
+    "cert_4_title": "إتقان RTOS: FreeRTOS و STM32 — Udemy",
+    "cert_4_text": "أكمل دورة \"إتقان RTOS: FreeRTOS العملي و STM32Fx مع التصحيح\" على Udemy (2023). تطبيق مباشر على تعدد المهام بـ STM32H7 FreeRTOS-MPU وبرمجيات السلامة في الزمن الحقيقي.",
 
-    "cert_5_title": "Embedded C Programming — Udemy",
-    "cert_5_text": "Completed \"Microcontroller Embedded C Programming: Absolute Beginners\" on Udemy (2023), establishing rigorous bare-metal C fundamentals for STM32 peripheral and register-level programming.",
+    "cert_5_title": "برمجة C المدمجة — Udemy",
+    "cert_5_text": "أكمل دورة \"برمجة C المدمجة للمتحكمات: للمبتدئين\" على Udemy (2023)، لتأسيس أساسيات متينة في برمجة C على مستوى السجلات والطرفيات لمتحكمات STM32.",
 
-    "cert_6_title": "1st Place — Electronics Competition",
-    "cert_6_text": "Achieved first place in a middle-school electronics competition by accurately assembling a random schematic circuit in the shortest time — the earliest recognition of hardware intuition.",
+    "cert_6_title": "المركز الأول — مسابقة إلكترونيات",
+    "cert_6_text": "حصل على المركز الأول في مسابقة إلكترونيات مدرسية بتجميع دائرة عشوائية من مخطط بأسرع وقت — أول تقدير لموهبة الأجهزة الإلكترونية.",
 
-    "tech_stack_title": "Tools & Tech Stack"
+    "tech_stack_title": "الأدوات والتقنيات"
   },
 
   "resume": {
-    "title": "Resume",
-    "education_title": "Education",
-    "experience_title": "Experience",
-    "skills_title": "My skills",
+    "title": "السيرة الذاتية",
+    "education_title": "التعليم",
+    "experience_title": "الخبرة العملية",
+    "skills_title": "مهاراتي",
 
-    "edu_1_title": "M.S. in Mechatronics Engineering",
-    "edu_1_year": "2024 - Present",
-    "edu_1_place": "Necmettin Erbakan University",
+    "edu_1_title": "ماجستير هندسة الميكاترونيكس",
+    "edu_1_year": "2024 - حالياً",
+    "edu_1_place": "جامعة نجم الدين أربكان",
 
-    "edu_2_title": "B.S. in Mechatronics Engineering",
+    "edu_2_title": "بكالوريوس هندسة الميكاترونيكس",
     "edu_2_year": "2020 - 2024",
-    "edu_2_place": "Necmettin Erbakan University",
+    "edu_2_place": "جامعة نجم الدين أربكان",
 
-    "edu_3_title": "Turkish Language Course (C1)",
+    "edu_3_title": "دورة اللغة التركية (C1)",
     "edu_3_year": "2019 - 2020",
     "edu_3_place": "TÖMER",
 
-    "edu_4_title": "High School, Natural Sciences",
+    "edu_4_title": "الثانوية العامة، العلوم الطبيعية",
     "edu_4_year": "2016 - 2019",
-    "edu_4_place": "AL KINDY, Kuwait",
+    "edu_4_place": "الكندي، الكويت",
 
-    "exp_1_title": "UAV Wireless Charging Station",
-    "exp_1_year": "2026 — Present",
-    "exp_1_company": "Zenopix Technology, Konya, Turkey",
-    "exp_1_text": "Architected UAV ground Tx & onboard Rx WPT power electronics for autonomous drone charging. Developed custom BMS with safe charging profiles, real-time SMBus telemetry, and embedded fault handling.",
+    "exp_1_title": "محطة شحن لاسلكي للطائرات بدون طيار",
+    "exp_1_year": "2026 — حالياً",
+    "exp_1_company": "شركة زينوبيكس للتكنولوجيا، قونيا، تركيا",
+    "exp_1_text": "تصميم إلكترونيات القدرة لنقل الطاقة اللاسلكي (WPT) — وحدة الإرسال الأرضية ووحدة الاستقبال على متن الطائرة للشحن الذاتي. تطوير نظام BMS مخصص مع ملفات شحن آمنة، بيانات SMBus في الزمن الحقيقي، ومعالجة الأعطال المدمجة.",
 
-    "exp_2_title": "Industrial BLDC Motor Driver",
-    "exp_2_year": "2026 — Present",
-    "exp_2_company": "Zenopix Technology, Konya, Turkey",
-    "exp_2_text": "Defined architecture for a high-reliability BLDC motor driver: FOC & Six-Step control, high-current PCB layout, gate driver selection, protection logic, thermal robustness, and firmware interface design.",
+    "exp_2_title": "دائرة تحكم بمحرك BLDC صناعي",
+    "exp_2_year": "2026 — حالياً",
+    "exp_2_company": "شركة زينوبيكس للتكنولوجيا، قونيا، تركيا",
+    "exp_2_text": "تحديد بنية دائرة تحكم بمحرك BLDC عالية الموثوقية: تحكم FOC و Six-Step، تصميم PCB عالي التيار، اختيار دوائر قيادة البوابات، منطق الحماية، المتانة الحرارية، وتصميم واجهة البرمجيات المدمجة.",
 
-    "exp_3_title": "Hologram Fan System — TUBITAK R&D",
+    "exp_3_title": "نظام مروحة الهولوغرام — بحث TUBITAK",
     "exp_3_year": "2024 — 2026",
-    "exp_3_company": "Zenopix Technology, Konya, Turkey",
-    "exp_3_text": "Engineered 0.5m high-density LED PCB for a POV display. Designed high-current KiCad PCBs with galvanic isolation. Implemented FOC, SVPWM, Six-Step & PID on STM32/FreeRTOS. Achieved 200W WPT using Fuzzy Logic Control.",
+    "exp_3_company": "شركة زينوبيكس للتكنولوجيا، قونيا، تركيا",
+    "exp_3_text": "تصميم لوحة PCB بطول 0.5 متر عالية الكثافة بـ LED لعرض POV. تصميم لوحات KiCad عالية التيار مع عزل كلفاني. تنفيذ FOC و SVPWM و Six-Step و PID على STM32/FreeRTOS. تحقيق 200 واط WPT باستخدام التحكم بالمنطق الضبابي.",
 
-    "exp_4_title": "Abrasion Tester — End-to-End Control System",
+    "exp_4_title": "جهاز اختبار التآكل — نظام تحكم متكامل",
     "exp_4_year": "2021 — 2023",
-    "exp_4_company": "Zenopix Technology, Konya, Turkey",
-    "exp_4_text": "Built full signal-processing pipeline (SPI/I2C), custom DC motor driver with PID, and a C# GUI for real-time machine control and data logging via UART.",
+    "exp_4_company": "شركة زينوبيكس للتكنولوجيا، قونيا، تركيا",
+    "exp_4_text": "بناء خط معالجة إشارات كامل (SPI/I2C)، دائرة تحكم بمحرك DC مخصصة مع PID، وواجهة مستخدم C# للتحكم بالآلة في الزمن الحقيقي وتسجيل البيانات عبر UART.",
 
-    "exp_5_title": "Embedded Interface & UI Simulation",
+    "exp_5_title": "واجهات مدمجة ومحاكاة واجهات المستخدم",
     "exp_5_year": "2021 — 2022",
-    "exp_5_company": "Zenopix Technology, Konya, Turkey",
-    "exp_5_text": "Developed JavaScript/CSS lighting simulation for product visualization. Launched four localized multilingual corporate websites with SEO optimization."
+    "exp_5_company": "شركة زينوبيكس للتكنولوجيا، قونيا، تركيا",
+    "exp_5_text": "تطوير محاكاة إضاءة بـ JavaScript/CSS لعرض المنتجات. إطلاق أربعة مواقع شركات متعددة اللغات مع تحسين محركات البحث."
   },
 
   "portfolio": {
-    "title": "Portfolio",
-    "filter_all": "All",
-    "filter_hardware": "Hardware & PCB",
-    "filter_embedded": "Embedded Control",
-    "filter_software": "PC Software",
-    "select_category": "Select category",
+    "title": "المشاريع",
+    "filter_all": "الكل",
+    "filter_hardware": "الأجهزة و PCB",
+    "filter_embedded": "التحكم المدمج",
+    "filter_software": "برمجيات الحاسب",
+    "select_category": "اختر الفئة",
 
-    "proj_1_title": "UAV Wireless Charging Station",
-    "proj_1_category": "Hardware & PCB",
+    "proj_1_title": "محطة شحن لاسلكي للطائرات بدون طيار",
+    "proj_1_category": "الأجهزة و PCB",
 
-    "proj_2_title": "Industrial BLDC Motor Driver",
-    "proj_2_category": "Embedded Control",
+    "proj_2_title": "دائرة تحكم بمحرك BLDC صناعي",
+    "proj_2_category": "التحكم المدمج",
 
-    "proj_3_title": "Hologram Fan — TUBITAK R&D",
-    "proj_3_category": "Embedded Control",
+    "proj_3_title": "مروحة الهولوغرام — بحث TUBITAK",
+    "proj_3_category": "التحكم المدمج",
 
-    "proj_4_title": "Multi-IMU Sensor Fusion (M.S. Thesis)",
-    "proj_4_category": "Embedded Control",
+    "proj_4_title": "دمج مستشعرات Multi-IMU (رسالة ماجستير)",
+    "proj_4_category": "التحكم المدمج",
 
-    "proj_5_title": "Flight Controller PCB — ArduPilot/PX4",
-    "proj_5_category": "Hardware & PCB",
+    "proj_5_title": "لوحة تحكم طيران — ArduPilot/PX4",
+    "proj_5_category": "الأجهزة و PCB",
 
-    "proj_6_title": "Electric Vehicle Motor Driver (4.5kW/72V)",
-    "proj_6_category": "Hardware & PCB",
+    "proj_6_title": "دائرة تحكم بمحرك سيارة كهربائية (4.5kW/72V)",
+    "proj_6_category": "الأجهزة و PCB",
 
-    "proj_7_title": "Laser Vibrometer PCB",
-    "proj_7_category": "Hardware & PCB",
+    "proj_7_title": "لوحة PCB لقياس الاهتزاز بالليزر",
+    "proj_7_category": "الأجهزة و PCB",
 
-    "proj_8_title": "Temperature Control — Medical Furnace",
-    "proj_8_category": "Hardware & PCB",
+    "proj_8_title": "التحكم بدرجة الحرارة — فرن طبي",
+    "proj_8_category": "الأجهزة و PCB",
 
-    "proj_9_title": "Abrasion Tester Control System",
-    "proj_9_category": "Embedded Control",
+    "proj_9_title": "نظام التحكم بجهاز اختبار التآكل",
+    "proj_9_category": "التحكم المدمج",
 
-    "proj_10_title": "Hyperloop Data Transmission (STM32F7)",
-    "proj_10_category": "Embedded Control",
+    "proj_10_title": "نقل بيانات هايبرلوب (STM32F7)",
+    "proj_10_category": "التحكم المدمج",
 
-    "proj_11_title": "POSYAK Assistive Wearable Device",
-    "proj_11_category": "Embedded Control",
+    "proj_11_title": "جهاز POSYAK المساعد القابل للارتداء",
+    "proj_11_category": "التحكم المدمج",
 
-    "proj_12_title": "Web & Lighting Simulation",
-    "proj_12_category": "PC Software"
+    "proj_12_title": "تطوير الويب ومحاكاة الإضاءة",
+    "proj_12_category": "برمجيات الحاسب"
   },
 
   "project_details": {
-    "title": "Project Details",
-    "back_btn": "Back to Portfolio",
-    "loading": "Loading project details...",
-    "error": "Error loading project details. Please try again later."
+    "title": "تفاصيل المشروع",
+    "back_btn": "العودة للمشاريع",
+    "loading": "جارٍ تحميل تفاصيل المشروع...",
+    "error": "خطأ في تحميل تفاصيل المشروع. يرجى المحاولة لاحقاً."
   },
 
   "cv_page": {
-    "title": "Curriculum Vitae",
-    "download_btn": "Download CV",
-    "pdf_fallback": "This browser does not support inline PDFs. Please use the download button above to view the CV."
+    "title": "السيرة الذاتية",
+    "download_btn": "تحميل السيرة الذاتية",
+    "pdf_fallback": "هذا المتصفح لا يدعم عرض ملفات PDF. يرجى استخدام زر التحميل أعلاه لعرض السيرة الذاتية."
   },
 
   "contact": {
-    "title": "Contact",
-    "form_title": "Contact Form",
-    "placeholder_name": "Full name",
-    "placeholder_email": "Email address",
-    "placeholder_message": "Your Message",
-    "send_btn": "Send Message"
+    "title": "تواصل معي",
+    "form_title": "نموذج التواصل",
+    "placeholder_name": "الاسم الكامل",
+    "placeholder_email": "البريد الإلكتروني",
+    "placeholder_message": "رسالتك",
+    "send_btn": "إرسال الرسالة"
   },
 
   "privacy": {
-    "title": "Privacy Policy",
-    "intro": "This Privacy Policy outlines how your personal information and usage data are collected, processed, and safeguarded when you access and interact with this website. I am committed to protecting your privacy and ensuring transparency regarding any data collected.",
-    "section_1_title": "1. Information Gathered Automatically",
-    "section_1_p1": "When you visit and navigate through this website, certain information about your session is automatically recorded. This data is non-personally identifiable and is used exclusively to evaluate site performance, understand visitor dynamics, and improve general user experience.",
-    "section_1_p2": "This automatically collected information includes:",
-    "section_1_li1": "Device and Technical Information: Details regarding your device type (desktop, mobile, or tablet), screen resolution, operating system, web browser type, and language settings.",
-    "section_1_li2": "Access and Referrer Logs: The origin of your visit (such as search engines, social media platforms, direct navigation, or campaigns), including specific UTM tracking parameters if applicable.",
-    "section_1_li3": "Interaction and Usage Patterns: The pages you view, navigation routes, timestamps of your visit, session durations, and specific interactions (such as link clicks, downloads of resources, and form submissions).",
-    "section_1_li4": "General Location Data: Your approximate geographic location (at a country or city level) estimated via network information.",
-    "section_2_title": "2. Information You Voluntarily Provide",
-    "section_2_p1": "If you choose to communicate with me via the contact form on this website, you voluntarily provide personal details such as your name, email address, and the content of your message.",
-    "section_2_p2": "To ensure the security, delivery, and appropriate routing of your inquiries, your submission is bundled with technical diagnostic metadata (such as device type, browser, approximate location, and timestamp of the transaction). This data is processed securely through specialized third-party services and forwarded directly to my primary contact address.",
-    "section_3_title": "3. Cookies and Tracking Technologies",
-    "section_3_p1": "This website utilizes cookies and similar tracking technologies to analyze trends and monitor user interactions. These technologies help recognize repeat visitors and optimize page load configurations. You can manage, block, or delete cookies through your individual browser settings; however, disabling cookies may impact your overall experience on the site.",
-    "section_4_title": "4. Third-Party Integrations",
-    "section_4_p1": "To support professional functionality, this site integrates industry-standard third-party tools (including Google Analytics, Microsoft Clarity, and FormSubmit). These services compile aggregated data and anonymous recordings of visitor behavior, helping to identify bugs and enhance site navigation. All third-party providers handle your data in strict compliance with their respective privacy policies and security regulations.",
-    "section_5_title": "5. Data Protection and Retention",
-    "section_5_p1": "I prioritize data safety and implement appropriate technical measures to prevent unauthorized access, alteration, or disclosure of collected logs and messages. Your information is retained only as long as necessary to address your inquiries or perform analytics. I do not sell, trade, or distribute your information to outside parties.",
-    "section_6_title": "6. Consent and Policy Updates",
-    "section_6_p1": "By using this website, you hereby consent to the terms of this Privacy Policy. I reserve the right to modify or update this document at any time to reflect updates in website features or legal requirements.",
-    "last_updated": "Last updated: June 2026"
+    "title": "سياسة الخصوصية",
+    "intro": "توضح سياسة الخصوصية هذه كيفية جمع ومعالجة وحماية معلوماتك الشخصية وبيانات الاستخدام عند وصولك إلى هذا الموقع والتفاعل معه. أنا ملتزم بحماية خصوصيتك وضمان الشفافية بشأن أي بيانات يتم جمعها.",
+    "section_1_title": "1. المعلومات التي تُجمع تلقائياً",
+    "section_1_p1": "عند زيارتك لهذا الموقع والتنقل فيه، يتم تسجيل معلومات معينة عن جلستك تلقائياً. هذه البيانات غير محددة للهوية وتُستخدم حصرياً لتقييم أداء الموقع وفهم ديناميكيات الزوار وتحسين تجربة المستخدم.",
+    "section_1_p2": "تشمل هذه المعلومات المجمعة تلقائياً:",
+    "section_1_li1": "معلومات الجهاز والتقنية: تفاصيل حول نوع جهازك (حاسوب، هاتف، أو جهاز لوحي)، دقة الشاشة، نظام التشغيل، نوع المتصفح، وإعدادات اللغة.",
+    "section_1_li2": "سجلات الوصول والإحالة: مصدر زيارتك (مثل محركات البحث، منصات التواصل الاجتماعي، التنقل المباشر، أو الحملات)، بما في ذلك معلمات تتبع UTM إن وجدت.",
+    "section_1_li3": "أنماط التفاعل والاستخدام: الصفحات التي تعرضها، مسارات التنقل، أوقات زيارتك، مدة الجلسات، والتفاعلات المحددة (مثل النقرات على الروابط، تحميل الموارد، وإرسال النماذج).",
+    "section_1_li4": "بيانات الموقع العامة: موقعك الجغرافي التقريبي (على مستوى الدولة أو المدينة) المقدر عبر معلومات الشبكة.",
+    "section_2_title": "2. المعلومات التي تقدمها طوعاً",
+    "section_2_p1": "إذا اخترت التواصل معي عبر نموذج الاتصال في هذا الموقع، فإنك تقدم طوعاً بيانات شخصية مثل اسمك وبريدك الإلكتروني ومحتوى رسالتك.",
+    "section_2_p2": "لضمان الأمان والتوصيل والتوجيه المناسب لاستفساراتك، يتم تجميع إرسالك مع بيانات تشخيصية تقنية (مثل نوع الجهاز، المتصفح، الموقع التقريبي، والطابع الزمني). تتم معالجة هذه البيانات بشكل آمن من خلال خدمات طرف ثالث متخصصة وتُرسل مباشرة إلى عنوان الاتصال الرئيسي.",
+    "section_3_title": "3. ملفات تعريف الارتباط وتقنيات التتبع",
+    "section_3_p1": "يستخدم هذا الموقع ملفات تعريف الارتباط وتقنيات تتبع مشابهة لتحليل الاتجاهات ومراقبة تفاعلات المستخدمين. تساعد هذه التقنيات في التعرف على الزوار المتكررين وتحسين تكوينات تحميل الصفحات. يمكنك إدارة أو حظر أو حذف ملفات تعريف الارتباط من إعدادات متصفحك؛ ولكن تعطيلها قد يؤثر على تجربتك في الموقع.",
+    "section_4_title": "4. تكاملات الطرف الثالث",
+    "section_4_p1": "لدعم الوظائف المهنية، يدمج هذا الموقع أدوات طرف ثالث قياسية (بما في ذلك Google Analytics و Microsoft Clarity و FormSubmit). تقوم هذه الخدمات بتجميع بيانات مجمعة وتسجيلات مجهولة لسلوك الزوار، مما يساعد في تحديد الأخطاء وتحسين التنقل. يتعامل جميع مزودي الطرف الثالث مع بياناتك وفقاً لسياسات الخصوصية ولوائح الأمان الخاصة بهم.",
+    "section_5_title": "5. حماية البيانات والاحتفاظ بها",
+    "section_5_p1": "أعطي الأولوية لسلامة البيانات وأطبق إجراءات تقنية مناسبة لمنع الوصول غير المصرح به أو التعديل أو الكشف عن السجلات والرسائل المجمعة. يتم الاحتفاظ بمعلوماتك فقط طالما كان ذلك ضرورياً لمعالجة استفساراتك أو إجراء التحليلات. لا أبيع أو أتاجر أو أوزع معلوماتك لأطراف خارجية.",
+    "section_6_title": "6. الموافقة وتحديثات السياسة",
+    "section_6_p1": "باستخدام هذا الموقع، فإنك توافق على شروط سياسة الخصوصية هذه. أحتفظ بالحق في تعديل أو تحديث هذا المستند في أي وقت ليعكس التحديثات في ميزات الموقع أو المتطلبات القانونية.",
+    "last_updated": "آخر تحديث: يونيو 2026"
   },
 
   "footer": {
-    "copyright": "© 2026 Ahmed Ahmed. All rights reserved.",
-    "privacy_link": "Privacy Policy"
+    "copyright": "© 2026 أحمد أحمد. جميع الحقوق محفوظة.",
+    "privacy_link": "سياسة الخصوصية"
   },
 
   "toast": {
-    "success_message": "Message sent successfully! Thank you."
+    "success_message": "تم إرسال الرسالة بنجاح! شكراً لك."
   }
 }
