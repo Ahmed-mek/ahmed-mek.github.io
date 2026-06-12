@@ -117,26 +117,102 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 
 
+// Google Analytics 4 (GA4) Custom Event Tracker
+const trackGAEvent = function (eventName, eventParams = {}) {
+  if (typeof window.gtag === "function") {
+    window.gtag("event", eventName, eventParams);
+  }
+};
+
 // contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
-// add event to all form input field
+// check form validation function
+const checkFormValidity = function () {
+  if (form && form.checkValidity()) {
+    formBtn.removeAttribute("disabled");
+  } else if (formBtn) {
+    formBtn.setAttribute("disabled", "");
+  }
+};
+
+// add event to all form input fields (input and change for select/checkbox)
 for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
-
-  });
+  formInputs[i].addEventListener("input", checkFormValidity);
+  formInputs[i].addEventListener("change", checkFormValidity);
 }
 
+// Populate hidden metadata fields for lead collection
+const populateHiddenFields = async function () {
+  const pageUrlInput = document.getElementById("hidden_page_url");
+  const referrerUrlInput = document.getElementById("hidden_referrer_url");
+  const utmParamsInput = document.getElementById("hidden_utm_params");
+  const submissionTimeInput = document.getElementById("hidden_submission_time");
+  const deviceTypeInput = document.getElementById("hidden_device_type");
+  const browserInput = document.getElementById("hidden_browser");
+  const approxLocationInput = document.getElementById("hidden_approx_location");
 
+  if (pageUrlInput) pageUrlInput.value = window.location.href;
+  if (referrerUrlInput) referrerUrlInput.value = document.referrer || "Direct";
+
+  // Parse UTM parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  const utmFields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+  const utmObj = {};
+  utmFields.forEach(param => {
+    if (urlParams.has(param)) {
+      utmObj[param] = urlParams.get(param);
+    }
+  });
+  if (utmParamsInput) utmParamsInput.value = Object.keys(utmObj).length > 0 ? JSON.stringify(utmObj) : "None";
+
+  // Date and Time
+  if (submissionTimeInput) submissionTimeInput.value = new Date().toLocaleString();
+
+  // Device Type
+  let deviceType = "Desktop";
+  if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+    deviceType = "Mobile";
+  } else if (/iPad|Tablet/i.test(navigator.userAgent)) {
+    deviceType = "Tablet";
+  }
+  if (deviceTypeInput) deviceTypeInput.value = deviceType;
+
+  // Browser
+  let browser = "Unknown Browser";
+  const ua = navigator.userAgent;
+  if (ua.indexOf("Firefox") > -1) {
+    browser = "Mozilla Firefox";
+  } else if (ua.indexOf("Opera") > -1 || ua.indexOf("OPR") > -1) {
+    browser = "Opera";
+  } else if (ua.indexOf("Chrome") > -1) {
+    browser = "Google Chrome";
+  } else if (ua.indexOf("Safari") > -1) {
+    browser = "Apple Safari";
+  } else if (ua.indexOf("Edge") > -1) {
+    browser = "Microsoft Edge";
+  }
+  if (browserInput) browserInput.value = browser;
+
+  // Location Geolocation API
+  if (approxLocationInput) {
+    try {
+      const response = await fetch("https://freeipapi.com/api/json");
+      if (response.ok) {
+        const geoData = await response.json();
+        approxLocationInput.value = `${geoData.cityName || "Unknown City"}, ${geoData.countryName || "Unknown Country"}`;
+      } else {
+        approxLocationInput.value = "Unknown (API error)";
+      }
+    } catch (e) {
+      approxLocationInput.value = "Unknown (Blocked/Adblock)";
+    }
+  }
+};
+
+window.addEventListener("load", populateHiddenFields);
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
@@ -166,6 +242,26 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+// Privacy Policy link click routing
+const privacyLink = document.getElementById("privacy-link");
+privacyLink?.addEventListener("click", function (e) {
+  e.preventDefault();
+  // Deactivate all pages and nav links
+  for (let j = 0; j < pages.length; j++) {
+    pages[j].classList.remove("active");
+  }
+  for (let k = 0; k < navigationLinks.length; k++) {
+    navigationLinks[k].classList.remove("active");
+  }
+  
+  // Show privacy policy page
+  const privacyPage = document.querySelector("[data-page='privacy']");
+  if (privacyPage) {
+    privacyPage.classList.add("active");
+    window.scrollTo(0, 0);
+  }
+});
+
 // project details fetch routing
 const projectDetailsArticle = document.querySelector("[data-page='project-details']");
 const projectItems = document.querySelectorAll("[data-filter-item]");
@@ -184,6 +280,9 @@ for (let i = 0; i < projectItems.length; i++) {
       alert("Project details not available yet.");
       return;
     }
+
+    // Track project view event
+    trackGAEvent("view_project", { project_name: projectTitle, project_file: fileName });
 
     // Set title and loading text
     projectPageTitle.innerText = projectTitle;
@@ -229,6 +328,26 @@ projectDetailsBackBtn?.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
 
+// Click trackers for contacts and downloads
+document.addEventListener("DOMContentLoaded", function () {
+  // Track WhatsApp Clicks
+  document.getElementById("whatsapp-link")?.addEventListener("click", function() {
+    trackGAEvent("click_whatsapp");
+  });
+
+  // Track Email Link Clicks
+  document.querySelectorAll("a[href^='mailto:']").forEach(link => {
+    link.addEventListener("click", function() {
+      trackGAEvent("click_email", { email_address: this.getAttribute("href") });
+    });
+  });
+
+  // Track CV Download Clicks
+  document.querySelector(".download-cv-btn")?.addEventListener("click", function() {
+    trackGAEvent("download_cv");
+  });
+});
+
 // Contact form AJAX submission
 form?.addEventListener("submit", async function (e) {
   e.preventDefault();
@@ -237,9 +356,18 @@ form?.addEventListener("submit", async function (e) {
   formBtn.setAttribute("disabled", "");
   formBtn.innerHTML = `<ion-icon name="sync-outline" class="spin"></ion-icon> <span>Sending...</span>`;
   
+  // Make sure hidden fields are populated
+  await populateHiddenFields();
+
   const formData = new FormData(form);
   const data = {};
   formData.forEach((value, key) => data[key] = value);
+
+  // Track lead form submission event
+  trackGAEvent("lead_form_submit", {
+    service_type: data.service || "unknown",
+    preferred_contact: data.preferred_contact || "unknown"
+  });
   
   try {
     const response = await fetch("https://formsubmit.co/ajax/4c2147eaca0ce78c681deb9cf3ab2bf6", {
@@ -270,10 +398,6 @@ form?.addEventListener("submit", async function (e) {
   } finally {
     formBtn.innerHTML = originalBtnText;
     // Recheck validity for button state
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
+    checkFormValidity();
   }
 });

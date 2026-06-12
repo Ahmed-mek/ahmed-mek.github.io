@@ -5,6 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Analytics (GA4) - Replace G-XXXXXXXXXX with your actual Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Microsoft Clarity - Replace YOUR_CLARITY_PROJECT_ID with your actual Clarity Project ID -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","YOUR_CLARITY_PROJECT_ID");
+  </script>
   <title>Ahmed Ahmed — R&D Power & Embedded Electronics Engineer</title>
   <meta name="description" content="Portfolio of Ahmed Ahmed, R&D Power & Embedded Electronics Engineer with 5+ years in BLDC/ESC, SMPS, BMS, FreeRTOS, STM32, and KiCad PCB design.">
 
@@ -90,6 +108,10 @@
               <p class="contact-title">Phone</p>
 
               <a href="tel:+905523135538" class="contact-link">+90 552 313 55 38</a>
+              
+              <a href="https://wa.me/905523135538" target="_blank" class="contact-link" id="whatsapp-link" style="color: var(--orange-yellow-crayola); font-size: var(--fs-8); display: flex; align-items: center; gap: 4px; margin-top: 3px;">
+                <ion-icon name="logo-whatsapp"></ion-icon> WhatsApp Chat
+              </a>
             </div>
 
           </li>
@@ -1005,17 +1027,59 @@
 
           <form action="https://formsubmit.co/4c2147eaca0ce78c681deb9cf3ab2bf6" method="POST" class="form" data-form>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+            <!-- Hidden fields for automatic data collection -->
+            <input type="hidden" name="_subject" value="New Portfolio Lead / Project Request">
+            <input type="hidden" name="page_url" id="hidden_page_url">
+            <input type="hidden" name="referrer_url" id="hidden_referrer_url">
+            <input type="hidden" name="utm_params" id="hidden_utm_params">
+            <input type="hidden" name="submission_time" id="hidden_submission_time">
+            <input type="hidden" name="device_type" id="hidden_device_type">
+            <input type="hidden" name="browser" id="hidden_browser">
+            <input type="hidden" name="approx_location" id="hidden_approx_location">
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full Name *" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email Address *" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <div class="input-wrapper">
+              <input type="tel" name="phone" class="form-input" placeholder="Phone / WhatsApp *" required data-form-input>
+
+              <input type="text" name="company" class="form-input" placeholder="Company Name (Optional)" data-form-input>
+            </div>
+
+            <div class="input-wrapper">
+              <select name="service" class="form-input" required data-form-input style="background: var(--eerie-black-1); color: var(--white-2); cursor: pointer; border: 1px solid var(--jet); border-radius: 14px;">
+                <option value="" disabled selected>Service Needed / Project Type *</option>
+                <option value="embedded_systems">Embedded Systems / Firmware</option>
+                <option value="power_electronics">Power Electronics &amp; WPT</option>
+                <option value="pcb_design">PCB Design (Altium/KiCad)</option>
+                <option value="motor_control">Motor Control &amp; FOC</option>
+                <option value="other">Other / Custom R&amp;D Project</option>
+              </select>
+
+              <input type="text" name="budget" class="form-input" placeholder="Estimated Budget (Optional)" data-form-input>
+            </div>
+
+            <div class="input-wrapper" style="grid-template-columns: 1fr;">
+              <select name="preferred_contact" class="form-input" required data-form-input style="background: var(--eerie-black-1); color: var(--white-2); cursor: pointer; border: 1px solid var(--jet); border-radius: 14px;">
+                <option value="" disabled selected>Preferred Contact Method *</option>
+                <option value="email">Email</option>
+                <option value="whatsapp">WhatsApp / Phone</option>
+              </select>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Project Details &amp; Message *" required data-form-input></textarea>
+
+            <div class="consent-wrapper" style="display: flex; align-items: center; gap: 10px; margin-bottom: 25px; padding: 0 5px;">
+              <input type="checkbox" name="consent" id="consent" required class="form-checkbox" data-form-input style="width: 18px; height: 18px; accent-color: var(--orange-yellow-crayola); cursor: pointer;">
+              <label for="consent" class="consent-label" style="color: var(--light-gray); font-size: var(--fs-6); cursor: pointer; user-select: none;">I agree to share my contact details for follow-up. *</label>
+            </div>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <span>Send Request</span>
             </button>
 
           </form>
@@ -1023,6 +1087,62 @@
         </section>
 
       </article>
+
+      <!--
+        - #PRIVACY
+      -->
+      <article class="privacy" data-page="privacy" style="display: none;">
+
+        <header>
+          <h2 class="h2 article-title">Privacy Policy</h2>
+        </header>
+
+        <section class="privacy-text" style="color: var(--light-gray); font-size: var(--fs-6); line-height: 1.6; margin-bottom: 25px;">
+          <p style="margin-bottom: 15px;">
+            Your privacy is important to me. This Privacy Policy explains how this website collects, uses, and safeguards information when you visit.
+          </p>
+
+          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">1. Analytics &amp; Tracking</h3>
+          <p style="margin-bottom: 15px;">
+            This website uses <strong>Google Analytics 4 (GA4)</strong> and <strong>Microsoft Clarity</strong> to analyze traffic and understand visitor behavior. These tools collect non-personal data, such as:
+          </p>
+          <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px;">
+            <li>Device type (Mobile, Desktop, Tablet), browser, and operating system.</li>
+            <li>Approximate geographic location (country/city level).</li>
+            <li>Time of visit, pages viewed, and duration of stay.</li>
+            <li>Interaction events (e.g., clicking WhatsApp/email links, downloading the CV, viewing projects, submitting contact forms).</li>
+          </ul>
+          <p style="margin-bottom: 15px;">
+            This information is used solely to improve the user experience and analyze portfolio performance. Microsoft Clarity also records anonymous user sessions (such as click heatmaps and scroll depth) to help optimize layout and navigation.
+          </p>
+
+          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">2. Contact / Request Form Data</h3>
+          <p style="margin-bottom: 15px;">
+            If you choose to contact me via the form on this website, the information you enter (Name, Email, Phone/WhatsApp, Company, Service, Message, and Budget) is collected.
+          </p>
+          <p style="margin-bottom: 15px;">
+            <strong>No data is collected automatically without your consent.</strong> Your contact details are only submitted and processed when you manually check the consent box and click "Send Request".
+          </p>
+          <p style="margin-bottom: 15px;">
+            The form submission is processed securely via <strong>FormSubmit</strong> and delivered directly to my email (<a href="mailto:ahmedmikatronik@gmail.com" style="color: var(--orange-yellow-crayola);">ahmedmikatronik@gmail.com</a>) to handle your request.
+          </p>
+
+          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">3. Cookies</h3>
+          <p style="margin-bottom: 15px;">
+            Analytics services may place small files called cookies on your device to distinguish unique visitors. You can choose to disable cookies in your browser settings at any time.
+          </p>
+
+          <p style="margin-top: 30px; font-size: var(--fs-7); color: var(--light-gray-70);">
+            Last updated: June 2026
+          </p>
+        </section>
+
+      </article>
+
+      <!-- Footer -->
+      <footer style="margin-top: 40px; padding: 20px 0; text-align: center; border-top: 1px solid var(--jet); font-size: var(--fs-8); color: var(--light-gray-70);">
+        <p>© 2026 Ahmed Ahmed. All rights reserved. | <a href="#" id="privacy-link" style="color: var(--orange-yellow-crayola); text-decoration: underline;">Privacy Policy</a></p>
+      </footer>
 
     </div>
 
