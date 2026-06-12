@@ -74,19 +74,12 @@
           <p class="title" data-i18n="sidebar.title">R&D Power & Embedded Electronics Engineer</p>
         </div>
 
-        <!-- Language Switcher -->
-        <div class="lang-switcher" style="position: relative;">
-          <button class="lang-toggle" id="lang-toggle">
-            <span id="lang-current-flag">🇬🇧</span>
-            <span id="lang-current-label">EN</span>
-            <ion-icon name="chevron-down" style="font-size: 12px;"></ion-icon>
-          </button>
-          <ul class="lang-dropdown" id="lang-dropdown">
-            <li class="lang-option active" data-lang="en">🇬🇧 English</li>
-            <li class="lang-option" data-lang="ar">🇸🇦 العربية</li>
-            <li class="lang-option" data-lang="tr">🇹🇷 Türkçe</li>
-            <li class="lang-option" data-lang="es">🇪🇸 Español</li>
-          </ul>
+        <!-- Language Switcher (Inline Flags) -->
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn active" data-lang="en" title="English">🇬🇧</button>
+          <button class="lang-btn" data-lang="ar" title="العربية">🇸🇦</button>
+          <button class="lang-btn" data-lang="tr" title="Türkçe">🇹🇷</button>
+          <button class="lang-btn" data-lang="es" title="Español">🇪🇸</button>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -1242,7 +1235,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/i18n.js?v=1.0"></script>
+  <script src="./assets/js/i18n.js?v=2.0"></script>
   <script src="./assets/js/script.js?v=2.4"></script>
 
   <!--
