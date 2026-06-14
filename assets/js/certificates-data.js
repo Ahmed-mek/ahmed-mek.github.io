@@ -56,6 +56,12 @@ window.CERTIFICATES_DATA = [
     file: "first-aid-training-certificate.pdf"
   },
   {
+    title: "Linux Administration with Ubuntu",
+    year: "2022",
+    description: "Completed a 60-hour KOMEK training program covering Linux fundamentals and practical Ubuntu system usage.",
+    file: "linux-ubuntu-training-certificate.pdf"
+  },
+  {
     title: "Arduino Programming Certificate",
     year: "2021",
     description: "Completed a 56-hour Arduino programming and development course in information technologies.",
