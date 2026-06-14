@@ -22,6 +22,7 @@
   "nav": {
     "about": "About",
     "resume": "Resume",
+    "certificates": "Certificates",
     "portfolio": "Portfolio",
     "cv": "CV",
     "contact": "Contact"
@@ -67,6 +68,18 @@
     "cert_6_text": "Achieved first place in a middle-school electronics competition by accurately assembling a random schematic circuit in the shortest time — the earliest recognition of hardware intuition.",
 
     "tech_stack_title": "Tools & Tech Stack"
+  },
+
+  "certificates": {
+    "title": "Certificates",
+    "intro": "Browse my professional certificates and download the original PDF files.",
+    "cert_1": "TEKNOFEST EV Finalist",
+    "cert_2": "TEKNOFEST EV Finalist",
+    "cert_3": "Graduation Honors Certificate",
+    "cert_4": "Arduino Programming Certificate",
+    "cert_5": "Microcontroller Embedded C Programming",
+    "view": "View PDF",
+    "download": "Download"
   },
 
   "resume": {

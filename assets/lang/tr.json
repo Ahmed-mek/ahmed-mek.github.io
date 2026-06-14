@@ -22,6 +22,7 @@
   "nav": {
     "about": "Hakkımda",
     "resume": "Özgeçmiş",
+    "certificates": "Sertifikalar",
     "portfolio": "Portföy",
     "cv": "CV",
     "contact": "İletişim"
@@ -67,6 +68,18 @@
     "cert_6_text": "Bir ortaokul elektronik yarışmasında rastgele bir şematik devreyi en kısa sürede doğru bir şekilde monte ederek birinci oldu — donanım sezgisinin en erken tanınması.",
 
     "tech_stack_title": "Araçlar & Teknoloji Yığını"
+  },
+
+  "certificates": {
+    "title": "Sertifikalar",
+    "intro": "Profesyonel sertifikalarımı inceleyin ve orijinal PDF dosyalarını indirin.",
+    "cert_1": "TEKNOFEST EV Finalist",
+    "cert_2": "TEKNOFEST EV Finalist",
+    "cert_3": "Graduation Honors Certificate",
+    "cert_4": "Arduino Programming Certificate",
+    "cert_5": "Microcontroller Embedded C Programming",
+    "view": "PDF'yi Görüntüle",
+    "download": "İndir"
   },
 
   "resume": {
