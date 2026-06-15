@@ -233,7 +233,7 @@
   },
 
   "cookie": {
-    "message": "Este sitio utiliza cookies y herramientas de análisis para mejorar su experiencia.",
+    "message": "Este sitio utiliza cookies y herramientas de análisis. Al continuar navegando, acepta el uso de cookies.",
     "learn_more": "Más información",
     "accept": "Entendido"
   }

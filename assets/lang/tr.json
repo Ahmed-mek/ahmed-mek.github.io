@@ -233,7 +233,7 @@
   },
 
   "cookie": {
-    "message": "Bu site, deneyiminizi iyileştirmek için çerezler ve analiz araçları kullanmaktadır.",
+    "message": "Bu site çerezleri ve analiz araçlarını kullanmaktadır. Sitede gezinmeye devam ederek çerez kullanımını kabul etmiş olursunuz.",
     "learn_more": "Daha fazla bilgi",
     "accept": "Anladım"
   }
