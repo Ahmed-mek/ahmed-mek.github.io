@@ -132,6 +132,8 @@
 
   "portfolio": {
     "title": "Portafolio",
+    "media_button_title": "Ver Videos y Fotos de Proyectos",
+    "media_button_text": "Explora videos y fotos reales de mis proyectos de ingeniería y trabajos prácticos.",
     "filter_all": "Todos",
     "filter_hardware": "Hardware y PCB",
     "filter_embedded": "Control Embebido",

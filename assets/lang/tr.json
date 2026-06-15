@@ -132,6 +132,8 @@
 
   "portfolio": {
     "title": "Portföy",
+    "media_button_title": "Proje Video ve Fotoğraflarını Görüntüle",
+    "media_button_text": "Mühendislik projelerimi ve uygulamalı çalışmalarımı gösteren gerçek video ve fotoğrafları inceleyin.",
     "filter_all": "Tümü",
     "filter_hardware": "Donanım & PCB",
     "filter_embedded": "Gömülü Kontrol",

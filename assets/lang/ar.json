@@ -132,6 +132,8 @@
 
   "portfolio": {
     "title": "المشاريع",
+    "media_button_title": "شاهد فيديوهات وصور أعمالي",
+    "media_button_text": "استعرض فيديوهات وصوراً حقيقية لمشاريعي الهندسية وأعمالي العملية.",
     "filter_all": "الكل",
     "filter_hardware": "الأجهزة و PCB",
     "filter_embedded": "التحكم المدمج",
