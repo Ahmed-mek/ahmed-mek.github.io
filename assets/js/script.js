@@ -144,123 +144,130 @@ for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("change", checkFormValidity);
 }
 
-// Populate hidden metadata fields for lead collection
-const populateHiddenFields = async function () {
-  const pageUrlInput = document.getElementById("hidden_page_url");
-  const referrerUrlInput = document.getElementById("hidden_referrer_url");
-  const utmParamsInput = document.getElementById("hidden_utm_params");
-  const submissionTimeInput = document.getElementById("hidden_submission_time");
-  const deviceTypeInput = document.getElementById("hidden_device_type");
-  const browserInput = document.getElementById("hidden_browser");
-  const approxLocationInput = document.getElementById("hidden_approx_location");
+// ── Shared Visitor Data Utilities ──
 
-  if (pageUrlInput) pageUrlInput.value = window.location.href;
-  if (referrerUrlInput) referrerUrlInput.value = document.referrer || "Direct";
+// Detect operating system from User Agent
+const detectOS = function () {
+  const ua = navigator.userAgent;
+  if (/Windows NT 10/i.test(ua)) return "Windows 10/11";
+  if (/Windows NT/i.test(ua)) return "Windows";
+  if (/Mac OS X/i.test(ua)) return "macOS";
+  if (/Android/i.test(ua)) return "Android";
+  if (/iPhone|iPad|iPod/i.test(ua)) return "iOS";
+  if (/Linux/i.test(ua)) return "Linux";
+  if (/CrOS/i.test(ua)) return "Chrome OS";
+  return "Unknown OS";
+};
 
-  // Parse UTM parameters
+// Detect browser name
+const detectBrowser = function () {
+  const ua = navigator.userAgent;
+  if (ua.indexOf("Edg") > -1) return "Microsoft Edge";
+  if (ua.indexOf("OPR") > -1 || ua.indexOf("Opera") > -1) return "Opera";
+  if (ua.indexOf("Firefox") > -1) return "Mozilla Firefox";
+  if (ua.indexOf("Chrome") > -1) return "Google Chrome";
+  if (ua.indexOf("Safari") > -1) return "Apple Safari";
+  return "Unknown Browser";
+};
+
+// Detect device type
+const detectDevice = function () {
+  if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) return "Mobile";
+  if (/iPad|Tablet/i.test(navigator.userAgent)) return "Tablet";
+  return "Desktop";
+};
+
+// Get geolocation with multiple fallbacks
+const getGeoLocation = async function () {
+  // Primary: ip-api.com (CORS enabled, reliable)
+  try {
+    const res = await fetch("http://ip-api.com/json/?fields=status,country,city,regionName,isp,query");
+    if (res.ok) {
+      const data = await res.json();
+      if (data.status === "success") {
+        return {
+          location: `${data.city || "Unknown"}, ${data.regionName || ""}, ${data.country || "Unknown"}`.replace(/, ,/g, ","),
+          ip: data.query || "Unknown",
+          isp: data.isp || "Unknown"
+        };
+      }
+    }
+  } catch (e) { /* fallback */ }
+
+  // Fallback: ipapi.co (also CORS enabled)
+  try {
+    const res = await fetch("https://ipapi.co/json/");
+    if (res.ok) {
+      const data = await res.json();
+      return {
+        location: `${data.city || "Unknown"}, ${data.region || ""}, ${data.country_name || "Unknown"}`.replace(/, ,/g, ","),
+        ip: data.ip || "Unknown",
+        isp: data.org || "Unknown"
+      };
+    }
+  } catch (e) { /* fallback */ }
+
+  return { location: "Unknown", ip: "Unknown", isp: "Unknown" };
+};
+
+// Build complete visitor metadata object
+const buildVisitorData = async function () {
   const urlParams = new URLSearchParams(window.location.search);
   const utmFields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
   const utmObj = {};
   utmFields.forEach(param => {
-    if (urlParams.has(param)) {
-      utmObj[param] = urlParams.get(param);
-    }
+    if (urlParams.has(param)) utmObj[param] = urlParams.get(param);
   });
-  if (utmParamsInput) utmParamsInput.value = Object.keys(utmObj).length > 0 ? JSON.stringify(utmObj) : "None";
 
-  // Date and Time
-  if (submissionTimeInput) submissionTimeInput.value = new Date().toLocaleString();
+  const geo = await getGeoLocation();
 
-  // Device Type
-  let deviceType = "Desktop";
-  if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
-    deviceType = "Mobile";
-  } else if (/iPad|Tablet/i.test(navigator.userAgent)) {
-    deviceType = "Tablet";
-  }
-  if (deviceTypeInput) deviceTypeInput.value = deviceType;
+  return {
+    page_url: window.location.href,
+    referrer_url: document.referrer || "Direct",
+    utm_params: Object.keys(utmObj).length > 0 ? JSON.stringify(utmObj) : "None",
+    time: new Date().toLocaleString(),
+    device_type: detectDevice(),
+    browser: detectBrowser(),
+    operating_system: detectOS(),
+    screen_resolution: `${screen.width}x${screen.height}`,
+    browser_language: navigator.language || navigator.userLanguage || "Unknown",
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || "Unknown",
+    approx_location: geo.location,
+    ip_address: geo.ip,
+    isp: geo.isp
+  };
+};
 
-  // Browser
-  let browser = "Unknown Browser";
-  const ua = navigator.userAgent;
-  if (ua.indexOf("Firefox") > -1) {
-    browser = "Mozilla Firefox";
-  } else if (ua.indexOf("Opera") > -1 || ua.indexOf("OPR") > -1) {
-    browser = "Opera";
-  } else if (ua.indexOf("Chrome") > -1) {
-    browser = "Google Chrome";
-  } else if (ua.indexOf("Safari") > -1) {
-    browser = "Apple Safari";
-  } else if (ua.indexOf("Edge") > -1) {
-    browser = "Microsoft Edge";
-  }
-  if (browserInput) browserInput.value = browser;
+// Populate hidden metadata fields for lead collection
+const populateHiddenFields = async function () {
+  const data = await buildVisitorData();
 
-  // Location Geolocation API
-  if (approxLocationInput) {
-    try {
-      const response = await fetch("https://freeipapi.com/api/json");
-      if (response.ok) {
-        const geoData = await response.json();
-        approxLocationInput.value = `${geoData.cityName || "Unknown City"}, ${geoData.countryName || "Unknown Country"}`;
-      } else {
-        approxLocationInput.value = "Unknown (API error)";
-      }
-    } catch (e) {
-      approxLocationInput.value = "Unknown (Blocked/Adblock)";
-    }
+  const fieldMap = {
+    hidden_page_url: data.page_url,
+    hidden_referrer_url: data.referrer_url,
+    hidden_utm_params: data.utm_params,
+    hidden_submission_time: data.time,
+    hidden_device_type: data.device_type,
+    hidden_browser: data.browser,
+    hidden_os: data.operating_system,
+    hidden_screen: data.screen_resolution,
+    hidden_language: data.browser_language,
+    hidden_timezone: data.timezone,
+    hidden_approx_location: data.approx_location
+  };
+
+  for (const [id, value] of Object.entries(fieldMap)) {
+    const el = document.getElementById(id);
+    if (el) el.value = value;
   }
 };
 
-// Send visitor alert notification on page load (once per session to avoid spam)
+// Send visitor alert notification on page load (once per session)
 const reportVisit = async function () {
   if (sessionStorage.getItem("visit_reported")) return;
   sessionStorage.setItem("visit_reported", "true");
 
-  const pageUrl = window.location.href;
-  const referrer = document.referrer || "Direct";
-  
-  const urlParams = new URLSearchParams(window.location.search);
-  const utmFields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
-  const utmObj = {};
-  utmFields.forEach(param => {
-    if (urlParams.has(param)) {
-      utmObj[param] = urlParams.get(param);
-    }
-  });
-  const utmParamsStr = Object.keys(utmObj).length > 0 ? JSON.stringify(utmObj) : "None";
-
-  let deviceType = "Desktop";
-  if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
-    deviceType = "Mobile";
-  } else if (/iPad|Tablet/i.test(navigator.userAgent)) {
-    deviceType = "Tablet";
-  }
-
-  let browser = "Unknown Browser";
-  const ua = navigator.userAgent;
-  if (ua.indexOf("Firefox") > -1) {
-    browser = "Mozilla Firefox";
-  } else if (ua.indexOf("Opera") > -1 || ua.indexOf("OPR") > -1) {
-    browser = "Opera";
-  } else if (ua.indexOf("Chrome") > -1) {
-    browser = "Google Chrome";
-  } else if (ua.indexOf("Safari") > -1) {
-    browser = "Apple Safari";
-  } else if (ua.indexOf("Edge") > -1) {
-    browser = "Microsoft Edge";
-  }
-
-  let location = "Unknown";
-  try {
-    const response = await fetch("https://freeipapi.com/api/json");
-    if (response.ok) {
-      const geoData = await response.json();
-      location = `${geoData.cityName || "Unknown City"}, ${geoData.countryName || "Unknown Country"}`;
-    }
-  } catch (e) {
-    location = "Unknown (Blocked/Adblock)";
-  }
+  const data = await buildVisitorData();
 
   try {
     await fetch("https://formsubmit.co/ajax/4c2147eaca0ce78c681deb9cf3ab2bf6", {
@@ -272,13 +279,19 @@ const reportVisit = async function () {
       body: JSON.stringify({
         _subject: "⚡ Live Visit Alert: New Visitor!",
         message: "A user has entered your portfolio website.",
-        page_url: pageUrl,
-        referrer_url: referrer,
-        utm_params: utmParamsStr,
-        device_type: deviceType,
-        browser: browser,
-        approx_location: location,
-        time: new Date().toLocaleString()
+        page_url: data.page_url,
+        referrer_url: data.referrer_url,
+        utm_params: data.utm_params,
+        device_type: data.device_type,
+        browser: data.browser,
+        operating_system: data.operating_system,
+        screen_resolution: data.screen_resolution,
+        browser_language: data.browser_language,
+        timezone: data.timezone,
+        approx_location: data.approx_location,
+        ip_address: data.ip_address,
+        isp: data.isp,
+        time: data.time
       })
     });
   } catch (err) {

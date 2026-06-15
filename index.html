@@ -1258,6 +1258,10 @@
             <input type="hidden" name="submission_time" id="hidden_submission_time">
             <input type="hidden" name="device_type" id="hidden_device_type">
             <input type="hidden" name="browser" id="hidden_browser">
+            <input type="hidden" name="operating_system" id="hidden_os">
+            <input type="hidden" name="screen_resolution" id="hidden_screen">
+            <input type="hidden" name="browser_language" id="hidden_language">
+            <input type="hidden" name="timezone" id="hidden_timezone">
             <input type="hidden" name="approx_location" id="hidden_approx_location">
 
             <div class="input-wrapper">
@@ -1300,23 +1304,29 @@
             Automatically</h3>
           <p style="margin-bottom: 15px;">
             When you visit and navigate through this website, certain information about your session is automatically
-            recorded. This data is non-personally identifiable and is used exclusively to evaluate site performance,
-            understand visitor dynamics, and improve general user experience.
+            recorded. This data is used exclusively to evaluate site performance, understand visitor dynamics, improve
+            user experience, and ensure the security and reliability of the platform.
           </p>
           <p style="margin-bottom: 15px;">
             This automatically collected information includes:
           </p>
           <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px;">
             <li><strong>Device and Technical Information:</strong> Details regarding your device type (desktop, mobile,
-              or tablet), screen resolution, operating system, web browser type, and language settings.</li>
+              or tablet), screen resolution, operating system, web browser type and version, and language settings.</li>
             <li><strong>Access and Referrer Logs:</strong> The origin of your visit (such as search engines, social
               media platforms, direct navigation, or campaigns), including specific UTM tracking parameters if
               applicable.</li>
             <li><strong>Interaction and Usage Patterns:</strong> The pages you view, navigation routes, timestamps of
-              your visit, session durations, and specific interactions (such as link clicks, downloads of resources, and
+              your visit, session durations, and specific interactions (such as link clicks, resource downloads, and
               form submissions).</li>
-            <li><strong>General Location Data:</strong> Your approximate geographic location (at a country or city
-              level) estimated via network information.</li>
+            <li><strong>Network and Location Data:</strong> Your approximate geographic location (at a country, region,
+              or city level) estimated via your IP address and network information. Your Internet Service Provider (ISP)
+              and timezone may also be recorded to improve service quality and regional analytics.</li>
+            <li><strong>Language and Regional Preferences:</strong> Your browser's preferred language and timezone
+              settings, which help us deliver a better localized experience.</li>
+            <li><strong>Session Behavior:</strong> Visual session recordings, heatmaps, and click tracking are collected
+              anonymously through third-party analytics tools to understand how visitors interact with the interface and
+              identify areas for improvement.</li>
           </ul>
 
           <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">2. Information You
@@ -1326,32 +1336,53 @@
             details such as your name, email address, and the content of your message.
           </p>
           <p style="margin-bottom: 15px;">
-            To ensure the security, delivery, and appropriate routing of your inquiries, your submission is bundled with
-            technical diagnostic metadata (such as device type, browser, approximate location, and timestamp of the
-            transaction). This data is processed securely through specialized third-party services and forwarded
-            directly to my primary contact address.
+            To ensure the security, delivery, and appropriate routing of your inquiries, your submission is automatically
+            enriched with technical diagnostic metadata — including device type, browser, operating system, screen
+            resolution, approximate geographic location, timezone, preferred language, and the timestamp of the
+            transaction. This data is processed securely through specialized third-party services and forwarded directly
+            to my primary contact address.
           </p>
 
-          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">3. Cookies and Tracking
+          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">3. Automatic Visit
+            Notifications</h3>
+          <p style="margin-bottom: 15px;">
+            Upon your first visit in a browsing session, an automated notification may be sent to the site owner
+            containing non-personally identifiable session data (such as device type, browser, approximate location, and
+            referral source). This mechanism is used solely for monitoring site traffic and is limited to one notification
+            per session to minimize data collection.
+          </p>
+
+          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">4. Cookies and Tracking
             Technologies</h3>
           <p style="margin-bottom: 15px;">
             This website utilizes cookies and similar tracking technologies to analyze trends and monitor user
-            interactions. These technologies help recognize repeat visitors and optimize page load configurations. You
-            can manage, block, or delete cookies through your individual browser settings; however, disabling cookies
-            may impact your overall experience on the site.
+            interactions. These technologies help recognize repeat visitors, remember language preferences, and optimize
+            page load configurations. You can manage, block, or delete cookies through your individual browser settings;
+            however, disabling cookies may impact your overall experience on the site, including language preference
+            persistence.
           </p>
 
-          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">4. Third-Party
+          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">5. Third-Party
             Integrations</h3>
           <p style="margin-bottom: 15px;">
-            To support professional functionality, this site integrates industry-standard third-party tools (including
-            Google Analytics, Microsoft Clarity, and FormSubmit). These services compile aggregated data and anonymous
-            recordings of visitor behavior, helping to identify bugs and enhance site navigation. All third-party
-            providers handle your data in strict compliance with their respective privacy policies and security
-            regulations.
+            To support professional functionality and analytics, this site integrates industry-standard third-party tools
+            including but not limited to Google Analytics 4 (GA4), Microsoft Clarity, and FormSubmit. These services
+            compile aggregated data, session recordings, heatmaps, and anonymous visitor behavior patterns, helping to
+            identify bugs, track custom events (such as button clicks, downloads, and form submissions), and enhance site
+            navigation. IP-based geolocation services are also utilized to estimate visitor locations. All third-party
+            providers handle your data in compliance with their respective privacy policies and applicable regulations.
           </p>
 
-          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">5. Data Protection and
+          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">6. Custom Event
+            Tracking</h3>
+          <p style="margin-bottom: 15px;">
+            Certain interactive elements on this site are instrumented with custom analytics events to measure engagement
+            and improve the user experience. These events may include, but are not limited to: clicking communication
+            links, downloading documents, viewing project details, submitting forms, and switching between language
+            versions. Event data is anonymized and aggregated — it does not contain personally identifiable information.
+          </p>
+
+          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">7. Data Protection and
             Retention</h3>
           <p style="margin-bottom: 15px;">
             I prioritize data safety and implement appropriate technical measures to prevent unauthorized access,
@@ -1360,11 +1391,13 @@
             information to outside parties.
           </p>
 
-          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">6. Consent and Policy
+          <h3 class="h3" style="color: var(--white-2); margin-top: 25px; margin-bottom: 10px;">8. Consent and Policy
             Updates</h3>
           <p style="margin-bottom: 15px;">
             By using this website, you hereby consent to the terms of this Privacy Policy. I reserve the right to modify
-            or update this document at any time to reflect updates in website features or legal requirements.
+            or update this document at any time to reflect updates in website features, data collection practices, or
+            legal requirements. Continued use of the website following any such changes constitutes acceptance of the
+            revised policy.
           </p>
 
           <p style="margin-top: 40px; font-size: var(--fs-7); color: var(--light-gray-70);">
@@ -1406,7 +1439,7 @@
   <script src="./assets/js/i18n.js?v=2.0"></script>
   <script src="./assets/js/certificates-data.js?v=1.1"></script>
   <script src="./assets/js/certificates.js?v=1.1"></script>
-  <script src="./assets/js/script.js?v=2.4"></script>
+  <script src="./assets/js/script.js?v=3.0"></script>
 
   <!--
     - ionicon link
