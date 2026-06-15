@@ -268,17 +268,39 @@ const populateHiddenFields = async function () {
 // Paste your Google Apps Script Web App URL here (see docs/google-sheets-logger-setup.md)
 const GOOGLE_SHEET_WEBHOOK = "https://script.google.com/macros/s/AKfycbygeH3fl3Omq9L4VoXLiLwKGISj_FjA0SCEHvrUVsJ5cvVmWnlhvLO0MEQxiTxPuQ/exec";
 
-// Log visitor data to Google Sheets
-const logToGoogleSheets = async function (data) {
-  if (!GOOGLE_SHEET_WEBHOOK) return; // Skip if not configured
+// Log visitor data to Google Sheets via hidden form (bypasses CORS + redirect issues)
+const logToGoogleSheets = function (data) {
+  if (!GOOGLE_SHEET_WEBHOOK) return;
   try {
-    // Use text/plain (CORS-safelisted) so the body is actually sent in no-cors mode
-    await fetch(GOOGLE_SHEET_WEBHOOK, {
-      method: "POST",
-      mode: "no-cors",
-      headers: { 'Content-Type': 'text/plain' },
-      body: JSON.stringify(data)
-    });
+    // Create hidden iframe target
+    const iframe = document.createElement("iframe");
+    iframe.name = "sheets_log_frame";
+    iframe.style.display = "none";
+    document.body.appendChild(iframe);
+
+    // Create hidden form
+    const form = document.createElement("form");
+    form.method = "POST";
+    form.action = GOOGLE_SHEET_WEBHOOK;
+    form.target = "sheets_log_frame";
+
+    // Add each data field as a hidden input
+    for (const [key, value] of Object.entries(data)) {
+      const input = document.createElement("input");
+      input.type = "hidden";
+      input.name = key;
+      input.value = String(value);
+      form.appendChild(input);
+    }
+
+    document.body.appendChild(form);
+    form.submit();
+
+    // Cleanup after 10 seconds
+    setTimeout(function () {
+      if (form.parentNode) form.parentNode.removeChild(form);
+      if (iframe.parentNode) iframe.parentNode.removeChild(iframe);
+    }, 10000);
   } catch (err) {
     console.error("Failed to log to Google Sheets", err);
   }

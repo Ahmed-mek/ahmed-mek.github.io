@@ -22,7 +22,7 @@ This guide will help you set up a free Google Sheets webhook that logs every vis
 function doPost(e) {
   try {
     var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-    var data = JSON.parse(e.postData.contents);
+    var data = e.parameter;
     
     sheet.appendRow([
       new Date().toISOString(),
