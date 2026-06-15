@@ -230,5 +230,11 @@
 
   "toast": {
     "success_message": "¡Mensaje enviado con éxito! Gracias."
+  },
+
+  "cookie": {
+    "message": "Este sitio utiliza cookies y herramientas de análisis para mejorar su experiencia.",
+    "learn_more": "Más información",
+    "accept": "Entendido"
   }
 }

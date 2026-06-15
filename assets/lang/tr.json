@@ -230,5 +230,11 @@
 
   "toast": {
     "success_message": "Mesaj başarıyla gönderildi! Teşekkürler."
+  },
+
+  "cookie": {
+    "message": "Bu site, deneyiminizi iyileştirmek için çerezler ve analiz araçları kullanmaktadır.",
+    "learn_more": "Daha fazla bilgi",
+    "accept": "Anladım"
   }
 }

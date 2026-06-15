@@ -37,7 +37,7 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css?v=2.2">
+  <link rel="stylesheet" href="./assets/css/style.css?v=2.3">
 
   <!--
     - google font link
@@ -1446,6 +1446,48 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--
+    - cookie consent banner
+  -->
+  <div class="cookie-consent" id="cookie-consent">
+    <span class="cookie-consent-icon">🍪</span>
+    <p class="cookie-consent-text" data-i18n="cookie.message">
+      This site uses cookies and analytics to improve your experience.
+      <a href="#" id="cookie-privacy-link" data-i18n="cookie.learn_more">Learn more</a>
+    </p>
+    <button class="cookie-consent-btn" id="cookie-accept-btn" data-i18n="cookie.accept">Got it</button>
+  </div>
+
+  <script>
+    // Cookie Consent Logic
+    (function () {
+      const banner = document.getElementById("cookie-consent");
+      const acceptBtn = document.getElementById("cookie-accept-btn");
+      const privacyLink = document.getElementById("cookie-privacy-link");
+
+      if (!localStorage.getItem("cookie_consent")) {
+        setTimeout(function () {
+          banner.classList.add("show");
+        }, 1500);
+      }
+
+      acceptBtn.addEventListener("click", function () {
+        localStorage.setItem("cookie_consent", "accepted");
+        banner.classList.remove("show");
+      });
+
+      privacyLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        // Navigate to privacy page
+        document.querySelectorAll("[data-page]").forEach(function (p) { p.classList.remove("active"); });
+        document.querySelectorAll("[data-nav-link]").forEach(function (n) { n.classList.remove("active"); });
+        var pp = document.querySelector("[data-page='privacy']");
+        if (pp) { pp.classList.add("active"); window.scrollTo(0, 0); }
+        banner.classList.remove("show");
+        localStorage.setItem("cookie_consent", "accepted");
+      });
+    })();
+  </script>
 
 </body>
 
