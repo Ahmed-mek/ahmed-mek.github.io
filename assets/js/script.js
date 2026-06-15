@@ -177,33 +177,35 @@ const detectDevice = function () {
   return "Desktop";
 };
 
-// Get geolocation with multiple fallbacks
+// Get geolocation with multiple HTTPS fallbacks
 const getGeoLocation = async function () {
-  // Primary: ip-api.com (CORS enabled, reliable)
+  // Primary: ipapi.co (HTTPS, CORS enabled, free 1000/day)
   try {
-    const res = await fetch("http://ip-api.com/json/?fields=status,country,city,regionName,isp,query");
+    const res = await fetch("https://ipapi.co/json/");
     if (res.ok) {
       const data = await res.json();
-      if (data.status === "success") {
+      if (!data.error) {
         return {
-          location: `${data.city || "Unknown"}, ${data.regionName || ""}, ${data.country || "Unknown"}`.replace(/, ,/g, ","),
-          ip: data.query || "Unknown",
-          isp: data.isp || "Unknown"
+          location: `${data.city || "Unknown"}, ${data.region || ""}, ${data.country_name || "Unknown"}`.replace(/, ,/g, ","),
+          ip: data.ip || "Unknown",
+          isp: data.org || "Unknown"
         };
       }
     }
   } catch (e) { /* fallback */ }
 
-  // Fallback: ipapi.co (also CORS enabled)
+  // Fallback: ipwho.is (HTTPS, CORS enabled, no key needed)
   try {
-    const res = await fetch("https://ipapi.co/json/");
+    const res = await fetch("https://ipwho.is/");
     if (res.ok) {
       const data = await res.json();
-      return {
-        location: `${data.city || "Unknown"}, ${data.region || ""}, ${data.country_name || "Unknown"}`.replace(/, ,/g, ","),
-        ip: data.ip || "Unknown",
-        isp: data.org || "Unknown"
-      };
+      if (data.success !== false) {
+        return {
+          location: `${data.city || "Unknown"}, ${data.region || ""}, ${data.country || "Unknown"}`.replace(/, ,/g, ","),
+          ip: data.ip || "Unknown",
+          isp: data.connection?.isp || "Unknown"
+        };
+      }
     }
   } catch (e) { /* fallback */ }
 
@@ -262,6 +264,25 @@ const populateHiddenFields = async function () {
   }
 };
 
+// ── Google Sheets Visitor Logger ──
+// Paste your Google Apps Script Web App URL here (see docs/google-sheets-logger-setup.md)
+const GOOGLE_SHEET_WEBHOOK = "";
+
+// Log visitor data to Google Sheets
+const logToGoogleSheets = async function (data) {
+  if (!GOOGLE_SHEET_WEBHOOK) return; // Skip if not configured
+  try {
+    await fetch(GOOGLE_SHEET_WEBHOOK, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+  } catch (err) {
+    console.error("Failed to log to Google Sheets", err);
+  }
+};
+
 // Send visitor alert notification on page load (once per session)
 const reportVisit = async function () {
   if (sessionStorage.getItem("visit_reported")) return;
@@ -269,8 +290,10 @@ const reportVisit = async function () {
 
   const data = await buildVisitorData();
 
-  try {
-    await fetch("https://formsubmit.co/ajax/4c2147eaca0ce78c681deb9cf3ab2bf6", {
+  // Run email alert and Google Sheets log in parallel
+  await Promise.allSettled([
+    // Email alert via FormSubmit
+    fetch("https://formsubmit.co/ajax/4c2147eaca0ce78c681deb9cf3ab2bf6", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
@@ -293,10 +316,11 @@ const reportVisit = async function () {
         isp: data.isp,
         time: data.time
       })
-    });
-  } catch (err) {
-    console.error("Failed to send visit alert", err);
-  }
+    }).catch(err => console.error("Failed to send visit alert", err)),
+
+    // Google Sheets log
+    logToGoogleSheets(data)
+  ]);
 };
 
 window.addEventListener("load", async function() {
