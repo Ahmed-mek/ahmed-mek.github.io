@@ -272,10 +272,11 @@ const GOOGLE_SHEET_WEBHOOK = "https://script.google.com/macros/s/AKfycbygeH3fl3O
 const logToGoogleSheets = async function (data) {
   if (!GOOGLE_SHEET_WEBHOOK) return; // Skip if not configured
   try {
+    // Use text/plain (CORS-safelisted) so the body is actually sent in no-cors mode
     await fetch(GOOGLE_SHEET_WEBHOOK, {
       method: "POST",
       mode: "no-cors",
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'text/plain' },
       body: JSON.stringify(data)
     });
   } catch (err) {
