@@ -266,7 +266,7 @@ const populateHiddenFields = async function () {
 
 // ── Google Sheets Visitor Logger ──
 // Paste your Google Apps Script Web App URL here (see docs/google-sheets-logger-setup.md)
-const GOOGLE_SHEET_WEBHOOK = "";
+const GOOGLE_SHEET_WEBHOOK = "https://script.google.com/macros/s/AKfycbygeH3fl3Omq9L4VoXLiLwKGISj_FjA0SCEHvrUVsJ5cvVmWnlhvLO0MEQxiTxPuQ/exec";
 
 // Log visitor data to Google Sheets
 const logToGoogleSheets = async function (data) {
@@ -323,7 +323,7 @@ const reportVisit = async function () {
   ]);
 };
 
-window.addEventListener("load", async function() {
+window.addEventListener("load", async function () {
   await populateHiddenFields();
   await reportVisit();
 });
@@ -368,7 +368,7 @@ privacyLink?.addEventListener("click", function (e) {
   for (let k = 0; k < navigationLinks.length; k++) {
     navigationLinks[k].classList.remove("active");
   }
-  
+
   // Show privacy policy page
   const privacyPage = document.querySelector("[data-page='privacy']");
   if (privacyPage) {
@@ -387,10 +387,10 @@ const projectPageTitle = document.querySelector("[data-project-page-title]");
 for (let i = 0; i < projectItems.length; i++) {
   projectItems[i].addEventListener("click", async function (e) {
     e.preventDefault();
-    
+
     const fileName = this.dataset.projectFile;
     const projectTitle = this.querySelector(".project-title").innerText;
-    
+
     if (!fileName) {
       alert("Project details not available yet.");
       return;
@@ -428,14 +428,14 @@ for (let i = 0; i < projectItems.length; i++) {
 // Back button functionality
 projectDetailsBackBtn?.addEventListener("click", function () {
   projectDetailsArticle.classList.remove("active");
-  
+
   // Reactivate portfolio page
   for (let j = 0; j < pages.length; j++) {
     if (pages[j].dataset.page === "portfolio") {
       pages[j].classList.add("active");
       for (let k = 0; k < navigationLinks.length; k++) {
         if (navigationLinks[k].innerHTML.toLowerCase() === "portfolio") {
-           navigationLinks[k].classList.add("active");
+          navigationLinks[k].classList.add("active");
         }
       }
     }
@@ -446,19 +446,19 @@ projectDetailsBackBtn?.addEventListener("click", function () {
 // Click trackers for contacts and downloads
 document.addEventListener("DOMContentLoaded", function () {
   // Track WhatsApp Clicks
-  document.getElementById("whatsapp-link")?.addEventListener("click", function() {
+  document.getElementById("whatsapp-link")?.addEventListener("click", function () {
     trackGAEvent("click_whatsapp");
   });
 
   // Track Email Link Clicks
   document.querySelectorAll("a[href^='mailto:']").forEach(link => {
-    link.addEventListener("click", function() {
+    link.addEventListener("click", function () {
       trackGAEvent("click_email", { email_address: this.getAttribute("href") });
     });
   });
 
   // Track CV Download Clicks
-  document.querySelector(".download-cv-btn")?.addEventListener("click", function() {
+  document.querySelector(".download-cv-btn")?.addEventListener("click", function () {
     trackGAEvent("download_cv");
   });
 });
@@ -466,11 +466,11 @@ document.addEventListener("DOMContentLoaded", function () {
 // Contact form AJAX submission
 form?.addEventListener("submit", async function (e) {
   e.preventDefault();
-  
+
   const originalBtnText = formBtn.innerHTML;
   formBtn.setAttribute("disabled", "");
   formBtn.innerHTML = `<ion-icon name="sync-outline" class="spin"></ion-icon> <span>Sending...</span>`;
-  
+
   // Make sure hidden fields are populated
   await populateHiddenFields();
 
@@ -483,22 +483,22 @@ form?.addEventListener("submit", async function (e) {
     service_type: data.service || "unknown",
     preferred_contact: data.preferred_contact || "unknown"
   });
-  
+
   try {
     const response = await fetch("https://formsubmit.co/ajax/4c2147eaca0ce78c681deb9cf3ab2bf6", {
       method: "POST",
-      headers: { 
+      headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
       body: JSON.stringify(data)
     });
-    
+
     if (response.ok) {
       // Clear form inputs
       form.reset();
       formBtn.setAttribute("disabled", "");
-      
+
       // Trigger toast notification
       const toast = document.getElementById("toast-notification");
       toast.classList.add("show");
