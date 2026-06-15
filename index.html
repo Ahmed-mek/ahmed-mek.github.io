@@ -37,7 +37,7 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css?v=2.3">
+  <link rel="stylesheet" href="./assets/css/style.css?v=2.6">
 
   <!--
     - google font link
@@ -76,10 +76,10 @@
 
         <!-- Language Switcher (Inline Flags) -->
         <div class="lang-switcher" id="lang-switcher">
-          <button class="lang-btn active" data-lang="en" title="English">🇬🇧</button>
-          <button class="lang-btn" data-lang="ar" title="العربية">🇸🇦</button>
-          <button class="lang-btn" data-lang="tr" title="Türkçe">🇹🇷</button>
-          <button class="lang-btn" data-lang="es" title="Español">🇪🇸</button>
+          <button class="lang-btn active" type="button" data-lang="en" title="English">🇬🇧</button>
+          <button class="lang-btn" type="button" data-lang="ar" title="العربية">🇸🇦</button>
+          <button class="lang-btn" type="button" data-lang="tr" title="Türkçe">🇹🇷</button>
+          <button class="lang-btn" type="button" data-lang="es" title="Español">🇪🇸</button>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -1410,8 +1410,14 @@
       <!-- Footer -->
       <footer
         style="margin-top: 40px; padding: 20px 0; text-align: center; border-top: 1px solid var(--jet); font-size: var(--fs-8); color: var(--light-gray-70);">
-        <p><span data-i18n="footer.copyright">© 2026 Ahmed Ahmed. All rights reserved.</span> | <a href="#" id="privacy-link"
-            style="color: var(--orange-yellow-crayola); text-decoration: underline;" data-i18n="footer.privacy_link">Privacy Policy</a></p>
+        <p class="footer-legal">
+          <span data-i18n="footer.copyright">© 2026 Ahmed Ahmed. All rights reserved.</span>
+          <span aria-hidden="true"> | </span>
+          <span data-i18n="cookie.message">We use cookies to improve your experience and understand site usage.</span>
+          <span aria-hidden="true"> | </span>
+          <a href="#" id="privacy-link" style="color: var(--orange-yellow-crayola); text-decoration: underline;"
+            data-i18n="footer.privacy_link">Privacy Policy</a>
+        </p>
       </footer>
 
     </div>
@@ -1436,7 +1442,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/i18n.js?v=2.0"></script>
+  <script src="./assets/js/i18n.js?v=2.1"></script>
   <script src="./assets/js/certificates-data.js?v=1.1"></script>
   <script src="./assets/js/certificates.js?v=1.1"></script>
   <script src="./assets/js/script.js?v=3.3"></script>
@@ -1446,49 +1452,6 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <!--
-    - cookie consent banner
-  -->
-  <div class="cookie-consent" id="cookie-consent">
-    <span class="cookie-consent-icon">🍪</span>
-    <p class="cookie-consent-text">
-      <span data-i18n="cookie.message">This site uses cookies and analytics. By continuing to use the site, you agree to our use of cookies.</span>
-      <a href="#" id="cookie-privacy-link" data-i18n="cookie.learn_more">Learn more</a>
-    </p>
-    <button class="cookie-consent-btn" id="cookie-accept-btn" data-i18n="cookie.accept">Got it</button>
-  </div>
-
-  <script>
-    // Cookie Consent Logic
-    (function () {
-      const banner = document.getElementById("cookie-consent");
-      const acceptBtn = document.getElementById("cookie-accept-btn");
-      const privacyLink = document.getElementById("cookie-privacy-link");
-
-      if (!localStorage.getItem("cookie_consent")) {
-        setTimeout(function () {
-          banner.classList.add("show");
-        }, 1500);
-      }
-
-      acceptBtn.addEventListener("click", function () {
-        localStorage.setItem("cookie_consent", "accepted");
-        banner.classList.remove("show");
-      });
-
-      privacyLink.addEventListener("click", function (e) {
-        e.preventDefault();
-        // Navigate to privacy page
-        document.querySelectorAll("[data-page]").forEach(function (p) { p.classList.remove("active"); });
-        document.querySelectorAll("[data-nav-link]").forEach(function (n) { n.classList.remove("active"); });
-        var pp = document.querySelector("[data-page='privacy']");
-        if (pp) { pp.classList.add("active"); window.scrollTo(0, 0); }
-        banner.classList.remove("show");
-        localStorage.setItem("cookie_consent", "accepted");
-      });
-    })();
-  </script>
-
 </body>
 
 </html>

@@ -233,8 +233,6 @@
   },
 
   "cookie": {
-    "message": "This site uses cookies and analytics. By continuing to use the site, you agree to our use of cookies.",
-    "learn_more": "Learn more",
-    "accept": "Got it"
+    "message": "We use cookies to improve your experience and understand site usage."
   }
 }
