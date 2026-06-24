@@ -146,6 +146,26 @@ for (let i = 0; i < formInputs.length; i++) {
 
 // ── Shared Visitor Data Utilities ──
 
+// Generate or retrieve a unique session ID (per browser tab/session)
+const getSessionId = function () {
+  let sessionId = sessionStorage.getItem("visitor_session_id");
+  if (!sessionId) {
+    sessionId = "sess_" + Math.random().toString(36).substring(2, 11) + "_" + Date.now().toString(36);
+    sessionStorage.setItem("visitor_session_id", sessionId);
+  }
+  return sessionId;
+};
+
+// Check if this is a new or returning visitor (persisted across sessions via localStorage)
+const checkReturningVisitor = function () {
+  const hasVisited = localStorage.getItem("portfolio_visited");
+  if (!hasVisited) {
+    localStorage.setItem("portfolio_visited", Date.now().toString());
+    return "New Visitor";
+  }
+  return "Returning Visitor";
+};
+
 // Detect operating system from User Agent
 const detectOS = function () {
   const ua = navigator.userAgent;
@@ -224,6 +244,9 @@ const buildVisitorData = async function () {
   const geo = await getGeoLocation();
 
   return {
+    event_type: "page_visit",
+    session_id: getSessionId(),
+    visitor_type: checkReturningVisitor(),
     page_url: window.location.href,
     referrer_url: document.referrer || "Direct",
     utm_params: Object.keys(utmObj).length > 0 ? JSON.stringify(utmObj) : "None",
@@ -233,6 +256,7 @@ const buildVisitorData = async function () {
     operating_system: detectOS(),
     screen_resolution: `${screen.width}x${screen.height}`,
     browser_language: navigator.language || navigator.userLanguage || "Unknown",
+    color_scheme: window.matchMedia("(prefers-color-scheme: dark)").matches ? "Dark Mode" : "Light Mode",
     timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || "Unknown",
     approx_location: geo.location,
     ip_address: geo.ip,
@@ -265,45 +289,40 @@ const populateHiddenFields = async function () {
 };
 
 // ── Google Sheets Visitor Logger ──
-// Paste your Google Apps Script Web App URL here (see docs/google-sheets-logger-setup.md)
 const GOOGLE_SHEET_WEBHOOK = "https://script.google.com/macros/s/AKfycbygeH3fl3Omq9L4VoXLiLwKGISj_FjA0SCEHvrUVsJ5cvVmWnlhvLO0MEQxiTxPuQ/exec";
 
-// Log visitor data to Google Sheets via hidden form (bypasses CORS + redirect issues)
+// Send any data object to Google Sheets as a POST (no-cors mode to avoid redirect issues)
 const logToGoogleSheets = function (data) {
   if (!GOOGLE_SHEET_WEBHOOK) return;
   try {
-    // Create hidden iframe target
-    const iframe = document.createElement("iframe");
-    iframe.name = "sheets_log_frame";
-    iframe.style.display = "none";
-    document.body.appendChild(iframe);
-
-    // Create hidden form
-    const form = document.createElement("form");
-    form.method = "POST";
-    form.action = GOOGLE_SHEET_WEBHOOK;
-    form.target = "sheets_log_frame";
-
-    // Add each data field as a hidden input
-    for (const [key, value] of Object.entries(data)) {
-      const input = document.createElement("input");
-      input.type = "hidden";
-      input.name = key;
-      input.value = String(value);
-      form.appendChild(input);
-    }
-
-    document.body.appendChild(form);
-    form.submit();
-
-    // Cleanup after 10 seconds
-    setTimeout(function () {
-      if (form.parentNode) form.parentNode.removeChild(form);
-      if (iframe.parentNode) iframe.parentNode.removeChild(iframe);
-    }, 10000);
+    navigator.sendBeacon(
+      GOOGLE_SHEET_WEBHOOK,
+      new URLSearchParams(Object.fromEntries(Object.entries(data).map(([k, v]) => [k, String(v)])))
+    );
   } catch (err) {
-    console.error("Failed to log to Google Sheets", err);
+    // Fallback: fire-and-forget fetch
+    fetch(GOOGLE_SHEET_WEBHOOK, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(Object.fromEntries(Object.entries(data).map(([k, v]) => [k, String(v)])))
+    }).catch(() => {});
   }
+};
+
+// ── Engagement Event Logger ──
+// Sends a lightweight event row to Google Sheets (session_id + event details)
+const logEngagementEvent = function (eventType, details = {}) {
+  const payload = {
+    event_type: eventType,
+    session_id: getSessionId(),
+    time: new Date().toLocaleString(),
+    ...details
+  };
+  logToGoogleSheets(payload);
+
+  // Also fire to GA4
+  trackGAEvent(eventType, details);
 };
 
 // Send visitor alert notification on page load (once per session)
@@ -348,7 +367,7 @@ const reportVisit = async function () {
 
 window.addEventListener("load", async function () {
   await populateHiddenFields();
-  await reportVisit();
+  await reportVisit(); // ✅ visit tracking enabled
 });
 
 // page navigation variables
@@ -369,13 +388,16 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
     // Add active class to clicked nav link and corresponding page
     this.classList.add("active");
+    const targetPage = this.getAttribute("data-nav-link") || this.innerHTML.toLowerCase().trim();
     for (let j = 0; j < pages.length; j++) {
-      const targetPage = this.getAttribute("data-nav-link") || this.innerHTML.toLowerCase().trim();
       if (targetPage === pages[j].dataset.page) {
         pages[j].classList.add("active");
         window.scrollTo(0, 0);
       }
     }
+
+    // ── Track tab navigation ──
+    logEngagementEvent("tab_view", { tab_name: targetPage });
 
   });
 }
@@ -419,8 +441,8 @@ for (let i = 0; i < projectItems.length; i++) {
       return;
     }
 
-    // Track project view event
-    trackGAEvent("view_project", { project_name: projectTitle, project_file: fileName });
+    // Track project view event (GA4 + Google Sheets)
+    logEngagementEvent("project_view", { project_name: projectTitle, project_file: fileName });
 
     // Set title and loading text
     projectPageTitle.innerText = projectTitle;
@@ -466,24 +488,43 @@ projectDetailsBackBtn?.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
 
-// Click trackers for contacts and downloads
+// ── Click Trackers for Contacts, Social Links & Downloads ──
 document.addEventListener("DOMContentLoaded", function () {
+
   // Track WhatsApp Clicks
   document.getElementById("whatsapp-link")?.addEventListener("click", function () {
-    trackGAEvent("click_whatsapp");
+    logEngagementEvent("click_whatsapp");
   });
 
   // Track Email Link Clicks
   document.querySelectorAll("a[href^='mailto:']").forEach(link => {
     link.addEventListener("click", function () {
-      trackGAEvent("click_email", { email_address: this.getAttribute("href") });
+      logEngagementEvent("click_email", { link_target: this.getAttribute("href") });
+    });
+  });
+
+  // Track Phone Clicks
+  document.querySelectorAll("a[href^='tel:']").forEach(link => {
+    link.addEventListener("click", function () {
+      logEngagementEvent("click_phone");
     });
   });
 
   // Track CV Download Clicks
   document.querySelector(".download-cv-btn")?.addEventListener("click", function () {
-    trackGAEvent("download_cv");
+    logEngagementEvent("download_cv");
   });
+
+  // Track LinkedIn Click
+  document.querySelector("a[href*='linkedin']")?.addEventListener("click", function () {
+    logEngagementEvent("click_linkedin");
+  });
+
+  // Track GitHub Click
+  document.querySelector("a[href*='github']")?.addEventListener("click", function () {
+    logEngagementEvent("click_github");
+  });
+
 });
 
 // Contact form AJAX submission

@@ -84,6 +84,22 @@
     }
   }
 
+  const CV_LINKS = {
+    "ar": "https://drive.google.com/file/d/1av0gAfe-1EQYrwxq33qJ4EaZNue17lQr/preview",
+    "en": "https://drive.google.com/file/d/1tgyqqJ4uJ2yJrJKtSyGmEBu7HU7qTTtD/preview",
+    "es": "https://drive.google.com/file/d/1cmlg39jZJNbMgVPxZtX2TC5PI7gKELA6/preview",
+    "tr": "https://drive.google.com/file/d/1UmaH2o5Mn33cU4F99bPvD9ayMPbPPSuy/preview"
+  };
+
+  function updateCVPreview(langCode) {
+    const cvIframe = document.getElementById("cv-iframe");
+    if (cvIframe && CV_LINKS[langCode]) {
+      if (cvIframe.src !== CV_LINKS[langCode]) {
+        cvIframe.src = CV_LINKS[langCode];
+      }
+    }
+  }
+
   /**
    * Update the language switcher buttons to show active state
    */
@@ -113,6 +129,7 @@
       applyTranslations(langData);
       applyDirection(langData);
       updateSwitcherUI(langCode);
+      updateCVPreview(langCode);
 
       // Save preference
       localStorage.setItem(LANG_STORAGE_KEY, langCode);

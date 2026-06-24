@@ -1922,7 +1922,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .article-title {
-    max-width: calc(100% - 460px);
+    max-width: 100%;
   }
 
 
@@ -1946,23 +1946,37 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .navbar {
-    position: absolute;
-    bottom: auto;
-    top: 0;
-    left: auto;
-    right: 0;
-    width: max-content;
-    border-radius: 0 20px;
+    position: static;
+    width: 100%;
+    border-radius: 20px;
     padding: 0 20px;
-    box-shadow: none;
+    box-shadow: var(--shadow-5);
+    margin-bottom: 25px;
   }
 
   .navbar-list {
-    gap: 30px;
-    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0;
   }
 
-  .navbar-link { font-weight: var(--fw-500); }
+  .navbar-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: var(--fw-500);
+    padding: 20px 0;
+  }
 
 
 
